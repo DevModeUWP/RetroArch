@@ -157,7 +157,7 @@
  *   thumbnail-based layouts */
 enum materialui_list_view_type
 {
-   MUI_LIST_VIEW_DEFAULT = 0,
+   MUI_LIST_VIEW_DEFAULT,
    MUI_LIST_VIEW_PLAYLIST,
    MUI_LIST_VIEW_PLAYLIST_THUMB_LIST_SMALL,
    MUI_LIST_VIEW_PLAYLIST_THUMB_LIST_MEDIUM,
@@ -725,7 +725,7 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x000000, /* sys_bar_background */
 		0x353535, /* title_bar_background */
 		0x191919, /* list_background */
-		0x3399FF, /* list_highlighted_background */
+		0xCB1619, /* list_highlighted_background */
 		0x282828, /* nav_bar_background */
 		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
@@ -733,12 +733,12 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0x3399FF, /* list_switch_on */
+		0xCB1619, /* list_switch_on */
 		0x454545, /* list_switch_on_background */
 		0x454545, /* list_switch_off */
 		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x3399FF, /* nav_bar_icon_active */
+		0xCB1619, /* nav_bar_icon_active */
 		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
@@ -771,7 +771,7 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x000000, /* sys_bar_background */
 		0x353535, /* title_bar_background */
 		0x191919, /* list_background */
-		0x39859A, /* list_highlighted_background */
+		0xCB1619, /* list_highlighted_background */
 		0x282828, /* nav_bar_background */
 		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
@@ -779,12 +779,12 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0x39859A, /* list_switch_on */
+		0xCB1619, /* list_switch_on */
 		0x454545, /* list_switch_on_background */
 		0x454545, /* list_switch_off */
 		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x39859A, /* nav_bar_icon_active */
+		0xCB1619, /* nav_bar_icon_active */
 		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
@@ -806,95 +806,95 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 	};
 	static const materialui_theme_t materialui_theme_blue = {
 		/* Text (& small inline icon) colours */
-		0xDEDEDE, /* on_sys_bar */
+		0xC4C4C4, /* on_sys_bar */
 		0xFFFFFF, /* on_header */
-		0x212121, /* list_text */
-		0x000000, /* list_text_highlighted */
-		0x666666, /* list_hint_text */
-		0x212121, /* list_hint_text_highlighted */
-		0x000000, /* status_bar_text */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
-		0x0069c0, /* sys_bar_background */
-		0x2196f3, /* title_bar_background */
-		0xF5F5F6, /* list_background */
-		0xc1d5e0, /* list_highlighted_background */
-		0xE1E2E1, /* nav_bar_background */
-		0xFFFFFF, /* surface_background */
-		0x242424, /* thumbnail_background */
-		0xc1d5e0, /* side_bar_background */
-		0x9F9FA0, /* status_bar_background */
+		0x000000, /* sys_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0x0069c0, /* list_icon */
-		0x2196f3, /* list_switch_on */
-		0x6ec6ff, /* list_switch_on_background */
-		0x808e95, /* list_switch_off */
-		0xbabdbe, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x0069c0, /* nav_bar_icon_active */
-		0x9ea7aa, /* nav_bar_icon_passive */
-		0xffffff, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xF5F5F6, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0x0069c0, /* scrollbar */
-		0x9ea7aa, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xF5F5F6, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
-		0.35f,    /* landscape_border_shadow_opacity */
-		0.45f,    /* status_bar_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
 		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_blue_grey = {
 		/* Text (& small inline icon) colours */
-		0xDEDEDE, /* on_sys_bar */
+		0xC4C4C4, /* on_sys_bar */
 		0xFFFFFF, /* on_header */
-		0x212121, /* list_text */
-		0x000000, /* list_text_highlighted */
-		0x666666, /* list_hint_text */
-		0x212121, /* list_hint_text_highlighted */
-		0x000000, /* status_bar_text */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
-		0x34515e, /* sys_bar_background */
-		0x607d8b, /* title_bar_background */
-		0xF5F5F6, /* list_background */
-		0xe0e0e0, /* list_highlighted_background */
-		0xE1E2E1, /* nav_bar_background */
-		0xFFFFFF, /* surface_background */
-		0x242424, /* thumbnail_background */
-		0xe0e0e0, /* side_bar_background */
-		0x9F9FA0, /* status_bar_background */
+		0x000000, /* sys_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0x34515e, /* list_icon */
-		0x607d8b, /* list_switch_on */
-		0x8eacbb, /* list_switch_on_background */
-		0xbcbcbc, /* list_switch_off */
-		0xc7c7c7, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x34515e, /* nav_bar_icon_active */
-		0xaeaeae, /* nav_bar_icon_passive */
-		0xffffff, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xF5F5F6, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0x34515e, /* scrollbar */
-		0xc2c2c2, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xF5F5F6, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
-		0.35f,    /* landscape_border_shadow_opacity */
-		0.45f,    /* status_bar_shadow_opacity */
-		0.2f,     /* selection_marker_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
@@ -902,187 +902,187 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		/* Text (& small inline icon) colours */
 		0xC4C4C4, /* on_sys_bar */
 		0xFFFFFF, /* on_header */
-		0xDEDEDE, /* list_text */
+		0xFFFFFF, /* list_text */
 		0xFFFFFF, /* list_text_highlighted */
-		0x999999, /* list_hint_text */
-		0xDEDEDE, /* list_hint_text_highlighted */
-		0x999999, /* status_bar_text */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x1F1F1F, /* title_bar_background */
-		0x121212, /* list_background */
-		0x34515e, /* list_highlighted_background */
-		0x242424, /* nav_bar_background */
-		0x1D1D1D, /* surface_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
-		0x1D1D1D, /* side_bar_background */
-		0x242424, /* status_bar_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0x90caf9, /* list_icon */
-		0x64b5f6, /* list_switch_on */
-		0x5d99c6, /* list_switch_on_background */
-		0x4b636e, /* list_switch_off */
-		0x607d8b, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x6ec6ff, /* nav_bar_icon_active */
-		0xA5B4BB, /* nav_bar_icon_passive */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xDEDEDE, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
-		0x3B3B3B, /* landscape_border_shadow */
+		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
-		0x3B3B3B, /* selection_marker_shadow */
-		0x90caf9, /* scrollbar */
-		0x607d8b, /* divider */
+		0x000000, /* selection_marker_shadow */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xDEDEDE, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
 		0.45f,    /* landscape_border_shadow_opacity */
-		0.8f,     /* status_bar_shadow_opacity */
-		0.2f,     /* selection_marker_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_green = {
 		/* Text (& small inline icon) colours */
-		0xDEDEDE, /* on_sys_bar */
+		0xC4C4C4, /* on_sys_bar */
 		0xFFFFFF, /* on_header */
-		0x212121, /* list_text */
-		0x000000, /* list_text_highlighted */
-		0x666666, /* list_hint_text */
-		0x212121, /* list_hint_text_highlighted */
-		0x000000, /* status_bar_text */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
-		0x087f23, /* sys_bar_background */
-		0x4caf50, /* title_bar_background */
-		0xF5F5F6, /* list_background */
-		0xdcedc8, /* list_highlighted_background */
-		0xE1E2E1, /* nav_bar_background */
-		0xFFFFFF, /* surface_background */
-		0x242424, /* thumbnail_background */
-		0xdcedc8, /* side_bar_background */
-		0x9F9FA0, /* status_bar_background */
+		0x000000, /* sys_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0x087f23, /* list_icon */
-		0x4caf50, /* list_switch_on */
-		0x80e27e, /* list_switch_on_background */
-		0xaabb97, /* list_switch_off */
-		0xbec5b7, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x087f23, /* nav_bar_icon_active */
-		0xaeaeae, /* nav_bar_icon_passive */
-		0xffffff, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xF5F5F6, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0x087f23, /* scrollbar */
-		0xaabb97, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xF5F5F6, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
-		0.35f,    /* landscape_border_shadow_opacity */
-		0.45f,    /* status_bar_shadow_opacity */
-		0.15f,     /* selection_marker_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_red = {
 		/* Text (& small inline icon) colours */
-		0xDEDEDE, /* on_sys_bar */
+		0xC4C4C4, /* on_sys_bar */
 		0xFFFFFF, /* on_header */
-		0x212121, /* list_text */
-		0x000000, /* list_text_highlighted */
-		0x666666, /* list_hint_text */
-		0x212121, /* list_hint_text_highlighted */
-		0x000000, /* status_bar_text */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
-		0xba000d, /* sys_bar_background */
-		0xf44336, /* title_bar_background */
-		0xF5F5F6, /* list_background */
-		0xf8bbd0, /* list_highlighted_background */
-		0xE1E2E1, /* nav_bar_background */
-		0xFFFFFF, /* surface_background */
-		0x242424, /* thumbnail_background */
-		0xf8bbd0, /* side_bar_background */
-		0x9F9FA0, /* status_bar_background */
+		0x000000, /* sys_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0xba000d, /* list_icon */
-		0xf44336, /* list_switch_on */
-		0xff7961, /* list_switch_on_background */
-		0xbf5f82, /* list_switch_off */
-		0xc48b9f, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xba000d, /* nav_bar_icon_active */
-		0xaeaeae, /* nav_bar_icon_passive */
-		0xffffff, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xF5F5F6, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0xba000d, /* scrollbar */
-		0xbf5f82, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xF5F5F6, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
-		0.35f,    /* landscape_border_shadow_opacity */
-		0.45f,    /* status_bar_shadow_opacity */
-		0.15f,    /* selection_marker_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_yellow = {
 		/* Text (& small inline icon) colours */
-		0x212121, /* on_sys_bar */
-		0x000000, /* on_header */
-		0x212121, /* list_text */
-		0x000000, /* list_text_highlighted */
-		0x666666, /* list_hint_text */
-		0x212121, /* list_hint_text_highlighted */
-		0x000000, /* status_bar_text */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
-		0xc8b900, /* sys_bar_background */
-		0xffeb3b, /* title_bar_background */
-		0xF5F5F6, /* list_background */
-		0xffecb3, /* list_highlighted_background */
-		0xE1E2E1, /* nav_bar_background */
-		0xFFFFFF, /* surface_background */
-		0x242424, /* thumbnail_background */
-		0xffecb3, /* side_bar_background */
-		0x9F9FA0, /* status_bar_background */
+		0x000000, /* sys_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0xc6a700, /* list_icon */
-		0xffeb3b, /* list_switch_on */
-		0xccc5af, /* list_switch_on_background */
-		0xcaae53, /* list_switch_off */
-		0xccc5af, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xc6a700, /* nav_bar_icon_active */
-		0xaeaeae, /* nav_bar_icon_passive */
-		0xFFFFFF, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xF5F5F6, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
-		0x33311A, /* selection_marker_shadow */
-		0xc6a700, /* scrollbar */
-		0xcbba83, /* divider */
+		0x000000, /* selection_marker_shadow */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xF5F5F6, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
-		0.35f,    /* landscape_border_shadow_opacity */
-		0.45f,    /* status_bar_shadow_opacity */
-		0.15f,     /* selection_marker_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
@@ -1090,92 +1090,92 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		/* Text (& small inline icon) colours */
 		0xC4C4C4, /* on_sys_bar */
 		0xFFFFFF, /* on_header */
-		0xDEDEDE, /* list_text */
+		0xFFFFFF, /* list_text */
 		0xFFFFFF, /* list_text_highlighted */
-		0x999999, /* list_hint_text */
-		0xDEDEDE, /* list_hint_text_highlighted */
-		0x999999, /* status_bar_text */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x1F1F1F, /* title_bar_background */
-		0x121212, /* list_background */
-		0x255d00, /* list_highlighted_background */
-		0x242424, /* nav_bar_background */
-		0x1D1D1D, /* surface_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
-		0x1D1D1D, /* side_bar_background */
-		0x242424, /* status_bar_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0x7ab547, /* list_icon */
-		0x85bb5c, /* list_switch_on */
-		0x498515, /* list_switch_on_background */
-		0x33691e, /* list_switch_off */
-		0x003d00, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x7ab547, /* nav_bar_icon_active */
-		0x558b2f, /* nav_bar_icon_passive */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xDEDEDE, /* screensaver_tint */
-		/* Misc. colours */
-		0x000000, /* header_shadow */
-		0x3B3B3B, /* landscape_border_shadow */
-		0x000000, /* status_bar_shadow */
-		0x3B3B3B, /* selection_marker_shadow */
-		0x7ab547, /* scrollbar */
-		0x498515, /* divider */
-		0x000000, /* screen_fade */
-		0xDEDEDE, /* missing_thumbnail_icon */
-		0.3f,     /* header_shadow_opacity */
-		0.45f,    /* landscape_border_shadow_opacity */
-		0.8f,     /* status_bar_shadow_opacity */
-		0.2f,     /* selection_marker_shadow_opacity */
-		0.75f     /* screen_fade_opacity */
-	};
-
-	static const materialui_theme_t materialui_theme_materialui = {
-		/* Text (& small inline icon) colours */
-		0xDEDEDE, /* on_sys_bar */
-		0xFFFFFF, /* on_header */
-		0x212121, /* list_text */
-		0x000000, /* list_text_highlighted */
-		0x666666, /* list_hint_text */
-		0x212121, /* list_hint_text_highlighted */
-		0x000000, /* status_bar_text */
-		/* Background colours */
-		0x3700B3, /* sys_bar_background */
-		0x6200ee, /* title_bar_background */
-		0xF5F5F6, /* list_background */
-		0xe7b9ff, /* list_highlighted_background */
-		0xE1E2E1, /* nav_bar_background */
-		0xFFFFFF, /* surface_background */
-		0x242424, /* thumbnail_background */
-		0xe7b9ff, /* side_bar_background */
-		0x9F9FA0, /* status_bar_background */
-		/* List icon colours */
-		0x3700B3, /* list_icon */
-		0x03DAC6, /* list_switch_on */
-		0x018786, /* list_switch_on_background */
-		0x9e47ff, /* list_switch_off */
-		0x0400ba, /* list_switch_off_background */
-		/* Navigation bar icon colours */
-		0x018786, /* nav_bar_icon_active */
-		0xaeaeae, /* nav_bar_icon_passive */
-		0xffffff, /* nav_bar_icon_disabled */
-		/* Screensaver */
-		0xF5F5F6, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0x018786, /* scrollbar */
-		0x018786, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xF5F5F6, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
-		0.35f,    /* landscape_border_shadow_opacity */
-		0.45f,    /* status_bar_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
+		0.75f     /* screen_fade_opacity */
+	};
+
+	static const materialui_theme_t materialui_theme_materialui = {
+		/* Text (& small inline icon) colours */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
+		/* Background colours */
+		0x000000, /* sys_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
+		/* List icon colours */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
+		/* Navigation bar icon colours */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
+		/* Screensaver */
+		0xFFFFFF, /* screensaver_tint */
+		/* Misc. colours */
+		0x000000, /* header_shadow */
+		0x000000, /* landscape_border_shadow */
+		0x000000, /* status_bar_shadow */
+		0x000000, /* selection_marker_shadow */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
+		0x000000, /* screen_fade */
+		0xDADADA, /* missing_thumbnail_icon */
+		0.3f,     /* header_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
 		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
@@ -1184,46 +1184,46 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		/* Text (& small inline icon) colours */
 		0xC4C4C4, /* on_sys_bar */
 		0xFFFFFF, /* on_header */
-		0xDEDEDE, /* list_text */
+		0xFFFFFF, /* list_text */
 		0xFFFFFF, /* list_text_highlighted */
-		0x999999, /* list_hint_text */
-		0xDEDEDE, /* list_hint_text_highlighted */
-		0x999999, /* status_bar_text */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x1F1F1F, /* title_bar_background */
-		0x121212, /* list_background */
-		0x51455E, /* list_highlighted_background */
-		0x242424, /* nav_bar_background */
-		0x1D1D1D, /* surface_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
-		0x1D1D1D, /* side_bar_background */
-		0x242424, /* status_bar_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0xbb86fc, /* list_icon */
-		0x03DAC5, /* list_switch_on */
-		0x00a895, /* list_switch_on_background */
-		0xbb86fc, /* list_switch_off */
-		0x8858c8, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x03DAC6, /* nav_bar_icon_active */
-		0x00a895, /* nav_bar_icon_passive */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xDEDEDE, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
-		0x3B3B3B, /* landscape_border_shadow */
+		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
-		0x3B3B3B, /* selection_marker_shadow */
-		0xC89EFC, /* scrollbar */
-		0x03DAC6, /* divider */
+		0x000000, /* selection_marker_shadow */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xDEDEDE, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
 		0.45f,    /* landscape_border_shadow_opacity */
-		0.8f,     /* status_bar_shadow_opacity */
-		0.2f,     /* selection_marker_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
@@ -1238,180 +1238,180 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x373737, /* title_bar_background */
-		0x2D2D2D, /* list_background */
-		0x268C75, /* list_highlighted_background */
-		0x373737, /* nav_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
 		0x333333, /* surface_background */
-		0x0B0B0B, /* thumbnail_background */
+		0x000000, /* thumbnail_background */
 		0x333333, /* side_bar_background */
-		0x191919, /* status_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0x00FFC5, /* list_switch_on */
-		0x00D8AE, /* list_switch_on_background */
-		0x9F9FA1, /* list_switch_off */
-		0x7D7D7D, /* list_switch_off_background */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x00FFC5, /* nav_bar_icon_active */
+		0xCB1619, /* nav_bar_icon_active */
 		0xDADADA, /* nav_bar_icon_passive */
-		0x242424, /* nav_bar_icon_disabled */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xDADADA, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0x9F9F9F, /* scrollbar */
-		0xFFFFFF, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
 		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
 		0.45f,    /* landscape_border_shadow_opacity */
-		0.8f,     /* status_bar_shadow_opacity */
-		0.05f,    /* selection_marker_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_nord = {
 		/* Text (& small inline icon) colours */
-		0xD8DEE9, /* on_sys_bar */
-		0xECEFF4, /* on_header */
-		0xD8DEE9, /* list_text */
-		0xECEFF4, /* list_text_highlighted */
-		0x93E5CC, /* list_hint_text */
-		0x93E5CC, /* list_hint_text_highlighted */
-		0x93E5CC, /* status_bar_text */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x4C566A, /* title_bar_background */
-		0x2E3440, /* list_background */
-		0x3f444f, /* list_highlighted_background */
-		0x3B4252, /* nav_bar_background */
-		0x3B4252, /* surface_background */
-		0x0B0B0B, /* thumbnail_background */
-		0x3f444f, /* side_bar_background */
-		0x191D23, /* status_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0xD8DEE9, /* list_icon */
-		0xA3BE8C, /* list_switch_on */
-		0x7E946D, /* list_switch_on_background */
-		0xB48EAD, /* list_switch_off */
-		0x8A6D84, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xD8DEE9, /* nav_bar_icon_active */
-		0x81A1C1, /* nav_bar_icon_passive */
-		0x242A33, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xD8DEE9, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0xA0A5AD, /* scrollbar */
-		0x81A1C1, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xD8DEE9, /* missing_thumbnail_icon */
-		0.4f,     /* header_shadow_opacity */
+		0xDADADA, /* missing_thumbnail_icon */
+		0.3f,     /* header_shadow_opacity */
 		0.45f,    /* landscape_border_shadow_opacity */
-		0.8f,     /* status_bar_shadow_opacity */
-		0.35f,     /* selection_marker_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_gruvbox_dark = {
 		/* Text (& small inline icon) colours */
-		0xA89984, /* on_sys_bar */
-		0xFBF1C7, /* on_header */
-		0xEBDBB2, /* list_text */
-		0xFBF1C7, /* list_text_highlighted */
-		0xD79921, /* list_hint_text */
-		0xFABD2F, /* list_hint_text_highlighted */
-		0xD79921, /* status_bar_text */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x504945, /* title_bar_background */
-		0x282828, /* list_background */
-		0x3C3836, /* list_highlighted_background */
-		0x1D2021, /* nav_bar_background */
-		0x32302F, /* surface_background */
-		0x0B0B0B, /* thumbnail_background */
-		0x3C3836, /* side_bar_background */
-		0x161616, /* status_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0xA89984, /* list_icon */
-		0xB8BB26, /* list_switch_on */
-		0x98971A, /* list_switch_on_background */
-		0xFB4934, /* list_switch_off */
-		0xCC241D, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xBF9137, /* nav_bar_icon_active */
-		0xA89984, /* nav_bar_icon_passive */
-		0x3C3836, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xEBDBB2, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0x7C6F64, /* scrollbar */
-		0xD5C4A1, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xA89984, /* missing_thumbnail_icon */
-		0.4f,     /* header_shadow_opacity */
+		0xDADADA, /* missing_thumbnail_icon */
+		0.3f,     /* header_shadow_opacity */
 		0.45f,    /* landscape_border_shadow_opacity */
-		0.8f,     /* status_bar_shadow_opacity */
-		0.35f,     /* selection_marker_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_solarized_dark = {
 		/* Text (& small inline icon) colours */
-		0x657B83, /* on_sys_bar */
-		0x93A1A1, /* on_header */
-		0x839496, /* list_text */
-		0x93A1A1, /* list_text_highlighted */
-		0x2AA198, /* list_hint_text */
-		0x2AA198, /* list_hint_text_highlighted */
-		0x2AA198, /* status_bar_text */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x053542, /* title_bar_background */
-		0x002B36, /* list_background */
-		0x073642, /* list_highlighted_background */
-		0x003541, /* nav_bar_background */
-		0x073642, /* surface_background */
-		0x0B0B0B, /* thumbnail_background */
-		0x073642, /* side_bar_background */
-		0x00181E, /* status_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0x657B83, /* list_icon */
-		0x859900, /* list_switch_on */
-		0x667500, /* list_switch_on_background */
-		0x6C71C4, /* list_switch_off */
-		0x565A9C, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x2AA198, /* nav_bar_icon_active */
-		0x839496, /* nav_bar_icon_passive */
-		0x00222B, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0x839496, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
 		0x000000, /* selection_marker_shadow */
-		0x586E75, /* scrollbar */
-		0x2AA198, /* divider */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0x657B83, /* missing_thumbnail_icon */
-		0.4f,     /* header_shadow_opacity */
+		0xDADADA, /* missing_thumbnail_icon */
+		0.3f,     /* header_shadow_opacity */
 		0.45f,    /* landscape_border_shadow_opacity */
-		0.8f,     /* status_bar_shadow_opacity */
-		0.35f,     /* selection_marker_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
@@ -1428,7 +1428,7 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x000000, /* sys_bar_background */
 		0x353535, /* title_bar_background */
 		0x191919, /* list_background */
-		0x23A367, /* list_highlighted_background */
+		0xCB1619, /* list_highlighted_background */
 		0x282828, /* nav_bar_background */
 		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
@@ -1436,12 +1436,12 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0x23A367, /* list_switch_on */
+		0xCB1619, /* list_switch_on */
 		0x454545, /* list_switch_on_background */
 		0x454545, /* list_switch_off */
 		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x23A367, /* nav_bar_icon_active */
+		0xCB1619, /* nav_bar_icon_active */
 		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
@@ -1475,7 +1475,7 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x000000, /* sys_bar_background */
 		0x353535, /* title_bar_background */
 		0x191919, /* list_background */
-		0xCE6E1F, /* list_highlighted_background */
+		0xCB1619, /* list_highlighted_background */
 		0x282828, /* nav_bar_background */
 		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
@@ -1483,12 +1483,12 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0xCE6E1F, /* list_switch_on */
+		0xCB1619, /* list_switch_on */
 		0x454545, /* list_switch_on_background */
 		0x454545, /* list_switch_off */
 		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xCE6E1F, /* nav_bar_icon_active */
+		0xCB1619, /* nav_bar_icon_active */
 		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
@@ -1522,7 +1522,7 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x000000, /* sys_bar_background */
 		0x353535, /* title_bar_background */
 		0x191919, /* list_background */
-		0xD16FD8, /* list_highlighted_background */
+		0xCB1619, /* list_highlighted_background */
 		0x282828, /* nav_bar_background */
 		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
@@ -1530,12 +1530,12 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0xD16FD8, /* list_switch_on */
+		0xCB1619, /* list_switch_on */
 		0x454545, /* list_switch_on_background */
 		0x454545, /* list_switch_off */
 		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xD16FD8, /* nav_bar_icon_active */
+		0xCB1619, /* nav_bar_icon_active */
 		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
@@ -1569,7 +1569,7 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x000000, /* sys_bar_background */
 		0x353535, /* title_bar_background */
 		0x191919, /* list_background */
-		0x814FFF, /* list_highlighted_background */
+		0xCB1619, /* list_highlighted_background */
 		0x282828, /* nav_bar_background */
 		0x333333, /* surface_background */
 		0x000000, /* thumbnail_background */
@@ -1577,12 +1577,12 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0x814FFF, /* list_switch_on */
+		0xCB1619, /* list_switch_on */
 		0x454545, /* list_switch_on_background */
 		0x454545, /* list_switch_off */
 		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x814FFF, /* nav_bar_icon_active */
+		0xCB1619, /* nav_bar_icon_active */
 		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
@@ -1652,190 +1652,190 @@ static const materialui_theme_t *materialui_get_theme(enum materialui_color_them
 
 	static const materialui_theme_t materialui_theme_virtual_boy = {
 		/* Text (& small inline icon) colours */
-		0xE60000, /* on_sys_bar */
-		0xF00000, /* on_header */
-		0xE60000, /* list_text */
-		0xF00000, /* list_text_highlighted */
-		0xE60000, /* list_hint_text */
-		0xF00000, /* list_hint_text_highlighted */
-		0xE60000, /* status_bar_text */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x350000, /* title_bar_background */
-		0x000000, /* list_background */
-		0x400000, /* list_highlighted_background */
-		0x350000, /* nav_bar_background */
-		0x400000, /* surface_background */
-		0x250000, /* thumbnail_background */
-		0x400000, /* side_bar_background */
-		0x000000, /* status_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0xE60000, /* list_icon */
-		0xE60000, /* list_switch_on */
-		0x6B0000, /* list_switch_on_background */
-		0x6B0000, /* list_switch_off */
-		0x6B0000, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xF00000, /* nav_bar_icon_active */
-		0xA10000, /* nav_bar_icon_passive */
-		0x300000, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0xE60000, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
 		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
-		0xE60000, /* selection_marker_shadow */
-		0xA10000, /* scrollbar */
-		0xE60000, /* divider */
+		0x000000, /* selection_marker_shadow */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0xE60000, /* missing_thumbnail_icon */
+		0xDADADA, /* missing_thumbnail_icon */
 		0.3f,     /* header_shadow_opacity */
 		0.45f,    /* landscape_border_shadow_opacity */
-		0.7f,     /* status_bar_shadow_opacity */
-		0.35f,    /* selection_marker_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
 		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_hacking_the_kernel = {
 		/* Text (& small inline icon) colours */
-		0x00E000, /* on_sys_bar */
-		0x00E02D, /* on_header */
-		0x00E000, /* list_text */
-		0x00E02D, /* list_text_highlighted */
-		0x83FF83, /* list_hint_text */
-		0x83FF83, /* list_hint_text_highlighted */
-		0x83FF83, /* status_bar_text */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
+		0xFFFFFF, /* list_text_highlighted */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
 		0x000000, /* sys_bar_background */
-		0x003400, /* title_bar_background */
-		0x000000, /* list_background */
-		0x022F1C, /* list_highlighted_background */
-		0x002200, /* nav_bar_background */
-		0x022F1C, /* surface_background */
-		0x001100, /* thumbnail_background */
-		0x022F1C, /* side_bar_background */
-		0x002200, /* status_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
-		0x008C00, /* list_icon */
-		0x89DE00, /* list_switch_on */
-		0x4A8500, /* list_switch_on_background */
-		0x04804C, /* list_switch_off */
-		0x02663C, /* list_switch_off_background */
+		0xFFFFFF, /* list_icon */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0x00E02D, /* nav_bar_icon_active */
-		0x008C00, /* nav_bar_icon_passive */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
 		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0x00E000, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
 		0x000000, /* header_shadow */
-		0x08ED8D, /* landscape_border_shadow */
+		0x000000, /* landscape_border_shadow */
 		0x000000, /* status_bar_shadow */
-		0x00FF00, /* selection_marker_shadow */
-		0x008C00, /* scrollbar */
-		0x006F00, /* divider */
+		0x000000, /* selection_marker_shadow */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
 		0x000000, /* screen_fade */
-		0x008C00, /* missing_thumbnail_icon */
-		0.8f,     /* header_shadow_opacity */
-		0.2f,     /* landscape_border_shadow_opacity */
-		1.0f,     /* status_bar_shadow_opacity */
-		0.12f,    /* selection_marker_shadow_opacity */
-		0.85f     /* screen_fade_opacity */
+		0xDADADA, /* missing_thumbnail_icon */
+		0.3f,     /* header_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
+		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_gray_dark = {
 		/* Text (& small inline icon) colours */
-		0x808080, /* on_sys_bar */
-		0xC0C0C0, /* on_header */
-		0xC0C0C0, /* list_text */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
 		0xFFFFFF, /* list_text_highlighted */
-		0x707070, /* list_hint_text */
-		0x808080, /* list_hint_text_highlighted */
-		0x808080, /* status_bar_text */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
-		0x101010, /* sys_bar_background */
-		0x101010, /* title_bar_background */
-		0x101010, /* list_background */
-		0x303030, /* list_highlighted_background */
-		0x101010, /* nav_bar_background */
-		0x202020, /* surface_background */
-		0x0C0C0C, /* thumbnail_background */
-		0x101010, /* side_bar_background */
-		0x101010, /* status_bar_background */
+		0x000000, /* sys_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0xFFFFFF, /* list_switch_on */
-		0x202020, /* list_switch_on_background */
-		0x707070, /* list_switch_off */
-		0x202020, /* list_switch_off_background */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xFFFFFF, /* nav_bar_icon_active */
-		0x707070, /* nav_bar_icon_passive */
-		0x202020, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0x101010, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
-		0x202020, /* header_shadow */
-		0x202020, /* landscape_border_shadow */
-		0x202020, /* status_bar_shadow */
-		0x0C0C0C, /* selection_marker_shadow */
-		0x202020, /* scrollbar */
-		0x101010, /* divider */
-		0x0C0C0C, /* screen_fade */
-		0x202020, /* missing_thumbnail_icon */
-		0.0f,     /* header_shadow_opacity */
-		0.5f,     /* landscape_border_shadow_opacity */
-		0.0f,     /* status_bar_shadow_opacity */
-		0.0f,     /* selection_marker_shadow_opacity */
-		0.5f      /* screen_fade_opacity */
+		0x000000, /* header_shadow */
+		0x000000, /* landscape_border_shadow */
+		0x000000, /* status_bar_shadow */
+		0x000000, /* selection_marker_shadow */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
+		0x000000, /* screen_fade */
+		0xDADADA, /* missing_thumbnail_icon */
+		0.3f,     /* header_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
+		0.75f     /* screen_fade_opacity */
 	};
 
 	static const materialui_theme_t materialui_theme_gray_light = {
 		/* Text (& small inline icon) colours */
-		0x808080, /* on_sys_bar */
-		0xC0C0C0, /* on_header */
-		0xC0C0C0, /* list_text */
+		0xC4C4C4, /* on_sys_bar */
+		0xFFFFFF, /* on_header */
+		0xFFFFFF, /* list_text */
 		0xFFFFFF, /* list_text_highlighted */
-		0x707070, /* list_hint_text */
-		0x808080, /* list_hint_text_highlighted */
-		0x808080, /* status_bar_text */
+		0xDADADA, /* list_hint_text */
+		0xEEEEEE, /* list_hint_text_highlighted */
+		0xDADADA, /* status_bar_text */
 		/* Background colours */
-		0x303030, /* sys_bar_background */
-		0x303030, /* title_bar_background */
-		0x303030, /* list_background */
-		0x101010, /* list_highlighted_background */
-		0x303030, /* nav_bar_background */
-		0x202020, /* surface_background */
-		0x0C0C0C, /* thumbnail_background */
-		0x303030, /* side_bar_background */
-		0x303030, /* status_bar_background */
+		0x000000, /* sys_bar_background */
+		0x353535, /* title_bar_background */
+		0x191919, /* list_background */
+		0xCB1619, /* list_highlighted_background */
+		0x282828, /* nav_bar_background */
+		0x333333, /* surface_background */
+		0x000000, /* thumbnail_background */
+		0x333333, /* side_bar_background */
+		0x0E0E0E, /* status_bar_background */
 		/* List icon colours */
 		0xFFFFFF, /* list_icon */
-		0xFFFFFF, /* list_switch_on */
-		0x202020, /* list_switch_on_background */
-		0x707070, /* list_switch_off */
-		0x202020, /* list_switch_off_background */
+		0xCB1619, /* list_switch_on */
+		0x454545, /* list_switch_on_background */
+		0x454545, /* list_switch_off */
+		0x414141, /* list_switch_off_background */
 		/* Navigation bar icon colours */
-		0xFFFFFF, /* nav_bar_icon_active */
-		0x707070, /* nav_bar_icon_passive */
-		0x202020, /* nav_bar_icon_disabled */
+		0xCB1619, /* nav_bar_icon_active */
+		0xDADADA, /* nav_bar_icon_passive */
+		0x000000, /* nav_bar_icon_disabled */
 		/* Screensaver */
-		0x101010, /* screensaver_tint */
+		0xFFFFFF, /* screensaver_tint */
 		/* Misc. colours */
-		0x202020, /* header_shadow */
-		0x202020, /* landscape_border_shadow */
-		0x202020, /* status_bar_shadow */
-		0x0C0C0C, /* selection_marker_shadow */
-		0x202020, /* scrollbar */
-		0x303030, /* divider */
-		0x0C0C0C, /* screen_fade */
-		0x202020, /* missing_thumbnail_icon */
-		0.0f,     /* header_shadow_opacity */
-		0.5f,     /* landscape_border_shadow_opacity */
-		0.0f,     /* status_bar_shadow_opacity */
-		0.0f,     /* selection_marker_shadow_opacity */
-		0.5f      /* screen_fade_opacity */
+		0x000000, /* header_shadow */
+		0x000000, /* landscape_border_shadow */
+		0x000000, /* status_bar_shadow */
+		0x000000, /* selection_marker_shadow */
+		0x727272, /* scrollbar */
+		0x727272, /* divider */
+		0x000000, /* screen_fade */
+		0xDADADA, /* missing_thumbnail_icon */
+		0.3f,     /* header_shadow_opacity */
+		0.45f,    /* landscape_border_shadow_opacity */
+		0.9f,     /* status_bar_shadow_opacity */
+		0.1f,     /* selection_marker_shadow_opacity */
+		0.75f     /* screen_fade_opacity */
 	};
 
 
