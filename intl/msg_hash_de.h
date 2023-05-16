@@ -46,7 +46,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_TAB,
-   "Inhalte importieren"
+   "Spiele importieren"
    )
 
 /* Main Menu */
@@ -111,19 +111,19 @@ MSG_HASH(
 #endif
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLISTS_TAB,
-   "Wiedergabelisten"
+   "Spieleliste"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLISTS_TAB,
-   "Beim Scannen gefundener Inhalt wird hier erscheinen."
+   "Beim Scannen gefundene Spiele werden hier erscheinen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_CONTENT_LIST,
-   "Inhalte importieren"
+   "Spiele importieren"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ADD_CONTENT_LIST,
-   "Wiedergabelisten durch Scannen von Inhalten erstellen und aktualisieren."
+   "Spielelisten durch Scannen erstellen und aktualisieren."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SHOW_WIMP,
@@ -135,7 +135,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_DISABLE_KIOSK_MODE,
-   "Kiosk-Modus deaktivieren (Neustart erforderlich)"
+   "Systemeinstellungen anzeigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_DISABLE_KIOSK_MODE,
@@ -191,7 +191,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RESTART_RETROARCH,
-   "RetroArch neu starten"
+   "Neu starten"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
@@ -199,7 +199,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
-   "RetroArch beenden"
+   "Beenden"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
@@ -207,7 +207,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_QUIT_RETROARCH,
-   "RetroArch beenden. Durch das harte Beenden (SIGKILL usw.) des Programms wird RetroArch beendet, ohne die Konfiguration usw. zu speichern. Auf Unix-ähnlichen Systemen ermöglicht SIGINT/SIGTERM eine saubere Deinitialisierung."
+   "Beenden. Durch das harte Beenden (SIGKILL usw.) des Programms wird es geschlossen ohne die Konfiguration usw. zu speichern. Auf Unix-ähnlichen Systemen ermöglicht SIGINT/SIGTERM eine saubere Deinitialisierung."
    )
 
 /* Main Menu > Load Core */
@@ -331,11 +331,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PL_THUMBNAILS_UPDATER_LIST,
-   "Wiedergabelisten Vorschaubild-Updater"
+   "Spielelisten Vorschaubild-Updater"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PL_THUMBNAILS_UPDATER_LIST,
-   "Vorschaubilder für Einträge in der ausgewählten Wiedergabeliste herunterladen."
+   "Vorschaubilder für Einträge in der ausgewählten Spieleliste herunterladen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
@@ -580,7 +580,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_RETROARCH_VERSION,
-   "RetroArch-Version"
+   "Nintendo64-RA-Version"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_INFO_GIT_VERSION,
@@ -1290,11 +1290,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SETTINGS,
-   "Wiedergabelisten"
+   "Spielelisten"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SETTINGS,
-   "Wiedergabelisteneinstellungen ändern."
+   "Spielelisteneinstellungen ändern."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_USER_SETTINGS,
@@ -4897,7 +4897,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NOTIFICATION_SHOW_SET_INITIAL_DISK,
-   "Eine Bildschirmmeldung anzeigen, wenn beim Start automatisch die zuletzt verwendete Disc von Multi-Disc-Inhalten wiederhergestellt wird, die über M3U-Wiedergabelisten geladen wurde."
+   "Eine Bildschirmmeldung anzeigen, wenn beim Start automatisch die zuletzt verwendete Disc von Multi-Disc-Inhalten wiederhergestellt wird, die über M3U-Spielelisten geladen wurde."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NOTIFICATION_SHOW_FAST_FORWARD,
@@ -5467,19 +5467,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_ADD,
-   "\"Inhalte importieren\" anzeigen"
+   "\"Spiele importieren\" anzeigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_SHOW_ADD,
-   "Das \"Inhalte importieren\"-Menü anzeigen. (Neustart erforderlich bei Ozone/XMB)"
+   "Das \"Spiele importieren\"-Menü anzeigen. (Neustart erforderlich bei Ozone/XMB)"
    )
 MSG_HASH( /* FIXME can now be replaced with MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_ADD */
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_ADD_ENTRY,
-   "\"Inhalte importieren\" anzeigen"
+   "\"Spiele importieren\" anzeigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_SHOW_ADD_ENTRY,
-   "\"Inhalte importieren\"-Eintrag im Hauptmenü oder im Wiedergabelisten-Untermenü anzeigen."
+   "\"Spiele importieren\"-Eintrag im Hauptmenü oder in Spielelisten-Untermenü anzeigen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_ADD_CONTENT_ENTRY_DISPLAY_MAIN_TAB,
@@ -5487,15 +5487,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_ADD_CONTENT_ENTRY_DISPLAY_PLAYLISTS_TAB,
-   "Wiedergabelisten-Menü"
+   "Spielelisten-Menü"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_PLAYLISTS,
-   "\"Wiedergabelisten\" anzeigen"
+   "\"Spielelisten\" anzeigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_SHOW_PLAYLISTS,
-   "Die Wiedergabelisten anzeigen. (Neustart erforderlich bei Ozone/XMB)"
+   "Die Spielelisten anzeigen. (Neustart erforderlich bei Ozone/XMB)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_EXPLORE,
@@ -5949,11 +5949,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SETTINGS_SHOW_PLAYLISTS,
-   "\"Wiedergabelisten\" anzeigen"
+   "\"Spielelisten\" anzeigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SETTINGS_SHOW_PLAYLISTS,
-   "Die \"Wiedergabelisten\"-Einstellungen anzeigen."
+   "Die \"Spielelisten\"-Einstellungen anzeigen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SETTINGS_SHOW_USER,
@@ -6069,7 +6069,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_REMEMBER_SELECTION,
-   "Beim Wechseln zu einem anderen Tab die Position des Cursors im Menü merken."
+   "Vorherige Cursorposition in Tabs merken. RGUI hat keine Tabs, aber Spielelisten und Einstellungen verhalten sich als solche."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_REMEMBER_SELECTION_ALWAYS,
@@ -6077,7 +6077,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_REMEMBER_SELECTION_PLAYLISTS,
-   "Nur für Wiedergabelisten"
+   "Nur für Spielelisten"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_REMEMBER_SELECTION_MAIN,
@@ -6637,7 +6637,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETWORK_ON_DEMAND_THUMBNAILS,
-   "Fehlende Vorschaubilder automatisch herunterladen, während die Wiedergabelisten durchsucht werden. Hat schwerwiegende Auswirkungen auf die Leistung."
+   "Fehlende Vorschaubilder automatisch herunterladen, während die Spielelisten durchsucht werden. Hat schwerwiegende Auswirkungen auf die Leistung."
    )
 
 /* Settings > Network > Updater */
@@ -6699,7 +6699,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_HISTORY_LIST_ENABLE,
-   "Eine Wiedergabeliste der zuletzt verwendeten Spiele, Bilder, Musik und Videos anlegen."
+   "Eine Spieleliste der zuletzt verwendeten Spiele, Bilder, Musik und Videos anlegen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_HISTORY_SIZE,
@@ -6723,7 +6723,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_ENTRY_RENAME,
-   "Umbenennen von Wiedergabelisten-Einträgen erlauben."
+   "Umbenennen von Spielelisten-Einträgen erlauben."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_ENTRY_REMOVE,
@@ -6731,47 +6731,47 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_ENTRY_REMOVE,
-   "Löschen von Wiedergabelisten-Einträgen erlauben."
+   "Löschen von Spielelisten-Einträgen erlauben."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SORT_ALPHABETICAL,
-   "Wiedergabelisten alphabetisch sortieren"
+   "Spielelisten alphabetisch sortieren"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SORT_ALPHABETICAL,
-   "Inhaltswiedergabelisten in alphabetischer Reihenfolge sortieren, mit Ausnahme der Wiedergabelisten 'Verlauf', 'Bilder', 'Musik' und 'Videos'."
+   "Spielelisten in alphabetischer Reihenfolge sortieren."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_USE_OLD_FORMAT,
-   "Wiedergabelisten im alten Format abspeichern"
+   "Spielelisten im alten Format abspeichern"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_USE_OLD_FORMAT,
-   "Schreibt Wiedergabelisten im veralteten Klartextformat. Wenn deaktiviert, werden Wiedergabelisten mit JSON formatiert."
+   "Schreibt Spielelisten im veralteten Klartextformat. Wenn deaktiviert, werden Spielelisten mit JSON formatiert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_COMPRESSION,
-   "Wiedergabelisten komprimieren"
+   "Spielelisten komprimieren"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_COMPRESSION,
-   "Komprimiert Wiedergabelistendaten beim Schreiben auf den Datenträger. Reduziert die Dateigröße und Ladezeiten auf Kosten einer (vernachlässigbar) erhöhten CPU-Auslastung. Kann mit Wiedergabelisten im alten oder neuen Format verwendet werden."
+   "Komprimiert Spielelistendaten beim Schreiben auf den Datenträger. Reduziert die Dateigröße und Ladezeiten auf Kosten einer (vernachlässigbar) erhöhten CPU-Auslastung. Kann mit Spielelisten im alten oder neuen Format verwendet werden."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SHOW_INLINE_CORE_NAME,
-   "Zugeordnete Cores in Wiedergabelisten anzeigen"
+   "Zugeordnete Cores in Spielelisten anzeigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SHOW_INLINE_CORE_NAME,
-   "Angeben, wann Wiedergabelisteneinträge mit dem aktuell zugeordneten Core gekennzeichnet werden sollen (falls vorhanden).\nDiese Einstellung wird ignoriert, wenn Sublabels für Wiedergabelisten aktiviert sind."
+   "Angeben, wann Spielelisteneinträge mit dem aktuell zugeordneten Core gekennzeichnet werden sollen (falls vorhanden).\nDiese Einstellung wird ignoriert, wenn Sublabels für Spielelisten aktiviert sind."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SHOW_SUBLABELS,
-   "Sublabels zu Wiedergabelisten anzeigen"
+   "Sublabels zu Spielelisten anzeigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SHOW_SUBLABELS,
-   "Zusätzliche Informationen für jeden Wiedergabelisteneintrag anzeigen, wie die aktuelle Core-Zuordnung und die Laufzeit (falls verfügbar). Hat einen variablen Einfluss auf die Leistung."
+   "Zusätzliche Informationen für jeden Spielelisteneintrag anzeigen, wie die aktuelle Core-Zuordnung und die Laufzeit (falls verfügbar). Hat einen variablen Einfluss auf die Leistung."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SHOW_HISTORY_ICONS,
@@ -6779,7 +6779,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SHOW_HISTORY_ICONS,
-   "Spezifische Symbole für jeden Verlaufs- und Favoriten-Wiedergabelisteneintrag anzeigen. Kann zu Leistungseinbußen führen."
+   "Spezifische Symbole für jeden Verlaufs- und Favoriten-Spielelisteneintrag anzeigen. Kann zu Leistungseinbußen führen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SUBLABEL_RUNTIME,
@@ -6851,19 +6851,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SHOW_ENTRY_IDX,
-   "Wiedergabelisteneintragsnummer anzeigen"
+   "Spielelisteneintragsnummer anzeigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SHOW_ENTRY_IDX,
-   "Eintragsnummern in Wiedergabelisten anzeigen. Das Anzeigeformat ist abhängig vom aktuell ausgewählten Menütreiber."
+   "Eintragsnummern in Spielelisten anzeigen. Das Anzeigeformat ist abhängig vom aktuell ausgewählten Menütreiber."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SUBLABEL_RUNTIME_TYPE,
-   "Wiedergabelisten-Sublabel Laufzeit"
+   "Spielelisten-Sublabel Laufzeit"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SUBLABEL_RUNTIME_TYPE,
-   "Festlegen, welche Art von Laufzeitprotokolldaten in Wiedergabelisten-Sublabels angezeigt werden soll.\nDas entsprechende Laufzeitprotokoll muss über das Optionsmenü 'Speichern' aktiviert werden."
+   "Festlegen, welche Art von Laufzeitprotokolldaten in Spielelisten-Sublabels angezeigt werden soll.\nDas entsprechende Laufzeitprotokoll muss über das Optionsmenü 'Speichern' aktiviert werden."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SUBLABEL_LAST_PLAYED_STYLE,
@@ -6879,7 +6879,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_FUZZY_ARCHIVE_MATCH,
-   "Wenn Wiedergabelisten nach Einträgen durchsucht werden, welche komprimierten Dateien zugeordnet sind, wird nur der Name der Archivdatei statt [file name] + [content] abgeglichen. Aktiviere diese Option, um doppelte Inhaltsverlaufseinträge beim Laden komprimierter Dateien zu vermeiden."
+   "Wenn Spielelisten nach Einträgen durchsucht werden, welche komprimierten Dateien zugeordnet sind, wird nur der Name der Archivdatei statt [file name] + [content] abgeglichen. Aktiviere diese Option, um doppelte Inhaltsverlaufseinträge beim Laden komprimierter Dateien zu vermeiden."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SCAN_WITHOUT_CORE_MATCH,
@@ -6887,23 +6887,23 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SCAN_WITHOUT_CORE_MATCH,
-   "Erlauben, dass gescannte Inhalte zu einer Wiedergabeliste hinzugefügt werden, ohne dass ein Core installiert ist, der sie unterstützt."
+   "Erlauben, dass gescannte Inhalte zu einer Spieleliste hinzugefügt werden, ohne dass ein Core installiert ist, der sie unterstützt."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_LIST,
-   "Wiedergabelisten verwalten"
+   "Spielelisten verwalten"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_LIST,
-   "Wartungsarbeiten an Wiedergabelisten ausführen."
+   "Wartungsarbeiten an Spielelisten ausführen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_PORTABLE_PATHS,
-   "Portable Wiedergabelisten"
+   "Portable Spielelisten"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_PORTABLE_PATHS,
-   "Wenn diese Option aktiviert ist und auch das Verzeichnis 'Dateibrowser' ausgewählt ist, wird der aktuelle Wert des Parameters 'Dateibrowser' in der Wiedergabeliste gespeichert. Wenn die Wiedergabeliste auf ein anderes System geladen wird, auf dem dieselbe Option aktiviert ist, wird der Wert des Parameters 'Dateibrowser' mit dem Wert der Wiedergabeliste verglichen. Wenn dies nicht der Fall ist, werden die Pfade der Wiedergabelisteneinträge automatisch korrigiert."
+   "Wenn diese Option aktiviert ist und auch das Verzeichnis 'Dateibrowser' ausgewählt ist, wird der aktuelle Wert des Parameters 'Dateibrowser' in der Spieleliste gespeichert. Wenn die Spieleliste auf ein anderes System geladen wird, auf dem dieselbe Option aktiviert ist, wird der Wert des Parameters 'Dateibrowser' mit dem Wert der Spieleliste verglichen. Wenn dies nicht der Fall ist, werden die Pfade der Spielelisteneinträge automatisch korrigiert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANAGE,
@@ -6918,7 +6918,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_DEFAULT_CORE,
-   "Gib den Core an, der beim Starten von Inhalten über einen Wiedergabelisteneintrag verwendet werden soll, dem kein Core zugeordnet wurde."
+   "Gib den Core an, der beim Starten von Inhalten über einen Spielelisteneintrag verwendet werden soll, dem kein Core zugeordnet wurde."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_RESET_CORES,
@@ -6926,7 +6926,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_RESET_CORES,
-   "Vorhandene Core-Zuordnungen für alle Wiedergabelisteneinträge entfernen."
+   "Vorhandene Core-Zuordnungen für alle Spielelisteneinträge entfernen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_LABEL_DISPLAY_MODE,
@@ -6934,7 +6934,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_LABEL_DISPLAY_MODE,
-   "Die Art und Weise, wie die Inhaltsbezeichnungen in dieser Wiedergabeliste angezeigt werden."
+   "Die Art und Weise, wie die Inhaltsbezeichnungen in dieser Spieleliste angezeigt werden."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_SORT_MODE,
@@ -6942,11 +6942,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_SORT_MODE,
-   "Festlegen, wie Einträge in dieser Wiedergabeliste sortiert werden."
+   "Festlegen, wie Einträge in dieser Spieleliste sortiert werden."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_CLEAN_PLAYLIST,
-   "Wiedergabeliste bereinigen"
+   "Spieleliste bereinigen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_CLEAN_PLAYLIST,
@@ -6954,19 +6954,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_REFRESH_PLAYLIST,
-   "Wiedergabeliste aktualisieren"
+   "Spieleliste aktualisieren"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_REFRESH_PLAYLIST,
-   "Neue Inhalte hinzufügen und ungültige Einträge entfernen, indem der zuletzt zur Erstellung oder Bearbeitung der Wiedergabeliste verwendete Vorgang \"Manueller Scan\" wiederholt wird."
+   "Neue Inhalte hinzufügen und ungültige Einträge entfernen, indem der zuletzt zur Erstellung oder Bearbeitung der Spieleliste verwendete Vorgang \"Manueller Scan\" wiederholt wird."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DELETE_PLAYLIST,
-   "Wiedergabeliste löschen"
+   "Spieleliste löschen"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DELETE_PLAYLIST,
-   "Wiedergabeliste vom Dateisystem entfernen."
+   "Spieleliste vom Dateisystem entfernen."
    )
 
 /* Settings > User */
@@ -7218,51 +7218,51 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
-   "Wiedergabelisten"
+   "Spielelisten"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_DIRECTORY,
-   "Wiedergabelisten werden in diesem Verzeichnis gespeichert."
+   "Spielelisten werden in diesem Verzeichnis gespeichert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_FAVORITES_DIRECTORY,
-   "Favoriten-Wiedergabeliste"
+   "Favoriten-Spieleliste"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_FAVORITES_DIRECTORY,
-   "Die Favoriten-Wiedergabeliste wird in diesem Verzeichnis gespeichert."
+   "Die Favoriten-Spieleliste wird in diesem Verzeichnis gespeichert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_HISTORY_DIRECTORY,
-   "Verlauf-Wiedergabeliste"
+   "Verlauf-Spieleliste"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_HISTORY_DIRECTORY,
-   "Die Verlauf-Wiedergabeliste wird in diesem Verzeichnis gespeichert."
+   "Die Verlauf-Spieleliste wird in diesem Verzeichnis gespeichert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_IMAGE_HISTORY_DIRECTORY,
-   "Bilder-Wiedergabeliste"
+   "Bilder-Spieleliste"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_IMAGE_HISTORY_DIRECTORY,
-   "Die Bilder-Wiedergabeliste wird in diesem Verzeichnis gespeichert."
+   "Die Bilder-Spieleliste wird in diesem Verzeichnis gespeichert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_MUSIC_HISTORY_DIRECTORY,
-   "Musik-Wiedergabeliste"
+   "Musik-Spieleliste"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_MUSIC_HISTORY_DIRECTORY,
-   "Die Musik-Wiedergabeliste wird in diesem Verzeichnis gespeichert."
+   "Die Musik-Spieleliste wird in diesem Verzeichnis gespeichert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_VIDEO_HISTORY_DIRECTORY,
-   "Videos-Wiedergabeliste"
+   "Videos-Spieleliste"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_VIDEO_HISTORY_DIRECTORY,
-   "Die Videos-Wiedergabeliste wird in diesem Verzeichnis gespeichert."
+   "Die Videos-Spieleliste wird in diesem Verzeichnis gespeichert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RUNTIME_LOG_DIRECTORY,
@@ -7529,7 +7529,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
-   "Einen 'Systemnamen' angeben, dem gefundene Inhalte zugeordnet werden sollen. Wird verwendet, um die generierte Wiedergabelistendatei zu benennen und Vorschaubilder der Wiedergabeliste zu identifizieren."
+   "Einen 'Systemnamen' angeben, dem gefundene Inhalte zugeordnet werden sollen. Wird verwendet, um die generierte Spielelistendatei zu benennen und Vorschaubilder der Spieleliste zu identifizieren."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_CUSTOM,
@@ -7585,15 +7585,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_DAT_FILE_FILTER,
-   "Wenn eine Arcade-DAT-Datei verwendet wird, wird der Inhalt nur dann zur Wiedergabeliste hinzugefügt, wenn ein passender DAT-Dateieintrag gefunden wird."
+   "Wenn eine Arcade-DAT-Datei verwendet wird, wird der Inhalt nur dann zur Spieleliste hinzugefügt, wenn ein passender DAT-Dateieintrag gefunden wird."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_OVERWRITE,
-   "Vorhandene Wiedergabelisten überschreiben"
+   "Vorhandene Spielelisten überschreiben"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_OVERWRITE,
-   "Wenn diese Option aktiviert ist, wird jede vorhandene Wiedergabeliste vor dem Scannen von Inhalten gelöscht. Wenn deaktiviert, bleiben vorhandene Wiedergabelisteneinträge erhalten und es werden nur Inhalte hinzugefügt, die in der Wiedergabeliste fehlen."
+   "Wenn diese Option aktiviert ist, wird jede vorhandene Spieleliste vor dem Scannen von Inhalten gelöscht. Wenn deaktiviert, bleiben vorhandene Spielelisteneinträge erhalten und es werden nur Inhalte hinzugefügt, die in der Spieleliste fehlen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_VALIDATE_ENTRIES,
@@ -7601,7 +7601,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_VALIDATE_ENTRIES,
-   "Wenn aktiviert, werden Einträge in bestehenden Wiedergabelisten vor dem Scannen neuer Inhalte überprüft. Einträge, die auf fehlende Inhalte und/oder Dateien mit ungültigen Erweiterungen verweisen, werden entfernt."
+   "Wenn aktiviert, werden Einträge in bestehenden Spielelisten vor dem Scannen neuer Inhalte überprüft. Einträge, die auf fehlende Inhalte und/oder Dateien mit ungültigen Erweiterungen verweisen, werden entfernt."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_START,
@@ -8578,11 +8578,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DISK_IMAGE_APPEND,
-   "Aktuelle Disc auswerfen, eine neue Disc vom Dateisystem auswählen, einlegen und das virtuelle Disc-Fach schließen.\nHINWEIS: Dies ist eine veraltete Funktion. Es wird stattdessen empfohlen, Multi-Disc-Titel über M3U-Wiedergabelisten zu laden, die die Disc-Auswahl mit den Optionen 'Disc auswerfen/einlegen' und 'Aktueller Disc-Index' ermöglichen."
+   "Aktuelle Disc auswerfen, eine neue Disc vom Dateisystem auswählen, einlegen und das virtuelle Disc-Fach schließen.\nHINWEIS: Dies ist eine veraltete Funktion. Es wird stattdessen empfohlen, Multi-Disc-Titel über M3U-Spielelisten zu laden, die die Disc-Auswahl mit den Optionen 'Disc auswerfen/einlegen' und 'Aktueller Disc-Index' ermöglichen."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DISK_IMAGE_APPEND_TRAY_OPEN,
-   "Eine neue Disc vom Dateisystem auswählen und einlegen, ohne das virtuelle Laufwerk zu schließen.\nHINWEIS: Dies ist eine veraltete Funktion. Es wird stattdessen empfohlen, Multi-Disc-Titel über M3U-Wiedergabelisten zu laden, die die Disc-Auswahl mit der Option 'Aktueller Disc-Index ' ermöglichen."
+   "Eine neue Disc vom Dateisystem auswählen und einlegen, ohne das virtuelle Laufwerk zu schließen.\nHINWEIS: Dies ist eine veraltete Funktion. Es wird stattdessen empfohlen, Multi-Disc-Titel über M3U-Spielelisten zu laden, die die Disc-Auswahl mit der Option 'Aktueller Disc-Index ' ermöglichen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DISK_INDEX,
@@ -9004,7 +9004,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_PLAYLIST_ENTRIES_AVAILABLE,
-   "Keine Wiedergabelisten-Einträge verfügbar"
+   "Keine Spielelisten-Einträge verfügbar"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_SETTINGS_FOUND,
@@ -9163,7 +9163,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_ENTRY_REMOVE_ENABLE_ALL,
-   "Alle Wiedergabelisten"
+   "Alle Spielelisten"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_ENTRY_REMOVE_ENABLE_NONE,
@@ -9790,7 +9790,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_RGUI_INLINE_THUMBNAILS,
-   "Wiedergabelisten-Vorschaubilder anzeigen"
+   "Spielelisten-Vorschaubilder anzeigen"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_MENU_RGUI_INLINE_THUMBNAILS,
+   "Aktiviert die Anzeige von herunterskalierten Vorschaubildern während dem Betrachten von Spielelisten. Umschaltbar mit RetroPad Select. Wenn deaktiviert, können Vorschaubilder immer noch mit RetroPad Start zum Vollbild gewechselt werden."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_THUMBNAILS_RGUI,
@@ -9798,7 +9802,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_THUMBNAILS_RGUI,
-   "Art der Miniaturansicht, die oben rechts in der Wiedergabeliste angezeigt wird. Dieser Typ von Miniaturansicht kann durch Drücken von RetroPad Y gewechselt werden."
+   "Art der Miniaturansicht, die oben rechts in der Spieleliste angezeigt wird. Dieser Typ von Miniaturansicht kann durch Drücken von RetroPad Y gewechselt werden."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LEFT_THUMBNAILS_RGUI,
@@ -9806,7 +9810,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_LEFT_THUMBNAILS_RGUI,
-   "Art des Vorschaubilds, das unten rechts in den Wiedergabelisten angezeigt werden soll."
+   "Art des Vorschaubilds, das unten rechts in den Spielelisten angezeigt werden soll."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_RGUI_SWAP_THUMBNAILS,
@@ -9830,7 +9834,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_RGUI_THUMBNAIL_DELAY,
-   "Verzögert das Laden der zugehörigen Vorschaubilder bei der Auswahl eines Wiedergabelisteneintrags. Ein Wert von mindestens 256 ms ermöglicht schnelles und verzögerungsfreies Scrollen auch auf den langsamsten Geräten."
+   "Verzögert das Laden der zugehörigen Vorschaubilder bei der Auswahl eines Spielelisteneintrags. Ein Wert von mindestens 256 ms ermöglicht schnelles und verzögerungsfreies Scrollen auch auf den langsamsten Geräten."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_RGUI_EXTENDED_ASCII,
@@ -10310,19 +10314,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_TRUNCATE_PLAYLIST_NAME,
-   "Wiedergabelistennamen kürzen (Neustart erforderlich)"
+   "Spielelistennamen kürzen (Neustart erforderlich)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_OZONE_TRUNCATE_PLAYLIST_NAME,
-   "Die Anbieternamen aus den Wiedergabelistennamen entfernen. Zum Beispiel wird \"Sony - PlayStation\" zu \"PlayStation\"."
+   "Die Anbieternamen aus den Spielelistennamen entfernen. Zum Beispiel wird \"Sony - PlayStation\" zu \"PlayStation\"."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_SORT_AFTER_TRUNCATE_PLAYLIST_NAME,
-   "Wiedergabelisten nach Namenskürzung sortieren (Neustart erforderlich)"
+   "Spielelisten nach Namenskürzung sortieren (Neustart erforderlich)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_OZONE_SORT_AFTER_TRUNCATE_PLAYLIST_NAME,
-   "Wiedergabelisten werden in alphabetischer Reihenfolge neu sortiert, nachdem die Herstellerkomponente ihrer Namen entfernt wurde."
+   "Spielelisten werden in alphabetischer Reihenfolge neu sortiert, nachdem die Herstellerkomponente ihrer Namen entfernt wurde."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_MENU_COLOR_THEME,
@@ -10386,7 +10390,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_OZONE_SCROLL_CONTENT_METADATA,
-   "Wenn aktiviert, belegen alle Inhaltsmetadaten in der rechten Seitenleiste der Wiedergabelisten (zugeordneter Core, Spielzeit) eine einzelne Zeile. Text, der die Breite der Seitenleiste überschreitet, wird als Lauftext angezeigt. Wenn deaktiviert, werden alle Inhaltsmetadaten statisch angezeigt und so umbrochen, dass sie so viele Zeilen wie erforderlich belegen."
+   "Wenn aktiviert, belegen alle Inhaltsmetadaten in der rechten Seitenleiste der Spielelisten (zugeordneter Core, Spielzeit) eine einzelne Zeile. Text, der die Breite der Seitenleiste überschreitet, wird als Lauftext angezeigt. Wenn deaktiviert, werden alle Inhaltsmetadaten statisch angezeigt und so umbrochen, dass sie so viele Zeilen wie erforderlich belegen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OZONE_THUMBNAIL_SCALE_FACTOR,
@@ -10417,11 +10421,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_PLAYLIST_ICONS_ENABLE,
-   "Wiedergabelistensymbole (Neustart erforderlich)"
+   "Spielelistensymbole (Neustart erforderlich)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MATERIALUI_PLAYLIST_ICONS_ENABLE,
-   "Systemspezifische Symbole in den Wiedergabelisten anzeigen."
+   "Systemspezifische Symbole in den Spielelisten anzeigen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_LANDSCAPE_LAYOUT_OPTIMIZATION,
@@ -10469,7 +10473,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MATERIALUI_MENU_THUMBNAIL_VIEW_PORTRAIT,
-   "Den Vorschaubildansichtsmodus der Wiedergabelisten im Hochformat angeben."
+   "Den Vorschaubildansichtsmodus der Spielelisten im Hochformat angeben."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_MENU_THUMBNAIL_VIEW_LANDSCAPE,
@@ -10477,7 +10481,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MATERIALUI_MENU_THUMBNAIL_VIEW_LANDSCAPE,
-   "Den Vorschaubildansichtsmodus der Wiedergabelisten im Querformat angeben."
+   "Den Vorschaubildansichtsmodus der Spielelisten im Querformat angeben."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_DUAL_THUMBNAIL_LIST_VIEW_ENABLE,
@@ -10501,7 +10505,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_THUMBNAILS_MATERIALUI,
-   "Haupttyp der Vorschaubilder, die jedem Wiedergabelisteneintrag zugeordnet werden. Dienen normalerweise als Inhaltssymbole."
+   "Haupttyp der Vorschaubilder, die jedem Spielelisteneintrag zugeordnet werden. Dienen normalerweise als Inhaltssymbole."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LEFT_THUMBNAILS_MATERIALUI,
@@ -10509,7 +10513,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_LEFT_THUMBNAILS_MATERIALUI,
-   "Zusätzliche Art der Vorschaubilder, die jedem Wiedergabelisteneintrag zugeordnet werden. Die Verwendung hängt vom aktuellen Vorschaubildansichtsmodus der Wiedergabeliste ab."
+   "Zusätzliche Art der Vorschaubilder, die jedem Spielelisteneintrag zugeordnet werden. Die Verwendung hängt vom aktuellen Vorschaubildansichtsmodus der Spieleliste ab."
    )
 
 /* MaterialUI: Settings Options */
@@ -10735,7 +10739,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_TAB_PLAYLISTS,
-   "Wiedergabelisten"
+   "Spielelisten"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_TAB_FILE_BROWSER,
@@ -10759,7 +10763,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_ALL_PLAYLISTS,
-   "Alle Wiedergabelisten"
+   "Alle Spielelisten"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_CORE_INFO,
@@ -10815,7 +10819,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_HIDDEN_PLAYLISTS,
-   "Versteckte Wiedergabelisten"
+   "Versteckte Spielelisten"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_HIDE,
@@ -10887,11 +10891,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_VIEW_OPTIONS_ALL_PLAYLISTS_LIST_MAX_COUNT,
-   "Maximale Anzahl Listeneinträge in \"Alle Wiedergabelisten\":"
+   "Maximale Anzahl Listeneinträge in \"Alle Spielelisten\":"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_VIEW_OPTIONS_ALL_PLAYLISTS_GRID_MAX_COUNT,
-   "Maximale Anzahl Rastereinträge \"Alle Wiedergabelisten\":"
+   "Maximale Anzahl Rastereinträge \"Alle Spielelisten\":"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_VIEW_OPTIONS_SHOW_HIDDEN_FILES,
@@ -10899,23 +10903,23 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_NEW_PLAYLIST,
-   "Neue Wiedergabeliste"
+   "Neue Spieleliste"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_ENTER_NEW_PLAYLIST_NAME,
-   "Bitte Namen für neue Wiedergabeliste eingeben:"
+   "Bitte Namen für neue Spieleliste eingeben:"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_DELETE_PLAYLIST,
-   "Wiedergabeliste löschen"
+   "Spieleliste löschen"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_RENAME_PLAYLIST,
-   "Wiedergabeliste umbenennen"
+   "Spieleliste umbenennen"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_CONFIRM_DELETE_PLAYLIST,
-   "Möchtest Du Wiedergabeliste \"%1\" wirklich löschen?"
+   "Möchtest Du Spieleliste \"%1\" wirklich löschen?"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_QUESTION,
@@ -10935,11 +10939,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_ADDING_FILES_TO_PLAYLIST,
-   "Dateien werden zur Wiedergabeliste hinzugefügt..."
+   "Dateien werden zur Spieleliste hinzugefügt..."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_PLAYLIST_ENTRY,
-   "Wiedergabelisteneintrag"
+   "Spielelisteneintrag"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_PLAYLIST_ENTRY_PATH,
@@ -10971,7 +10975,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_CANNOT_ADD_TO_ALL_PLAYLISTS,
-   "Bitte wähle zuerst eine einzelne Wiedergabeliste."
+   "Bitte wähle zuerst eine einzelne Spieleliste."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_DELETE,
@@ -11007,7 +11011,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_COULD_NOT_UPDATE_PLAYLIST_ENTRY,
-   "Fehler beim Aktualisieren des Wiedergabelisteneintrags."
+   "Fehler beim Aktualisieren des Spielelisteneintrags."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_PLEASE_FILL_OUT_REQUIRED_FIELDS,
@@ -11095,7 +11099,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_VIEW_OPTIONS_STARTUP_PLAYLIST,
-   "Auf Wiedergabeliste starten:"
+   "Auf Spieleliste starten:"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_MENU_VIEW_OPTIONS_THUMBNAIL_TYPE,
@@ -11119,7 +11123,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_DOWNLOAD_ALL_THUMBNAILS_THIS_PLAYLIST,
-   "Diese Wiedergabeliste"
+   "Diese Spieleliste"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QT_THUMBNAIL_PACK_DOWNLOADED_SUCCESSFULLY,
@@ -11230,7 +11234,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_PLAYLISTS,
-   "Keine Wiedergabelisten."
+   "Keine Spielelisten."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_BT_CONNECTED,
@@ -12099,15 +12103,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_PLAYLIST_MANAGER_CLEANING_PLAYLIST,
-   "Reinige Wiedergabeliste: "
+   "Reinige Spieleliste: "
    )
 MSG_HASH(
    MSG_PLAYLIST_MANAGER_PLAYLIST_CLEANED,
-   "Wiedergabeliste bereinigt: "
+   "Spieleliste bereinigt: "
    )
 MSG_HASH(
    MSG_PLAYLIST_MANAGER_REFRESH_MISSING_CONFIG,
-   "Aktualisieren fehlgeschlagen - Wiedergabeliste enthält keinen gültigen Scan-Datensatz: "
+   "Aktualisieren fehlgeschlagen - Spieleliste enthält keinen gültigen Scan-Datensatz: "
    )
 MSG_HASH(
    MSG_PLAYLIST_MANAGER_REFRESH_INVALID_CONTENT_DIR,
@@ -12135,7 +12139,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_ADD_TO_FAVORITES_FAILED,
-   "Favorit kann nicht hinzugefügt werden: Wiedergabeliste voll"
+   "Favorit kann nicht hinzugefügt werden: Spieleliste voll"
    )
 MSG_HASH(
    MSG_SET_CORE_ASSOCIATION,
@@ -12143,7 +12147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_RESET_CORE_ASSOCIATION,
-   "Core-Zuordnung für den Wiedergabelisteneintrag wurde zurückgesetzt."
+   "Core-Zuordnung für den Spielelisteneintrag wurde zurückgesetzt."
    )
 MSG_HASH(
    MSG_APPENDED_DISK,
