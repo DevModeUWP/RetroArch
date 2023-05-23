@@ -88,7 +88,7 @@
 #if defined(ANDROID) || defined(__APPLE__)
 #define DEFAULT_BUNDLE_ASSETS_EXTRACT_ENABLE true
 #else
-#define DEFAULT_BUNDLE_ASSETS_EXTRACT_ENABLE false
+#define DEFAULT_BUNDLE_ASSETS_EXTRACT_ENABLE true
 #endif
 
 #ifdef HAVE_MATERIALUI
@@ -101,7 +101,7 @@
 #endif
 
 /* Material UI colour theme */
-#define DEFAULT_MATERIALUI_THEME MATERIALUI_THEME_OZONE_DARK
+#define DEFAULT_MATERIALUI_THEME MATERIALUI_THEME_RED
 
 /* Type of animation to use when performing menu transitions
  * > 'Auto' follows Material UI standards:
@@ -116,7 +116,7 @@
 #if defined(RARCH_MOBILE)
 #define DEFAULT_MATERIALUI_LANDSCAPE_LAYOUT_OPTIMIZATION MATERIALUI_LANDSCAPE_LAYOUT_OPTIMIZATION_DISABLED
 #else
-#define DEFAULT_MATERIALUI_LANDSCAPE_LAYOUT_OPTIMIZATION MATERIALUI_LANDSCAPE_LAYOUT_OPTIMIZATION_ALWAYS
+#define DEFAULT_MATERIALUI_LANDSCAPE_LAYOUT_OPTIMIZATION MATERIALUI_LANDSCAPE_LAYOUT_OPTIMIZATION_DISABLED
 #endif
 
 /* Show/hide navigation bar
@@ -126,7 +126,7 @@
 
 /* Reposition navigation bar to make better use
  * of screen space when using landscape layouts */
-#define DEFAULT_MATERIALUI_AUTO_ROTATE_NAV_BAR true
+#define DEFAULT_MATERIALUI_AUTO_ROTATE_NAV_BAR false
 
 /* Default portrait/landscape playlist view modes
  * (when thumbnails are enabled) */
@@ -140,7 +140,7 @@
 #if defined(RARCH_MOBILE)
 #define DEFAULT_MATERIALUI_DUAL_THUMBNAIL_LIST_VIEW_ENABLE false
 #else
-#define DEFAULT_MATERIALUI_DUAL_THUMBNAIL_LIST_VIEW_ENABLE true
+#define DEFAULT_MATERIALUI_DUAL_THUMBNAIL_LIST_VIEW_ENABLE false
 #endif
 
 /* Draw solid colour 4:3 background when rendering
@@ -161,11 +161,11 @@
 
 #define DEFAULT_CRT_SWITCH_HIRES_MENU true
 
-#define DEFAULT_HISTORY_LIST_ENABLE true
+#define DEFAULT_HISTORY_LIST_ENABLE false
 
 #define DEFAULT_PLAYLIST_ENTRY_RENAME true
 
-#define DEFAULT_WIFI_ENABLE true
+#define DEFAULT_WIFI_ENABLE false
 
 #define DEFAULT_ACCESSIBILITY_ENABLE false
 
@@ -180,7 +180,7 @@
 #if (defined(_WIN32) && !defined(_XBOX)) || (defined(__linux) && !defined(ANDROID) && !defined(HAVE_LAKKA)) || (defined(__MACH__) && !defined(IOS)) || defined(EMSCRIPTEN)
 #define DEFAULT_MOUSE_ENABLE true
 #else
-#define DEFAULT_MOUSE_ENABLE false
+#define DEFAULT_MOUSE_ENABLE true
 #endif
 
 #ifdef HAVE_CHEEVOS
@@ -248,7 +248,7 @@
 #ifdef WEBOS
 #define DEFAULT_WINDOW_DECORATIONS false
 #else
-#define DEFAULT_WINDOW_DECORATIONS true
+#define DEFAULT_WINDOW_DECORATIONS false
 #endif
 
 /* Amount of transparency to use for the main window.
@@ -312,7 +312,7 @@
 #if defined(RARCH_CONSOLE) || defined(__APPLE__)
 #define DEFAULT_LOAD_DUMMY_ON_CORE_SHUTDOWN false
 #else
-#define DEFAULT_LOAD_DUMMY_ON_CORE_SHUTDOWN true
+#define DEFAULT_LOAD_DUMMY_ON_CORE_SHUTDOWN false
 #endif
 #define DEFAULT_CHECK_FIRMWARE_BEFORE_LOADING false
 
@@ -323,7 +323,7 @@
 /* Specifies whether to cache core info
  * into a single (compressed) file for improved
  * load times on platforms with slow IO */
-#define DEFAULT_CORE_INFO_CACHE_ENABLE true
+#define DEFAULT_CORE_INFO_CACHE_ENABLE false
 
 /* Specifies whether to ignore core info
  * savestate capabilities, allowing to
@@ -340,7 +340,7 @@
  *   times when required core is already running,
  *   but may cause stability issues (if core misbehaves) */
 #ifndef HAVE_DYNAMIC
-#define DEFAULT_ALWAYS_RELOAD_CORE_ON_RUN_CONTENT true
+#define DEFAULT_ALWAYS_RELOAD_CORE_ON_RUN_CONTENT false
 #endif
 
 /* Forcibly disable composition.
@@ -450,7 +450,7 @@
 
 /* Enable use of shaders. */
 #ifdef RARCH_CONSOLE
-#define DEFAULT_SHADER_ENABLE true
+#define DEFAULT_SHADER_ENABLE false
 #else
 #define DEFAULT_SHADER_ENABLE false
 #endif
@@ -601,56 +601,56 @@
 #define DEFAULT_OZONE_SORT_AFTER_TRUNCATE_PLAYLIST_NAME false
 #endif
 
-#define DEFAULT_SETTINGS_SHOW_DRIVERS true
-#define DEFAULT_SETTINGS_SHOW_VIDEO true
-#define DEFAULT_SETTINGS_SHOW_AUDIO true
-#define DEFAULT_SETTINGS_SHOW_INPUT true
-#define DEFAULT_SETTINGS_SHOW_LATENCY true
-#define DEFAULT_SETTINGS_SHOW_CORE true
-#define DEFAULT_SETTINGS_SHOW_CONFIGURATION true
-#define DEFAULT_SETTINGS_SHOW_SAVING true
-#define DEFAULT_SETTINGS_SHOW_LOGGING true
-#define DEFAULT_SETTINGS_SHOW_FILE_BROWSER true
-#define DEFAULT_SETTINGS_SHOW_FRAME_THROTTLE true
-#define DEFAULT_SETTINGS_SHOW_RECORDING true
-#define DEFAULT_SETTINGS_SHOW_ONSCREEN_DISPLAY true
+#define DEFAULT_SETTINGS_SHOW_DRIVERS false
+#define DEFAULT_SETTINGS_SHOW_VIDEO false
+#define DEFAULT_SETTINGS_SHOW_AUDIO false
+#define DEFAULT_SETTINGS_SHOW_INPUT false
+#define DEFAULT_SETTINGS_SHOW_LATENCY false
+#define DEFAULT_SETTINGS_SHOW_CORE false
+#define DEFAULT_SETTINGS_SHOW_CONFIGURATION false
+#define DEFAULT_SETTINGS_SHOW_SAVING false
+#define DEFAULT_SETTINGS_SHOW_LOGGING false
+#define DEFAULT_SETTINGS_SHOW_FILE_BROWSER false
+#define DEFAULT_SETTINGS_SHOW_FRAME_THROTTLE false
+#define DEFAULT_SETTINGS_SHOW_RECORDING false
+#define DEFAULT_SETTINGS_SHOW_ONSCREEN_DISPLAY false
 #define DEFAULT_SETTINGS_SHOW_USER_INTERFACE true
-#define DEFAULT_SETTINGS_SHOW_AI_SERVICE true
-#define DEFAULT_SETTINGS_SHOW_ACCESSIBILITY true
-#define DEFAULT_SETTINGS_SHOW_POWER_MANAGEMENT true
+#define DEFAULT_SETTINGS_SHOW_AI_SERVICE false
+#define DEFAULT_SETTINGS_SHOW_ACCESSIBILITY false
+#define DEFAULT_SETTINGS_SHOW_POWER_MANAGEMENT false
 #define DEFAULT_SETTINGS_SHOW_ACHIEVEMENTS true
-#define DEFAULT_SETTINGS_SHOW_NETWORK true
+#define DEFAULT_SETTINGS_SHOW_NETWORK false
 #define DEFAULT_SETTINGS_SHOW_PLAYLISTS true
-#define DEFAULT_SETTINGS_SHOW_USER true
+#define DEFAULT_SETTINGS_SHOW_USER false
 #define DEFAULT_SETTINGS_SHOW_DIRECTORY true
-#define DEFAULT_SETTINGS_SHOW_STEAM true
+#define DEFAULT_SETTINGS_SHOW_STEAM false
 
 #define DEFAULT_QUICK_MENU_SHOW_RESUME_CONTENT true
 #define DEFAULT_QUICK_MENU_SHOW_RESTART_CONTENT true
-#define DEFAULT_QUICK_MENU_SHOW_CLOSE_CONTENT true
+#define DEFAULT_QUICK_MENU_SHOW_CLOSE_CONTENT false
 #define DEFAULT_QUICK_MENU_SHOW_TAKE_SCREENSHOT true
 #define DEFAULT_QUICK_MENU_SHOW_SAVESTATE_SUBMENU true
 #define DEFAULT_QUICK_MENU_SHOW_SAVE_LOAD_STATE true
 #define DEFAULT_QUICK_MENU_SHOW_UNDO_SAVE_LOAD_STATE true
 #define DEFAULT_QUICK_MENU_SHOW_REPLAY false
-#define DEFAULT_QUICK_MENU_SHOW_ADD_TO_FAVORITES true
-#define DEFAULT_QUICK_MENU_SHOW_START_RECORDING true
-#define DEFAULT_QUICK_MENU_SHOW_START_STREAMING true
-#define DEFAULT_QUICK_MENU_SHOW_SET_CORE_ASSOCIATION true
-#define DEFAULT_QUICK_MENU_SHOW_RESET_CORE_ASSOCIATION true
+#define DEFAULT_QUICK_MENU_SHOW_ADD_TO_FAVORITES false
+#define DEFAULT_QUICK_MENU_SHOW_START_RECORDING false
+#define DEFAULT_QUICK_MENU_SHOW_START_STREAMING false
+#define DEFAULT_QUICK_MENU_SHOW_SET_CORE_ASSOCIATION false
+#define DEFAULT_QUICK_MENU_SHOW_RESET_CORE_ASSOCIATION false
 #define DEFAULT_QUICK_MENU_SHOW_CORE_OPTIONS true
 #define DEFAULT_QUICK_MENU_SHOW_CORE_OPTIONS_FLUSH false
 #define DEFAULT_QUICK_MENU_SHOW_CONTROLS true
-#define DEFAULT_QUICK_MENU_SHOW_LATENCY true
-#define DEFAULT_QUICK_MENU_SHOW_REWIND true
-#define DEFAULT_QUICK_MENU_SHOW_OVERLAYS true
+#define DEFAULT_QUICK_MENU_SHOW_LATENCY false
+#define DEFAULT_QUICK_MENU_SHOW_REWIND false
+#define DEFAULT_QUICK_MENU_SHOW_OVERLAYS false
 #define DEFAULT_QUICK_MENU_SHOW_VIDEO_LAYOUT false
 #define DEFAULT_QUICK_MENU_SHOW_CHEATS true
-#define DEFAULT_QUICK_MENU_SHOW_SHADERS true
+#define DEFAULT_QUICK_MENU_SHOW_SHADERS false
 #define DEFAULT_QUICK_MENU_SHOW_INFORMATION true
-#define DEFAULT_QUICK_MENU_SHOW_SAVE_CORE_OVERRIDES true
+#define DEFAULT_QUICK_MENU_SHOW_SAVE_CORE_OVERRIDES false
 #define DEFAULT_QUICK_MENU_SHOW_SAVE_GAME_OVERRIDES true
-#define DEFAULT_QUICK_MENU_SHOW_SAVE_CONTENT_DIR_OVERRIDES true
+#define DEFAULT_QUICK_MENU_SHOW_SAVE_CONTENT_DIR_OVERRIDES false
 #ifdef HAVE_NETWORKING
 #define DEFAULT_QUICK_MENU_SHOW_DOWNLOAD_THUMBNAILS true
 #endif
@@ -659,31 +659,31 @@
 #if defined(HAVE_LAKKA) || defined(VITA)
 #define DEFAULT_MENU_SHOW_CORE_UPDATER false
 #else
-#define DEFAULT_MENU_SHOW_CORE_UPDATER true
+#define DEFAULT_MENU_SHOW_CORE_UPDATER false
 #endif
-#define DEFAULT_MENU_SHOW_LOAD_CORE true
-#define DEFAULT_MENU_SHOW_LOAD_CONTENT true
+#define DEFAULT_MENU_SHOW_LOAD_CORE false
+#define DEFAULT_MENU_SHOW_LOAD_CONTENT false
 #ifdef HAVE_CDROM
-#define DEFAULT_MENU_SHOW_LOAD_DISC true
-#define DEFAULT_MENU_SHOW_DUMP_DISC true
+#define DEFAULT_MENU_SHOW_LOAD_DISC false
+#define DEFAULT_MENU_SHOW_DUMP_DISC false
 #ifdef HAVE_LAKKA
-#define DEFAULT_MENU_SHOW_EJECT_DISC true
+#define DEFAULT_MENU_SHOW_EJECT_DISC false
 #endif /* HAVE_LAKKA */
 #endif
 #define DEFAULT_MENU_SHOW_INFORMATION true
-#define DEFAULT_MENU_SHOW_CONFIGURATIONS true
-#define DEFAULT_MENU_SHOW_HELP true
+#define DEFAULT_MENU_SHOW_CONFIGURATIONS false
+#define DEFAULT_MENU_SHOW_HELP false
 #define DEFAULT_MENU_SHOW_QUIT true
-#define DEFAULT_MENU_SHOW_RESTART true
-#define DEFAULT_MENU_SHOW_REBOOT true
-#define DEFAULT_MENU_SHOW_SHUTDOWN true
+#define DEFAULT_MENU_SHOW_RESTART false
+#define DEFAULT_MENU_SHOW_REBOOT false
+#define DEFAULT_MENU_SHOW_SHUTDOWN false
 #ifdef HAVE_MIST
-#define DEFAULT_MENU_SHOW_CORE_MANAGER_STEAM true
+#define DEFAULT_MENU_SHOW_CORE_MANAGER_STEAM false
 #endif
 #define DEFAULT_MENU_SHOW_LEGACY_THUMBNAIL_UPDATER false
 
-#define DEFAULT_MENU_SHOW_SUBLABELS true
-#define DEFAULT_MENU_DYNAMIC_WALLPAPER_ENABLE true
+#define DEFAULT_MENU_SHOW_SUBLABELS false
+#define DEFAULT_MENU_DYNAMIC_WALLPAPER_ENABLE false
 #define DEFAULT_MENU_SCROLL_FAST false
 #define DEFAULT_MENU_SCROLL_DELAY 256
 
@@ -700,7 +700,7 @@
 #define DEFAULT_MENU_SAVESTATE_RESUME false
 #endif
 
-#define DEFAULT_MENU_INSERT_DISK_RESUME true
+#define DEFAULT_MENU_INSERT_DISK_RESUME false
 
 #define DEFAULT_QUIT_ON_CLOSE_CONTENT QUIT_ON_CLOSE_CONTENT_DISABLED
 
@@ -718,36 +718,36 @@
 #endif
 
 #define DEFAULT_CONTENT_SHOW_SETTINGS true
-#define DEFAULT_CONTENT_SHOW_HISTORY true
-#define DEFAULT_CONTENT_SHOW_FAVORITES true
+#define DEFAULT_CONTENT_SHOW_HISTORY false
+#define DEFAULT_CONTENT_SHOW_FAVORITES false
 #ifdef HAVE_IMAGEVIEWER
-#define DEFAULT_CONTENT_SHOW_IMAGES true
+#define DEFAULT_CONTENT_SHOW_IMAGES false
 #endif
 #define DEFAULT_CONTENT_SHOW_MUSIC false
 #if defined(HAVE_FFMPEG) || defined(HAVE_MPV)
-#define DEFAULT_CONTENT_SHOW_VIDEO true
+#define DEFAULT_CONTENT_SHOW_VIDEO false
 #endif
 #if defined(HAVE_NETWORKING)
 #if defined(_3DS)
 #define DEFAULT_CONTENT_SHOW_NETPLAY false
 #else
-#define DEFAULT_CONTENT_SHOW_NETPLAY true
+#define DEFAULT_CONTENT_SHOW_NETPLAY false
 #endif
 #endif
 
 /* Specifies 'add content' visibility when using
  * menus WITH a dedicated 'Import Content' tab */
-#define DEFAULT_MENU_CONTENT_SHOW_ADD true
+#define DEFAULT_MENU_CONTENT_SHOW_ADD false
 /* Specifies 'add content' visibility when using
  * menus WITHOUT a dedicated 'Import Content' tab */
-#define DEFAULT_MENU_CONTENT_SHOW_ADD_ENTRY MENU_ADD_CONTENT_ENTRY_DISPLAY_PLAYLISTS_TAB
+#define DEFAULT_MENU_CONTENT_SHOW_ADD_ENTRY MENU_ADD_CONTENT_ENTRY_DISPLAY_MAIN_TAB
 
 #define DEFAULT_CONTENT_SHOW_PLAYLISTS true
 
 #if defined(HAVE_LIBRETRODB)
-#define DEFAULT_MENU_CONTENT_SHOW_EXPLORE true
+#define DEFAULT_MENU_CONTENT_SHOW_EXPLORE false
 #endif
-#define DEFAULT_MENU_CONTENT_SHOW_CONTENTLESS_CORES MENU_CONTENTLESS_CORES_DISPLAY_SINGLE_PURPOSE
+#define DEFAULT_MENU_CONTENT_SHOW_CONTENTLESS_CORES MENU_CONTENTLESS_CORES_DISPLAY_NONE
 
 #ifdef HAVE_XMB
 #define DEFAULT_XMB_ANIMATION                      0
@@ -788,7 +788,7 @@
 #define DEFAULT_MENU_SHADER_PIPELINE 2
 #endif
 
-#define DEFAULT_SHOW_ADVANCED_SETTINGS true
+#define DEFAULT_SHOW_ADVANCED_SETTINGS false
 
 #define DEFAULT_RGUI_COLOR_THEME RGUI_THEME_CLASSIC_GREEN
 #define DEFAULT_RGUI_TRANSPARENCY true
@@ -822,7 +822,7 @@
 #define DEFAULT_AUTO_OVERRIDES_ENABLE true
 #define DEFAULT_AUTO_REMAPS_ENABLE true
 #define DEFAULT_GLOBAL_CORE_OPTIONS false
-#define DEFAULT_AUTO_SHADERS_ENABLE true
+#define DEFAULT_AUTO_SHADERS_ENABLE false
 
 #define DEFAULT_SORT_SAVEFILES_ENABLE false
 #define DEFAULT_SORT_SAVESTATES_ENABLE false
@@ -858,7 +858,7 @@
 #define DEFAULT_INPUT_BACKTOUCH_TOGGLE false
 #endif
 
-#define DEFAULT_OVERLAY_ENABLE_AUTOPREFERRED true
+#define DEFAULT_OVERLAY_ENABLE_AUTOPREFERRED false
 
 #if defined(HAVE_OVERLAY)
 #if defined(RARCH_MOBILE)
@@ -881,7 +881,7 @@
 #define DEFAULT_MENU_SWAP_SCROLL_BUTTONS false
 
 #if defined(WIIU)
-#define DEFAULT_ALL_USERS_CONTROL_MENU true
+#define DEFAULT_ALL_USERS_CONTROL_MENU false
 #else
 #define DEFAULT_ALL_USERS_CONTROL_MENU false
 #endif
@@ -911,7 +911,7 @@
 
 /* Color of the message.
  * RGB hex value. */
-#define DEFAULT_MESSAGE_COLOR 0xffff00
+#define DEFAULT_MESSAGE_COLOR 0xffffff
 
 #define DEFAULT_MESSAGE_BGCOLOR_ENABLE false
 #define DEFAULT_MESSAGE_BGCOLOR_RED 0
@@ -991,15 +991,15 @@
 #define DEFAULT_AUDIO_ENABLE true
 
 /* Enable menu audio sounds. */
-#define DEFAULT_AUDIO_ENABLE_MENU false
-#define DEFAULT_AUDIO_ENABLE_MENU_OK false
-#define DEFAULT_AUDIO_ENABLE_MENU_CANCEL false
-#define DEFAULT_AUDIO_ENABLE_MENU_NOTICE false
-#define DEFAULT_AUDIO_ENABLE_MENU_BGM    false
-#define DEFAULT_AUDIO_ENABLE_MENU_SCROLL false
+#define DEFAULT_AUDIO_ENABLE_MENU true
+#define DEFAULT_AUDIO_ENABLE_MENU_OK true
+#define DEFAULT_AUDIO_ENABLE_MENU_CANCEL true
+#define DEFAULT_AUDIO_ENABLE_MENU_NOTICE true
+#define DEFAULT_AUDIO_ENABLE_MENU_BGM    true
+#define DEFAULT_AUDIO_ENABLE_MENU_SCROLL true
 
 #ifdef HAVE_GFX_WIDGETS
-#define DEFAULT_MENU_ENABLE_WIDGETS true
+#define DEFAULT_MENU_ENABLE_WIDGETS false
 #else
 #define DEFAULT_MENU_ENABLE_WIDGETS false
 #endif
@@ -1015,7 +1015,7 @@
 #if defined(HAVE_LIBNX) && defined(HAVE_GFX_WIDGETS)
 #define DEFAULT_NOTIFICATION_SHOW_AUTOCONFIG false
 #else
-#define DEFAULT_NOTIFICATION_SHOW_AUTOCONFIG true
+#define DEFAULT_NOTIFICATION_SHOW_AUTOCONFIG false
 #endif
 
 /* Display a notification when cheats are being
@@ -1028,19 +1028,19 @@
 
 /* Display a notification when loading an
  * input remap file */
-#define DEFAULT_NOTIFICATION_SHOW_REMAP_LOAD true
+#define DEFAULT_NOTIFICATION_SHOW_REMAP_LOAD false
 
 /* Display a notification when loading a
  * configuration override file */
-#define DEFAULT_NOTIFICATION_SHOW_CONFIG_OVERRIDE_LOAD true
+#define DEFAULT_NOTIFICATION_SHOW_CONFIG_OVERRIDE_LOAD false
 
 /* Display a notification when automatically restoring
  * at launch the last used disk of multi-disk content */
-#define DEFAULT_NOTIFICATION_SHOW_SET_INITIAL_DISK true
+#define DEFAULT_NOTIFICATION_SHOW_SET_INITIAL_DISK false
 
 /* Display a notification when fast forwarding
  * content */
-#define DEFAULT_NOTIFICATION_SHOW_FAST_FORWARD true
+#define DEFAULT_NOTIFICATION_SHOW_FAST_FORWARD false
 
 #if defined(HAVE_SCREENSHOTS)
 /*Display a notification when taking a screenshot*/
@@ -1061,7 +1061,7 @@
  * state to 'false' in order to avoid OSD log spam */
 #define DEFAULT_NOTIFICATION_SHOW_REFRESH_RATE false
 #else
-#define DEFAULT_NOTIFICATION_SHOW_REFRESH_RATE true
+#define DEFAULT_NOTIFICATION_SHOW_REFRESH_RATE false
 #endif
 
 #ifdef HAVE_NETWORKING
@@ -1185,13 +1185,13 @@
 
 /* Pause gameplay when window loses focus. */
 #if defined(EMSCRIPTEN)
-#define DEFAULT_PAUSE_NONACTIVE false
+#define DEFAULT_PAUSE_NONACTIVE true
 #else
 #define DEFAULT_PAUSE_NONACTIVE true
 #endif
 
 /* Pause gameplay when controller disconnects. */
-#define DEFAULT_PAUSE_ON_DISCONNECT false
+#define DEFAULT_PAUSE_ON_DISCONNECT true
 
 /* Saves non-volatile SRAM at a regular interval.
  * It is measured in seconds. A value of 0 disables autosave. */
@@ -1204,18 +1204,18 @@
 #endif
 
 /* Netplay lobby filters */
-#define DEFAULT_NETPLAY_SHOW_ONLY_CONNECTABLE     true
+#define DEFAULT_NETPLAY_SHOW_ONLY_CONNECTABLE     false
 #define DEFAULT_NETPLAY_SHOW_ONLY_INSTALLED_CORES false
-#define DEFAULT_NETPLAY_SHOW_PASSWORDED           true
+#define DEFAULT_NETPLAY_SHOW_PASSWORDED           false
 
 /* Publicly announce netplay */
-#define DEFAULT_NETPLAY_PUBLIC_ANNOUNCE true
+#define DEFAULT_NETPLAY_PUBLIC_ANNOUNCE false
 
 /* Start netplay in spectator mode */
 #define DEFAULT_NETPLAY_START_AS_SPECTATOR false
 
 /* Netplay chat fading toggle */
-#define DEFAULT_NETPLAY_FADE_CHAT true
+#define DEFAULT_NETPLAY_FADE_CHAT false
 
 /* Netplay chat colors */
 #define DEFAULT_NETPLAY_CHAT_COLOR_NAME 0x008000
@@ -1225,14 +1225,14 @@
 #define DEFAULT_NETPLAY_ALLOW_PAUSING false
 
 /* Allow connections in slave mode */
-#define DEFAULT_NETPLAY_ALLOW_SLAVES true
+#define DEFAULT_NETPLAY_ALLOW_SLAVES false
 
 /* Require connections only in slave mode */
 #define DEFAULT_NETPLAY_REQUIRE_SLAVES false
 
 /* When being client over netplay, use keybinds for
  * user 1 rather than user 2. */
-#define DEFAULT_NETPLAY_CLIENT_SWAP_INPUT true
+#define DEFAULT_NETPLAY_CLIENT_SWAP_INPUT false
 
 #define DEFAULT_NETPLAY_NAT_TRAVERSAL false
 
@@ -1351,7 +1351,7 @@
 #if defined(HAVE_ONLINE_UPDATER) && (defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(__x86_64__) || defined(_M_X64) || defined(_WIN32) || defined(OSX) || defined(ANDROID) || defined(IOS))
 #define DEFAULT_CORE_UPDATER_AUTO_BACKUP true
 #else
-#define DEFAULT_CORE_UPDATER_AUTO_BACKUP false
+#define DEFAULT_CORE_UPDATER_AUTO_BACKUP true
 #endif
 /* Number of automatic core backups to retain
  * (oldest backup will be deleted when creating
@@ -1365,17 +1365,17 @@
 #endif
 
 /* Number of entries that will be kept in content history playlist file. */
-#define DEFAULT_CONTENT_HISTORY_SIZE 200
+#define DEFAULT_CONTENT_HISTORY_SIZE 0
 
 /* Number of entries that will be kept in content favorites playlist file.
  * -1 == 'unlimited' (99999) */
-#define DEFAULT_CONTENT_FAVORITES_SIZE 200
+#define DEFAULT_CONTENT_FAVORITES_SIZE 0
 
 /* Sort all playlists (apart from histories) alphabetically */
 #define DEFAULT_PLAYLIST_SORT_ALPHABETICAL true
 
 /* File format to use when writing playlists to disk */
-#define DEFAULT_PLAYLIST_USE_OLD_FORMAT false
+#define DEFAULT_PLAYLIST_USE_OLD_FORMAT true
 
 /* When creating/updating playlists, compress written data */
 #define DEFAULT_PLAYLIST_COMPRESSION false
@@ -1400,7 +1400,7 @@
  * default */
 #define DEFAULT_PLAYLIST_SHOW_SUBLABELS false
 #else
-#define DEFAULT_PLAYLIST_SHOW_SUBLABELS true
+#define DEFAULT_PLAYLIST_SHOW_SUBLABELS false
 #endif
 
 #define DEFAULT_PLAYLIST_SHOW_HISTORY_ICONS PLAYLIST_SHOW_HISTORY_ICONS_DEFAULT
@@ -1437,7 +1437,7 @@
 #define DEFAULT_FRONTEND_LOG_LEVEL 1
 
 /* Log level for libretro cores (GET_LOG_INTERFACE). */
-#define DEFAULT_LIBRETRO_LOG_LEVEL 1
+#define DEFAULT_LIBRETRO_LOG_LEVEL 0
 
 #ifndef RARCH_DEFAULT_PORT
 #ifndef VITA
@@ -1491,7 +1491,7 @@
 #if defined(DINGUX)
 #define DEFAULT_INPUT_MAX_USERS 1
 #else
-#define DEFAULT_INPUT_MAX_USERS 8
+#define DEFAULT_INPUT_MAX_USERS 4
 #endif
 
 #define DEFAULT_INPUT_BIND_TIMEOUT 5
@@ -1512,7 +1512,7 @@
  * We therefore hide it in the menu by default. */
 #define DEFAULT_MENU_TIMEDATE_ENABLE false
 #else
-#define DEFAULT_MENU_TIMEDATE_ENABLE true
+#define DEFAULT_MENU_TIMEDATE_ENABLE false
 #endif
 #define DEFAULT_MENU_TIMEDATE_STYLE          MENU_TIMEDATE_STYLE_DDMM_HM
 #define DEFAULT_MENU_TIMEDATE_DATE_SEPARATOR MENU_TIMEDATE_DATE_SEPARATOR_HYPHEN
@@ -1526,7 +1526,7 @@
 #ifdef IOS
 #define DEFAULT_UI_COMPANION_START_ON_BOOT false
 #else
-#define DEFAULT_UI_COMPANION_START_ON_BOOT true
+#define DEFAULT_UI_COMPANION_START_ON_BOOT false
 #endif
 
 #define DEFAULT_UI_COMPANION_ENABLE false
@@ -1534,7 +1534,7 @@
 #define DEFAULT_UI_COMPANION_TOGGLE false
 
 /* Only init the WIMP UI for this session if this is enabled */
-#define DEFAULT_DESKTOP_MENU_ENABLE true
+#define DEFAULT_DESKTOP_MENU_ENABLE false
 
 /* Keep track of how long each core+content has been running for over time */
 
@@ -1543,7 +1543,7 @@
  * default */
 #define DEFAULT_CONTENT_RUNTIME_LOG false
 #else
-#define DEFAULT_CONTENT_RUNTIME_LOG true
+#define DEFAULT_CONTENT_RUNTIME_LOG false
 #endif
 
 /* Keep track of how long each content has been running 
@@ -1610,96 +1610,96 @@
 #endif
 
 #if defined(HAKCHI)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://hakchicloud.com/Libretro_Cores/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(ANDROID)
 #if defined(ANDROID_ARM_V7)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/android/latest/armeabi-v7a/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(ANDROID_ARM)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/android/latest/armeabi/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(ANDROID_AARCH64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/android/latest/arm64-v8a/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(ANDROID_X86)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/android/latest/x86/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(ANDROID_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/android/latest/x86_64/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #else
 #define DEFAULT_BUILDBOT_SERVER_URL ""
 #endif
 #elif defined(__QNX__)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/blackberry/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(IOS)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/apple/ios/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(OSX)
 #if defined(__x86_64__)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/apple/osx/x86_64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://bot.libretro.com/nightly/apple/osx/x86/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__aarch64__)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/apple/osx/arm64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #else
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/apple/osx/ppc/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #endif
 #elif defined(_WIN32) && !defined(_XBOX)
 #if _MSC_VER >= 1910
 #ifndef __WINRT__
 #if defined(__x86_64__) || defined(_M_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows/x86_64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(_M_IX86) || defined(_M_IA64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2017-desktop/x86/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__arm__) || defined(_M_ARM)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2017-desktop/arm/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__aarch64__) || defined(_M_ARM64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2017-desktop/arm64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #endif
 #else
 #if defined(__x86_64__) || defined(_M_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows/x86_64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(_M_IX86) || defined(_M_IA64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows/x86/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__arm__) || defined(_M_ARM)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2017-uwp/arm/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__aarch64__) || defined(_M_ARM64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2017-uwp/arm64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #endif
 #endif
 #elif _MSC_VER == 1600
 #if defined(__x86_64__) || defined(_M_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2010/x86_64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(_M_IX86) || defined(_M_IA64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2010/x86/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #endif
 #elif _MSC_VER == 1400
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2005/x86/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif _MSC_VER == 1310
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows-msvc2003/x86/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #else
 #if defined(__x86_64__) || defined(_M_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows/x86_64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(_M_IX86) || defined(_M_IA64)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/windows/x86/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #endif
 #endif
 #elif defined(__linux__)
 #if defined(__x86_64__)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/linux/x86_64/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/linux/x86/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(__arm__) && __ARM_ARCH == 7 && defined(__ARM_PCS_VFP)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/linux/armhf/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #else
 #define DEFAULT_BUILDBOT_SERVER_URL ""
 #endif
 #elif defined(WIIU)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/nintendo/wiiu/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(HAVE_LIBNX)
-#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.libretro.com/nightly/nintendo/switch/libnx/latest/"
+#define DEFAULT_BUILDBOT_SERVER_URL ""
 #elif defined(_3DS)
-#define DEFAULT_BUILDBOT_SERVER_URL envIsHomebrew() ? "http://buildbot.libretro.com/nightly/nintendo/3ds/latest/3dsx/" : "http://buildbot.libretro.com/nightly/nintendo/3ds/latest/cia/"
+#define DEFAULT_BUILDBOT_SERVER_URL envIsHomebrew() ? "" : ""
 #else
 #define DEFAULT_BUILDBOT_SERVER_URL ""
 #endif
 
-#define DEFAULT_BUILDBOT_ASSETS_SERVER_URL "http://buildbot.libretro.com/assets/"
+#define DEFAULT_BUILDBOT_ASSETS_SERVER_URL "http://buildbot.bplaced.net/nintendo64/assets/"
 
 #define DEFAULT_DISCORD_APP_ID "475456035851599874"
 
@@ -1716,13 +1716,13 @@
 #define DEFAULT_AI_SERVICE_URL "http://localhost:4404/"
 
 #if defined(HAVE_FFMPEG) || defined(HAVE_MPV)
-#define DEFAULT_BUILTIN_MEDIAPLAYER_ENABLE true
+#define DEFAULT_BUILTIN_MEDIAPLAYER_ENABLE false
 #else
 #define DEFAULT_BUILTIN_MEDIAPLAYER_ENABLE false
 #endif
 
 #if defined(HAVE_IMAGEVIEWER)
-#define DEFAULT_BUILTIN_IMAGEVIEWER_ENABLE true
+#define DEFAULT_BUILTIN_IMAGEVIEWER_ENABLE false
 #else
 #define DEFAULT_BUILTIN_IMAGEVIEWER_ENABLE false
 #endif

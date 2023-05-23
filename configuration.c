@@ -1321,16 +1321,10 @@ const char *config_get_default_menu(void)
 
    switch (default_driver)
    {
-      case MENU_RGUI:
-         return "rgui";
       case MENU_OZONE:
-         return "ozone";
+         return "glui";
       case MENU_MATERIALUI:
          return "glui";
-      case MENU_XMB:
-         return "xmb";
-      case MENU_STRIPES:
-         return "stripes";
       case MENU_NULL:
          break;
    }
