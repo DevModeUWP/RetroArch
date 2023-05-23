@@ -151,7 +151,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Baixa i instal·la diferents complements, components i continguts de RetroArch."
+   "Baixa i instal·la diferents complements, components i continguts."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,

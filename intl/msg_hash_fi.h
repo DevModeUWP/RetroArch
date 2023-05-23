@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Lataa lisäosia, komponentteja ja sisältöä RetroArchiin."
+   "Lataa lisäosia, komponentteja ja sisältöä."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,

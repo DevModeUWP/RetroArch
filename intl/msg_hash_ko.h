@@ -151,7 +151,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "RetroArch용 애드온, 구성요소 및 콘텐츠를 다운로드합니다."
+   "용 애드온, 구성요소 및 콘텐츠를 다운로드합니다."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,

@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "RetroArch için eklentiler, bileşenler ve içerikler indir."
+   "için eklentiler, bileşenler ve içerikler indir."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,

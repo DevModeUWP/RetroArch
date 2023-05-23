@@ -139,7 +139,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "برای RetroArch، افزونه‌، اجزا و محتوا بارگیری کنید."
+   "برای، افزونه‌، اجزا و محتوا بارگیری کنید."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,

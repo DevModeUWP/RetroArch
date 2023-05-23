@@ -107,7 +107,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Baxa complementos, componentes y conteníu pa RetroArch."
+   "Baxa complementos, componentes y conteníu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,

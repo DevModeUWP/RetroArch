@@ -135,7 +135,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Transferir add-ons, componentes e conteúdos para o RetroArch."
+   "Transferir add-ons, componentes e conteúdos."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,
