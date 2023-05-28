@@ -2955,9 +2955,6 @@ static void setting_get_string_representation_uint_ai_service_lang(
 
    switch (*setting->value.target.unsigned_integer)
    {
-      case TRANSLATION_LANG_EN:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_ENGLISH;
-         break;
       case TRANSLATION_LANG_ES:
          enum_idx = MENU_ENUM_LABEL_VALUE_LANG_SPANISH;
          break;
@@ -2969,184 +2966,6 @@ static void setting_get_string_representation_uint_ai_service_lang(
          break;
       case TRANSLATION_LANG_DE:
          enum_idx = MENU_ENUM_LABEL_VALUE_LANG_GERMAN;
-         break;
-      case TRANSLATION_LANG_JP:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_JAPANESE;
-         break;
-      case TRANSLATION_LANG_NL:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_DUTCH;
-         break;
-      case TRANSLATION_LANG_CS:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_CZECH;
-         break;
-      case TRANSLATION_LANG_DA:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_DANISH;
-         break;
-         /* TODO/FIXME */
-      case TRANSLATION_LANG_SV:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_SWEDISH;
-         break;
-      case TRANSLATION_LANG_HR:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_CROATIAN;
-         break;
-      case TRANSLATION_LANG_CA:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_CATALAN;
-         break;
-      case TRANSLATION_LANG_AST:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_ASTURIAN;
-         break;
-      case TRANSLATION_LANG_BG:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_BULGARIAN;
-         break;
-      case TRANSLATION_LANG_BN:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_BENGALI;
-         break;
-      case TRANSLATION_LANG_EU:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_BASQUE;
-         break;
-      case TRANSLATION_LANG_AZ:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_AZERBAIJANI;
-         break;
-      case TRANSLATION_LANG_SQ:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_ALBANIAN;
-         break;
-      case TRANSLATION_LANG_AF:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_AFRIKAANS;
-         break;
-      case TRANSLATION_LANG_ET:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_ESTONIAN;
-         break;
-      case TRANSLATION_LANG_TL:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_FILIPINO;
-         break;
-      case TRANSLATION_LANG_FI:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_FINNISH;
-         break;
-      case TRANSLATION_LANG_GL:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_GALICIAN;
-         break;
-      case TRANSLATION_LANG_KA:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_GEORGIAN;
-         break;
-      case TRANSLATION_LANG_GU:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_GUJARATI;
-         break;
-      case TRANSLATION_LANG_HT:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_HAITIAN_CREOLE;
-         break;
-      case TRANSLATION_LANG_HE:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_HEBREW;
-         break;
-      case TRANSLATION_LANG_HI:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_HINDI;
-         break;
-      case TRANSLATION_LANG_HU:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_HUNGARIAN;
-         break;
-      case TRANSLATION_LANG_IS:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_ICELANDIC;
-         break;
-      case TRANSLATION_LANG_ID:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_INDONESIAN;
-         break;
-      case TRANSLATION_LANG_GA:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_IRISH;
-         break;
-      case TRANSLATION_LANG_KN:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_KANNADA;
-         break;
-      case TRANSLATION_LANG_LA:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_LATIN;
-         break;
-      case TRANSLATION_LANG_LV:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_LATVIAN;
-         break;
-      case TRANSLATION_LANG_LT:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_LITHUANIAN;
-         break;
-      case TRANSLATION_LANG_MK:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_MACEDONIAN;
-         break;
-      case TRANSLATION_LANG_MS:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_MALAY;
-         break;
-      case TRANSLATION_LANG_MT:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_MALTESE;
-         break;
-      case TRANSLATION_LANG_NO:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_NORWEGIAN;
-         break;
-      case TRANSLATION_LANG_FA:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_PERSIAN;
-         break;
-      case TRANSLATION_LANG_RO:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_ROMANIAN;
-         break;
-      case TRANSLATION_LANG_SR:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_SERBIAN;
-         break;
-      case TRANSLATION_LANG_SK:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_SLOVAK;
-         break;
-      case TRANSLATION_LANG_SL:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_SLOVENIAN;
-         break;
-      case TRANSLATION_LANG_SW:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_SWAHILI;
-         break;
-      case TRANSLATION_LANG_TA:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_TAMIL;
-         break;
-      case TRANSLATION_LANG_TE:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_TELUGU;
-         break;
-      case TRANSLATION_LANG_TH:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_THAI;
-         break;
-      case TRANSLATION_LANG_UK:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_UKRAINIAN;
-         break;
-      case TRANSLATION_LANG_UR:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_URDU;
-         break;
-      case TRANSLATION_LANG_CY:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_WELSH;
-         break;
-      case TRANSLATION_LANG_YI:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_YIDDISH;
-         break;
-      case TRANSLATION_LANG_RU:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_RUSSIAN;
-         break;
-      case TRANSLATION_LANG_PT:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_PORTUGUESE_PORTUGAL;
-         break;
-      case TRANSLATION_LANG_TR:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_TURKISH;
-         break;
-      case TRANSLATION_LANG_PL:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_POLISH;
-         break;
-      case TRANSLATION_LANG_VI:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_VIETNAMESE;
-         break;
-      case TRANSLATION_LANG_EL:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_GREEK;
-         break;
-      case TRANSLATION_LANG_KO:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_KOREAN;
-         break;
-      case TRANSLATION_LANG_EO:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_ESPERANTO;
-         break;
-      case TRANSLATION_LANG_AR:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_ARABIC;
-         break;
-      case TRANSLATION_LANG_ZH_CN:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_CHINESE_SIMPLIFIED;
-         break;
-      case TRANSLATION_LANG_ZH_TW:
-         enum_idx = MENU_ENUM_LABEL_VALUE_LANG_CHINESE_TRADITIONAL;
          break;
       case TRANSLATION_LANG_DONT_CARE:
          enum_idx = MENU_ENUM_LABEL_VALUE_DONT_CARE;
@@ -5038,12 +4857,6 @@ static void setting_get_string_representation_uint_playlist_inline_core_display_
 
    switch (*setting->value.target.unsigned_integer)
    {
-      case PLAYLIST_INLINE_CORE_DISPLAY_HIST_FAV:
-         strlcpy(s,
-               msg_hash_to_str(
-                  MENU_ENUM_LABEL_VALUE_PLAYLIST_INLINE_CORE_DISPLAY_HIST_FAV),
-               len);
-         break;
       case PLAYLIST_INLINE_CORE_DISPLAY_ALWAYS:
          strlcpy(s,
                msg_hash_to_str(
@@ -5068,12 +4881,6 @@ static void setting_get_string_representation_uint_playlist_entry_remove_enable(
 
    switch (*setting->value.target.unsigned_integer)
    {
-      case PLAYLIST_ENTRY_REMOVE_ENABLE_HIST_FAV:
-         strlcpy(s,
-               msg_hash_to_str(
-                  MENU_ENUM_LABEL_VALUE_PLAYLIST_ENTRY_REMOVE_ENABLE_HIST_FAV),
-               len);
-         break;
       case PLAYLIST_ENTRY_REMOVE_ENABLE_ALL:
          strlcpy(s,
                msg_hash_to_str(
@@ -6720,7 +6527,7 @@ static void setting_get_string_representation_uint_user_language(
             translated[*msg_hash_get_uint(MSG_HASH_USER_LANGUAGE)] > 49 ? MENU_ENUM_LABEL_VALUE_LNG_COMPLETION_50_PLUS :
             translated[*msg_hash_get_uint(MSG_HASH_USER_LANGUAGE)] > 24 ? MENU_ENUM_LABEL_VALUE_LNG_COMPLETION_25_PLUS :
             MENU_ENUM_LABEL_VALUE_LNG_COMPLETION_25_MINUS);
-      snprintf(s, len, "%s [%s]",
+      snprintf(s, len, "%s",
             modes[*msg_hash_get_uint(MSG_HASH_USER_LANGUAGE)], rating);
    }
 }
@@ -6846,7 +6653,7 @@ static void setting_get_string_representation_uint_menu_screensaver_animation(
 }
 #endif
 
-#if defined(HAVE_XMB) || defined(HAVE_OZONE)
+#if defined(HAVE_XMB) || defined(HAVE_OZONE) || defined(HAVE_RGUI)
 static void setting_get_string_representation_uint_menu_remember_selection(
       rarch_setting_t *setting,
       char *s, size_t len)
@@ -8278,11 +8085,6 @@ static void general_write_handler(rarch_setting_t *setting)
                retroarch_favorites_init();
             }
          }
-         break;
-      case MENU_ENUM_LABEL_MANUAL_CONTENT_SCAN_SYSTEM_NAME_CUSTOM:
-         /* Ensure that custom system name includes no
-          * invalid characters */
-         manual_content_scan_scrub_system_name_custom();
          break;
       case MENU_ENUM_LABEL_MANUAL_CONTENT_SCAN_FILE_EXTS:
          /* Ensure that custom file extension list includes
@@ -16188,9 +15990,10 @@ static bool setting_append_list(
             menu_settings_list_current_add_range(list, list_info, 0.1, 10.0, 0.1, true, true);
          }
 #endif
-#if defined(HAVE_XMB) || defined(HAVE_OZONE)
-         if (string_is_equal(settings->arrays.menu_driver, "xmb")  ||
-             string_is_equal(settings->arrays.menu_driver, "ozone"))
+#if defined(HAVE_XMB) || defined(HAVE_OZONE) || defined(HAVE_RGUI)
+         if (string_is_equal(settings->arrays.menu_driver, "xmb") ||
+             string_is_equal(settings->arrays.menu_driver, "ozone") ||
+             string_is_equal(settings->arrays.menu_driver, "rgui"))
          {
             CONFIG_UINT(
                   list, list_info,

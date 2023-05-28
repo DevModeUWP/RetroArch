@@ -46,7 +46,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_TAB,
-   "Importer du contenu"
+   "Importer des jeux"
    )
 
 /* Main Menu */
@@ -111,7 +111,7 @@ MSG_HASH(
 #endif
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLISTS_TAB,
-   "Liste de jeux"
+   "Liste de lecture"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLISTS_TAB,
@@ -119,7 +119,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_CONTENT_LIST,
-   "Importer des jeux"
+   "Importer du contenu"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ADD_CONTENT_LIST,
@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Télécharger des modules complémentaires, des composants et du contenu."
+   "Télécharger les composants nécessaires et les images d'aperçu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -191,7 +191,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RESTART_RETROARCH,
-   "Redémarrer"
+   "Redémarrer RetroArch"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_RETROARCH,
@@ -327,19 +327,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_THUMBNAILS_UPDATER_LIST,
-   "Mise à jour des miniatures"
+   "Télécharger le paquet d'images de prévisualisation"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_THUMBNAILS_UPDATER_LIST,
-   "Télécharge le pack de miniatures complet pour le système sélectionné."
+   "Télécharger un paquet d'images d'aperçu complet."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PL_THUMBNAILS_UPDATER_LIST,
-   "Mise à jour des miniatures pour la liste de lecture"
+   "Télécharger les aperçus de la liste de jeux"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PL_THUMBNAILS_UPDATER_LIST,
-   "Télécharge des miniatures pour les entrées dans la liste de lecture sélectionnée."
+   "Télécharger les aperçus des jeux dans la liste de jeux sélectionnée."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
@@ -363,19 +363,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_ASSETS,
-   "Mettre à jour les ressources"
+   "Télécharger des fichiers de menu supplémentaires (requis)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_AUTOCONFIG_PROFILES,
-   "Mettre à jour les profils de manettes"
+   "Télécharger les profils de contrôleur (requis)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_CHEATS,
-   "Mettre à jour les cheats"
+   "Télécharger Cheats (facultatif)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
-   "Mettre à jour les bases de données"
+   "Télécharger les bases de données système (requis)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS,
@@ -1326,7 +1326,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SETTINGS,
-   "Listes de lecture"
+   "Listes de jeux"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SETTINGS,
@@ -2776,11 +2776,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_POLL_TYPE_BEHAVIOR,
-   "Influence la façon dont les touches pressées sont détectées dans RetroArch. Utiliser 'Précoce' ou 'Tardive' peut diminuer la latence, en fonction de votre configuration."
+   "Influence la façon dont les touches pressées sont détectées. Utiliser 'Précoce' ou 'Tardive' peut diminuer la latence, en fonction de votre configuration."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_POLL_TYPE_BEHAVIOR,
-   "Influence la façon dont la détection des touches pressées est effectuée dans RetroArch.\nPrécoce - La détection est effectuée avant le traitement de l'image.\nNormale - La détection est effectuée lorsque son traitement est demandé.\nTardive - La détection est effectuée à la première requête d'entrées par image.\nLa régler sur 'Précoce' ou 'Tardive' peut entraîner une réduction de la latence, en fonction de votre configuration. Sera ignorée lors du jeu en réseau."
+   "Influence la façon dont la détection des touches pressées est effectuée.\nPrécoce - La détection est effectuée avant le traitement de l'image.\nNormale - La détection est effectuée lorsque son traitement est demandé.\nTardive - La détection est effectuée à la première requête d'entrées par image.\nLa régler sur 'Précoce' ou 'Tardive' peut entraîner une réduction de la latence, en fonction de votre configuration. Sera ignorée lors du jeu en réseau."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -3078,7 +3078,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_INPUT_SWAP_SCROLL,
-   "Permute les touches pour le défilement. Désactivé défile de 10 éléments avec L/R et par ordre alphabétique avec L2/R2."
+   "Inverser les touches de défilement. Sortir défile 10 entrées avec LB / RB et 1 entrée avec Trigger L / Trigger R."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_ALL_USERS_CONTROL_MENU,
@@ -3809,7 +3809,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PREEMPT_ENABLE,
-   "Relancer la logique du cœur avec la dernière entrée lorsque l'état du contrôleur change. Plus rapide que l'exécution en avance, mais ne prévient pas les problèmes audio qui peuvent survenir avec le chargement des sauvegardes instantanées."
+   "Réexécute la chorégraphie avec la dernière entrée si l'état du contrôleur change. Plus vite que Run-Ahead. Des problèmes audio peuvent survenir lors du chargement de Savestates"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PREEMPT_FRAMES,
@@ -5160,7 +5160,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_VIEWS_SETTINGS,
-   "Afficher/masquer des éléments du menu dans RetroArch."
+   "Afficher/masquer des éléments du menu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SETTINGS,
@@ -5326,7 +5326,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SCROLL_FAST,
-   "Vitesse de déplacement maximale du curseur lors d'un défilement prolongé."
+   "Vitesse maximale lors du maintien d'une orientation de l'image.."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SCROLL_DELAY,
@@ -6029,7 +6029,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SETTINGS_SHOW_PLAYLISTS,
-   "Afficher 'Listes de lecture'"
+   "Afficher 'Listes de jeux'"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SETTINGS_SHOW_PLAYLISTS,
@@ -6248,7 +6248,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CHEEVOS_HARDCORE_MODE_ENABLE,
-   "Désactive les cheats, le rembobinage, le ralenti et le chargement des sauvegardes instantanées. Les succès gagnés en mode hardcore sont marquées de façon unique pour que vous puissiez montrer aux autres ce que vous avez accompli sans fonctionnalités d'assistance d'émulateur. La désactivation de ce paramètre lors de l'exécution redémarrera le jeu."
+   "Désactive Cheats et Savestates. Les succès obtenus en mode hardcore sont clairement marqués pour indiquer aux autres qu'ils ont été obtenus sans fonctionnalités auxiliaires."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CHEEVOS_LEADERBOARDS_ENABLE,
@@ -6823,7 +6823,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SORT_ALPHABETICAL,
-   "Trier les listes de lecture de contenu par ordre alphabétique, excluant les listes 'Historique', 'Images', 'Musique' et 'Vidéo'."
+   "Trier les listes de lecture par ordre alphabétique"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_USE_OLD_FORMAT,
@@ -7127,7 +7127,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_ACCOUNTS_RETRO_ACHIEVEMENTS,
-   "Informations de connexion pour votre compte RetroSuccès (RetroAchievements). Visitez retroachievements.org et créez un compte gratuit.\nUne fois votre inscription terminée, vous devrez entrer votre nom d'utilisateur et votre mot de passe dans RetroArch."
+   "Informations de connexion pour votre compte RetroSuccès (RetroAchievements). Visitez retroachievements.org et créez un compte gratuit.\nUne fois votre inscription terminée, vous devrez entrer votre nom d'utilisateur et votre mot de passe."
    )
 
 /* Settings > User > Accounts > RetroAchievements */
@@ -7174,11 +7174,11 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_DIRECTORY,
-   "Système/BIOS "
+   "Paquets de textures"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "Les BIOS, les ROM de démarrage et les autres fichiers spécifiques au système sont stockés dans ce dossier."
+   "Les paquets de textures sont stockés dans ce répertoire."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_ASSETS_DIRECTORY,
@@ -7190,11 +7190,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASSETS_DIRECTORY,
-   "Ressources "
+   "Données supplémentaires du menu"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ASSETS_DIRECTORY,
-   "Les ressources de menu utilisés par RetroArch sont conservés dans ce dossier."
+   "Les données de menu supplémentaires sont enregistrées dans ce répertoire."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DYNAMIC_WALLPAPERS_DIRECTORY,
@@ -7206,7 +7206,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_THUMBNAILS_DIRECTORY,
-   "Miniatures "
+   "Miniatures"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_THUMBNAILS_DIRECTORY,
@@ -7342,7 +7342,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
-   "Listes de lecture "
+   "Listes de jeux"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_DIRECTORY,
@@ -7414,7 +7414,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_DIRECTORY,
-   "Les sauvegardes instantanées et replays sont conservés dans ce dossier. Si non défini, RetroArch essayera de les enregistrer dans le dossier où se trouve le contenu."
+   "Les sauvegardes instantanées et replays sont conservés dans ce dossier. Si non défini, essayera de les enregistrer dans le dossier où se trouve le contenu."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CACHE_DIRECTORY,
@@ -7615,11 +7615,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_LIST,
-   "Analyse manuelle"
+   "Créer une liste de lecture"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_LIST,
-   "Analyse de contenu configurable basée sur le nom des fichiers. Le contenu n'est pas forcé d'être présent dans la base de données."
+   "Crée une liste de jeux basée sur le contenu des jeux de la base de données Nintendo 64."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SCAN_ENTRY,
@@ -7649,11 +7649,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
-   "Nom du système"
+   "Base de données Nintendo 64"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
-   "Specifie un 'Nom du système' avec lequel associer le contenu analysé. Utilisé pour le nom de la liste de lecture générée et pour identifier les miniatures de la liste de lecture."
+   "Spécifie une base de données à laquelle les jeux trouvés doivent être associés. Utilisé pour nommer le fichier de liste de jeux généré et identifier les aperçus de la liste de jeux."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_CUSTOM,
@@ -9655,11 +9655,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_USE_CONTENT_DIR,
-   "<Dossier du contenu>"
+   "Sélectionnez la base de données Nintendo 64 appropriée pour créer votre liste de jeux."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_USE_CUSTOM,
-   "<Personnalisé>"
+   "(si aucune base de données n'est affichée, elle doit être téléchargée dans l'outil de mise à jour en ligne.)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME_DETECT,

@@ -73,8 +73,8 @@ RETRO_BEGIN_DECLS
 #define FILE_PATH_NETPLAY_ROOM_LIST_URL "registry.lpl"
 #define FILE_PATH_RETROACHIEVEMENTS_URL "http://i.retroachievements.org"
 #define FILE_PATH_LOBBY_LIBRETRO_URL "http://lobby.libretro.com/"
-#define FILE_PATH_CORE_THUMBNAILS_URL "http://thumbnails.libretro.com"
-#define FILE_PATH_CORE_THUMBNAILPACKS_URL "http://thumbnailpacks.libretro.com"
+#define FILE_PATH_CORE_THUMBNAILS_URL "http://buildbot.bplaced.net/nintendo64/thumbnails/"
+#define FILE_PATH_CORE_THUMBNAILPACKS_URL "http://buildbot.bplaced.net/nintendo64/thumbnailpacks/"
 #ifdef HAVE_LAKKA_NIGHTLY
 #define FILE_PATH_LAKKA_URL "http://nightly.builds.lakka.tv/.updater"
 #else

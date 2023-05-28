@@ -111,7 +111,7 @@ MSG_HASH(
 #endif
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLISTS_TAB,
-   "Scaletta"
+   "Playlist"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLISTS_TAB,
@@ -119,7 +119,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_CONTENT_LIST,
-   "Importa partite"
+   "Importa Contenuto"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ADD_CONTENT_LIST,
@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Scarica add-ons, componenti, e contenuti."
+   "Scarica add-ons, componenti, e contenuti per RetroArch."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,
@@ -195,7 +195,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
-   "Esci"
+   "Esci da RetroArch"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_QUIT_RETROARCH,
@@ -7571,11 +7571,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_LIST,
-   "Scansione Manuale"
+   "Crea scaletta"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_LIST,
-   "Scansione configurabile basata sui nomi dei file di contenuto. Non è necessario che il contenuto corrisponda al database."
+   "Crea una playlist basata sui contenuti di gioco dei database Nintendo 64."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SCAN_ENTRY,
@@ -7605,11 +7605,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
-   "Nome del Sistema"
+   "Base di dati Nintendo 64"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
-   "Specifica un 'nome di sistema' con cui associare il contenuto scansionato. Usato per nominare il file generato della scaletta e per identificare le miniature della scaletta."
+   "Specifica una banca dati a cui assegnare le partite trovate. Usato per dare un nome al file della scaletta generato e per identificare le anteprime della scaletta."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_CUSTOM,
@@ -9599,11 +9599,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_USE_CONTENT_DIR,
-   "<Contenuto della cartella>"
+   "Seleziona il database Nintendo 64 adatto per creare la tua playlist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_USE_CUSTOM,
-   "<Personalizzato>"
+   "(se non vengono visualizzati database, è necessario scaricarli nel programma di aggiornamento online.)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME_DETECT,

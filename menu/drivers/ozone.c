@@ -1903,9 +1903,6 @@ static uintptr_t ozone_entries_icon_get_texture(
       case MENU_ENUM_LABEL_ONSCREEN_OVERLAY_SETTINGS:
       case MENU_ENUM_LABEL_CONTENT_SHOW_OVERLAYS:
             return ozone->icons_textures[OZONE_ENTRIES_ICONS_TEXTURE_OVERLAY];
-      case MENU_ENUM_LABEL_UPDATE_CG_SHADERS:
-      case MENU_ENUM_LABEL_UPDATE_GLSL_SHADERS:
-      case MENU_ENUM_LABEL_UPDATE_SLANG_SHADERS:
       case MENU_ENUM_LABEL_AUTO_SHADERS_ENABLE:
       case MENU_ENUM_LABEL_VIDEO_SHADER_PARAMETERS:
             return ozone->icons_textures[OZONE_ENTRIES_ICONS_TEXTURE_SHADER_OPTIONS];
@@ -8455,6 +8452,61 @@ static enum menu_action ozone_parse_menu_entry_action(
          ozone->flags &= ~OZONE_FLAG_CURSOR_MODE;
          break;
 
+      case MENU_ACTION_SCROLL_HOME:
+         if (ozone->flags & OZONE_FLAG_CURSOR_IN_SIDEBAR)
+         {
+            struct menu_state *menu_st = menu_state_get_ptr();
+
+            /* If cursor is active, ensure we target
+             * an on screen category */
+            size_t tab_selection       = (ozone->flags & OZONE_FLAG_CURSOR_MODE)
+                  ? ozone_get_onscreen_category_selection(ozone)
+                  : ozone->categories_selection_ptr;
+
+            new_selection              = 0;
+
+            if (tab_selection > ozone->system_tab_end)
+               new_selection           = (int)(ozone->system_tab_end + 1);
+
+            if (new_selection != tab_selection)
+               ozone_sidebar_goto(ozone, new_selection);
+
+            new_action         = MENU_ACTION_NOOP;
+            ozone->flags      &= ~OZONE_FLAG_CURSOR_MODE;
+
+#ifdef HAVE_AUDIOMIXER
+            if (new_selection != selection)
+               audio_driver_mixer_play_scroll_sound(true);
+#endif
+            break;
+         }
+         break;
+      case MENU_ACTION_SCROLL_END:
+         if (ozone->flags & OZONE_FLAG_CURSOR_IN_SIDEBAR)
+         {
+            struct menu_state *menu_st = menu_state_get_ptr();
+
+            /* If cursor is active, ensure we target
+             * an on screen category */
+            size_t tab_selection       = (ozone->flags & OZONE_FLAG_CURSOR_MODE)
+                  ? ozone_get_onscreen_category_selection(ozone)
+                  : ozone->categories_selection_ptr;
+
+            new_selection              = ozone->system_tab_end + horizontal_list_size;
+
+            if (new_selection != tab_selection)
+               ozone_sidebar_goto(ozone, new_selection);
+
+            new_action         = MENU_ACTION_NOOP;
+            ozone->flags      &= ~OZONE_FLAG_CURSOR_MODE;
+
+#ifdef HAVE_AUDIOMIXER
+            if (new_selection != selection)
+               audio_driver_mixer_play_scroll_sound(false);
+#endif
+            break;
+         }
+         break;
       case MENU_ACTION_INFO:
          /* If we currently viewing a playlist with
           * dual thumbnails, toggle the content metadata

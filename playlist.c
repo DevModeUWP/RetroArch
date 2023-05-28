@@ -2792,7 +2792,7 @@ playlist_t *playlist_init(const playlist_config_t *config)
    playlist->entries                = NULL;
    playlist->label_display_mode     = LABEL_DISPLAY_MODE_DEFAULT;
    playlist->right_thumbnail_mode   = PLAYLIST_THUMBNAIL_MODE_DEFAULT;
-   playlist->left_thumbnail_mode    = PLAYLIST_THUMBNAIL_MODE_DEFAULT;
+   playlist->left_thumbnail_mode    = false;
    playlist->sort_mode              = PLAYLIST_SORT_MODE_DEFAULT;
 
    playlist->scan_record.search_recursively = false;
@@ -3179,7 +3179,7 @@ const char *playlist_get_default_core_name(playlist_t *playlist)
 enum playlist_label_display_mode playlist_get_label_display_mode(playlist_t *playlist)
 {
    if (!playlist)
-      return LABEL_DISPLAY_MODE_DEFAULT;
+      return LABEL_DISPLAY_MODE_REMOVE_PARENTHESES_AND_BRACKETS;
    return playlist->label_display_mode;
 }
 

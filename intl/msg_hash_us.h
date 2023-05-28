@@ -119,7 +119,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLISTS_TAB,
-   "Scanned Games matching the database will appear here."
+   "Scanned games matching the database will appear here."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_CONTENT_LIST,
@@ -127,7 +127,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ADD_CONTENT_LIST,
-   "Create and update Gamelists by scanning content."
+   "Create and update gamelists by scanning content."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SHOW_WIMP,
@@ -151,7 +151,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Download add-ons, components, and content."
+   "Download components and thumbnails."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NETPLAY,
@@ -314,56 +314,20 @@ MSG_HASH(
 /* Main Menu > Online Updater */
 
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_CORE_UPDATER_LIST,
-   "Core Downloader"
-   )
-MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_INSTALLED_CORES,
-   "Update Installed Cores"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_UPDATE_INSTALLED_CORES,
-   "Update all installed cores to the latest version available."
-   )
-MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_SWITCH_INSTALLED_CORES_PFD,
-   "Switch Cores to Play Store Versions"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_SWITCH_INSTALLED_CORES_PFD,
-   "Replace all legacy and manually installed cores with the latest versions from the Play Store, where available."
-   )
-MSG_HASH(
    MENU_ENUM_LABEL_VALUE_THUMBNAILS_UPDATER_LIST,
-   "Thumbnails Updater"
+   "Thumbnail Pack Downloader"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_THUMBNAILS_UPDATER_LIST,
-   "Download complete thumbnail package for selected system."
+   "Download complete thumbnail package."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PL_THUMBNAILS_UPDATER_LIST,
-   "Gamelist Thumbnails Updater"
+   "Gamelist Thumbnails Downloader"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PL_THUMBNAILS_UPDATER_LIST,
-   "Download thumbnails for entries in the selected playlist."
-   )
-MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
-   "Content Downloader"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT,
-   "Download free content for the selected core."
-   )
-MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_SYSTEM_FILES,
-   "Core System Files Downloader"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_SYSTEM_FILES,
-   "Download auxiliary system files required for correct/optimal core operation."
+   "Download thumbnails for games in the selected gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_CORE_INFO_FILES,
@@ -371,19 +335,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_ASSETS,
-   "Update Assets"
+   "Menu Assets Downloader (required)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_AUTOCONFIG_PROFILES,
-   "Update Controller Profiles"
+   "Controller Profiles Downloader (required)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_CHEATS,
-   "Update Cheats"
+   "Cheats Downloader (optional)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
-   "Update Databases"
+   "System Database Downloader (required)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS,
@@ -1170,7 +1134,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_SETTINGS,
-   "Change controller, keyboard, and mouse settings."
+   "Change controller and keyboard settings."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LATENCY_SETTINGS,
@@ -1378,7 +1342,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SETTINGS,
-   "Change Gameslist settings."
+   "Change gameslist settings."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_USER_SETTINGS,
@@ -2872,11 +2836,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_POLL_TYPE_BEHAVIOR,
-   "Influences how input polling is done in RetroArch. Setting it to 'Early' or 'Late' can result in less latency, depending on your configuration."
+   "Influences how input polling is done. Setting it to 'Early' or 'Late' can result in less latency, depending on your configuration."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_INPUT_POLL_TYPE_BEHAVIOR,
-   "Influences how input polling is done inside RetroArch.\nEarly - Input polling is performed before the frame is processed.\nNormal - Input polling is performed when polling is requested.\nLate - Input polling is performed on first input state request per frame.\nSetting it to 'Early' or 'Late' can result in less latency, depending on your configuration. Will be ignored when using netplay."
+   "Influences how input polling is done.\nEarly - Input polling is performed before the frame is processed.\nNormal - Input polling is performed when polling is requested.\nLate - Input polling is performed on first input state request per frame.\nSetting it to 'Early' or 'Late' can result in less latency, depending on your configuration. Will be ignored when using netplay."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAP_BINDS_ENABLE,
@@ -3174,7 +3138,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_INPUT_SWAP_SCROLL,
-   "Swap buttons for scrolling. Disabled scrolls 10 items with L/R and alphabetically with L2/R2."
+   "Swap buttons for scrolling. Disabled scrolls 10 items with LB / RB and 1 item with Trigger L / Trigger R."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_ALL_USERS_CONTROL_MENU,
@@ -3718,11 +3682,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_JOYPAD_SELECT,
-   "Select Button"
+   "View Button"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_JOYPAD_START,
-   "Start Button"
+   "Menu Button"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_JOYPAD_UP,
@@ -5284,7 +5248,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_VIEWS_SETTINGS,
-   "Toggle the visibility of menu items in RetroArch."
+   "Toggle the visibility of menu items."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SETTINGS,
@@ -5454,7 +5418,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MENU_SCROLL_FAST,
-   "Maximum speed of the cursor when holding a direction to scroll."
+   "Maximum speed when holding a direction to scroll."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_SCROLL_DELAY,
@@ -5699,11 +5663,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_PLAYLISTS,
-   "Show 'Playlists'"
+   "Show 'Gamelists'"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CONTENT_SHOW_PLAYLISTS,
-   "Show the playlists. (Restart Required on Ozone/XMB)"
+   "Show the gamelists."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_EXPLORE,
@@ -6157,11 +6121,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SETTINGS_SHOW_PLAYLISTS,
-   "Show 'Playlists'"
+   "Show 'Gamelists'"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SETTINGS_SHOW_PLAYLISTS,
-   "Show 'Playlists' settings."
+   "Show 'Gamelists' settings."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SETTINGS_SHOW_USER,
@@ -6285,7 +6249,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_REMEMBER_SELECTION_PLAYLISTS,
-   "Only for Playlists"
+   "Only for Gamelists"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MENU_REMEMBER_SELECTION_MAIN,
@@ -6380,7 +6344,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CHEEVOS_HARDCORE_MODE_ENABLE,
-   "Disables cheats, rewind, slow-motion, and loading save states. Achievements earned in hardcore mode are uniquely marked so that you can show others what you've achieved without emulator assistance features. Toggling this setting at runtime will restart the game."
+   "Disables cheats and save states. Achievements earned in hardcore mode are uniquely marked so that you can show others what you've achieved without assistance features."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CHEEVOS_LEADERBOARDS_ENABLE,
@@ -6939,27 +6903,27 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_ENTRY_RENAME,
-   "Allow to Rename Entries"
+   "Allow to Rename Games"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_ENTRY_RENAME,
-   "Allow playlist entries to be renamed."
+   "Allow game entries to be renamed in gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_ENTRY_REMOVE,
-   "Allow to Remove Entries"
+   "Allow to Remove Games"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_ENTRY_REMOVE,
-   "Allow playlist entries to be removed."
+   "Allow game entries to be removed in gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_SORT_ALPHABETICAL,
-   "Sort Playlists Alphabetically"
+   "Sort Gamelists Alphabetically"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_SORT_ALPHABETICAL,
-   "Sort content playlists in alphabetical order, excluding the 'History', 'Images', 'Music' and 'Videos' playlists."
+   "Sort content gamelists in alphabetical order."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_USE_OLD_FORMAT,
@@ -7115,11 +7079,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_LIST,
-   "Manage Playlists"
+   "Manage Gamelists"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_LIST,
-   "Perform maintenance tasks on playlists."
+   "Perform maintenance tasks on gamelists."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_PORTABLE_PATHS,
@@ -7150,7 +7114,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_RESET_CORES,
-   "Remove existing core associations for all playlist entries."
+   "Remove existing core associations for all gamelist entries."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_LABEL_DISPLAY_MODE,
@@ -7158,7 +7122,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_LABEL_DISPLAY_MODE,
-   "Change how the content labels are displayed in this playlist."
+   "Change how the content labels are displayed in this gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_SORT_MODE,
@@ -7170,7 +7134,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_CLEAN_PLAYLIST,
-   "Clean Playlist"
+   "Clean Gamelist"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_CLEAN_PLAYLIST,
@@ -7178,19 +7142,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_REFRESH_PLAYLIST,
-   "Refresh Playlist"
+   "Refresh Gamelist"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_REFRESH_PLAYLIST,
-   "Add new content and remove invalid entries by repeating the 'Manual Scan' operation last used to create or edit the playlist."
+   "Add new content and remove invalid entries by repeating the 'Manual Scan' operation last used to create or edit the gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DELETE_PLAYLIST,
-   "Delete Playlist"
+   "Delete Gamelist"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DELETE_PLAYLIST,
-   "Remove playlist from filesystem."
+   "Remove gamelist from filesystem."
    )
 
 /* Settings > User */
@@ -7330,11 +7294,11 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_DIRECTORY,
-   "System/BIOS"
+   "Texture Packs"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "BIOSes, boot ROMs, and other system specific files are stored in this directory."
+   "Texture Packs are stored in this directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_ASSETS_DIRECTORY,
@@ -7346,11 +7310,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASSETS_DIRECTORY,
-   "Assets"
+   "Menu Assets"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ASSETS_DIRECTORY,
-   "Menu assets used by RetroArch are stored in this directory."
+   "Menu assets are stored in this directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DYNAMIC_WALLPAPERS_DIRECTORY,
@@ -7498,11 +7462,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
-   "Playlists"
+   "Gamelists"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_DIRECTORY,
-   "Playlists are stored in this directory."
+   "Gamelists are stored in this directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_FAVORITES_DIRECTORY,
@@ -7558,7 +7522,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVEFILE_DIRECTORY,
-   "Save all save files to this directory. If not set, will try to save inside the content file's working directory."
+   "Gamesaves are stored in this directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_SAVEFILE_DIRECTORY,
@@ -7570,7 +7534,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_DIRECTORY,
-   "Save states and replays are stored in this directory. If not set, will attempt to save them to the directory where the content is located."
+   "Save states are stored in this directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CACHE_DIRECTORY,
@@ -7771,11 +7735,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_LIST,
-   "Manual Scan"
+   "Create Gamelist"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_LIST,
-   "Configurable scan based on content file names. Does not require content to match the database."
+   "Creates a gamelist based on the game content of the Nintendo 64 databases."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SCAN_ENTRY,
@@ -7797,19 +7761,19 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_DIR,
-   "Content Directory"
+   "Games Directory"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_DIR,
-   "Select a directory to scan for content."
+   "Select a directory to scan for Games."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
-   "System Name"
+   "Nintendo 64 database"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
-   "Specify a 'system name' with which to associate scanned content. Used to name to the generated playlist file and to identify playlist thumbnails."
+   "Specify a database to which found games should be assigned. Used to name the generated gamelist file and identify thumbnails."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_CUSTOM,
@@ -7869,11 +7833,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_OVERWRITE,
-   "Overwrite Existing Playlist"
+   "Overwrite Existing Gamelist"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_OVERWRITE,
-   "When enabled, any existing playlist will be deleted before scanning content. When disabled, existing playlist entries are preserved and only content currently missing from the playlist will be added."
+   "When enabled, any existing gamelist will be deleted before scanning content. When disabled, existing gamelist entries are preserved and only content currently missing from the gamelist will be added."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_VALIDATE_ENTRIES,
@@ -7881,7 +7845,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_VALIDATE_ENTRIES,
-   "When enabled, entries in any existing playlist will be verified before scanning new content. Entries referring to missing content and/or files with invalid extensions will be removed."
+   "When enabled, entries in any existing gamelist will be verified before scanning new content. Entries referring to missing content and/or files with invalid extensions will be removed."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_START,
@@ -8102,7 +8066,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DELETE_ENTRY,
-   "Remove this entry from the playlist."
+   "Remove this entry from the gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_TO_FAVORITES_PLAYLIST,
@@ -9384,7 +9348,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_PLAYLIST_ENTRIES_AVAILABLE,
-   "No Playlist Entries Available"
+   "No Gamelist Entries Available"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_SETTINGS_FOUND,
@@ -9479,67 +9443,67 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_AFRIKAANS,
-   "Afrikaans - Afrikaans"
+   "Afrikaans (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ALBANIAN,
-   "Albanian - Shqip"
+   "Shqip (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ARABIC,
-   "Arabic - اَلْعَرَبِيَّةُ (Restart Required)"
+   "Al-Arabia (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ASTURIAN,
-   "Asturian - Asturianu"
+   "Asturianu (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_AZERBAIJANI,
-   "Azerbaijani - Azərbaycan dili"
+   "Azərbaycan dili (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_BASQUE,
-   "Basque - Euskara"
+   "Euskara (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_BENGALI,
-   "Bengali - বাংলা (Restart Required)"
+   "বাংলা (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_BULGARIAN,
-   "Bulgarian - Български"
+   "Български (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_CATALAN,
-   "Catalan - Català"
+   "Català (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_CHINESE_SIMPLIFIED,
-   "Chinese (Simplified) - 简体中文 (Restart Required)"
+   "体中文 (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_CHINESE_TRADITIONAL,
-   "Chinese (Traditional) - 繁體中文 (Restart Required)"
+   "繁體中文 (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_CROATIAN,
-   "Croatian - Hrvatski"
+   "Hrvatski (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_CZECH,
-   "Czech - Čeština"
+   "Čeština (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_DANISH,
-   "Danish - Dansk"
+   "Dansk (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_DUTCH,
-   "Dutch - Nederlands"
+   "Nederlands (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ENGLISH,
-   "English"
+   "English (United States)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_BRITISH_ENGLISH,
@@ -9547,203 +9511,203 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ESPERANTO,
-   "Esperanto - Esperanto"
+   "Esperanto (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ESTONIAN,
-   "Estonian - Eesti keel"
+   "Eesti keel (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_FILIPINO,
-   "Filipino - Wikang Filipino"
+   "Wikang Filipino (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_FINNISH,
-   "Finnish - Suomi"
+   "Suomi (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_FRENCH,
-   "French - Français"
+   "Français"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_GALICIAN,
-   "Galician - Galego"
+   "Galego (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_GEORGIAN,
-   "Georgian - ქართული ენა (Restart Required)"
+   "ქართული ენა (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_GERMAN,
-   "German - Deutsch"
+   "Deutsch"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_GREEK,
-   "Greek - Ελληνικά"
+   "Ελληνικά (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_GUJARATI,
-   "Gujarati - ગુજરાતી (Restart Required)"
+   "ગુજરાતી (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_HAITIAN_CREOLE,
-   "Haitian Creole - Kreyòl Ayisyen"
+   "Kreyòl Ayisyen (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_HEBREW,
-   "Hebrew - עִבְרִית"
+   "Hebrew (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_HINDI,
-   "Hindi - हिन्दी (Restart Required)"
+   "हिन्दी (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_HUNGARIAN,
-   "Hungarian - Magyar"
+   "Magyar (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ICELANDIC,
-   "Icelandic - Íslenska"
+   "Íslenska (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_INDONESIAN,
-   "Indonesian - Bahasa Indonesia"
+   "Bahasa Indonesia (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_IRISH,
-   "Irish - Gaeilge"
+   "Gaeilge (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ITALIAN,
-   "Italian - Italiano"
+   "Italiano"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_JAPANESE,
-   "Japanese - 日本語"
+   "日本語 (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_KANNADA,
-   "Kannada - ಕನ್ನಡ (Restart Required)"
+   "ಕನ್ನಡ (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_KOREAN,
-   "Korean - 한국어 (Restart Required)"
+   "Korean (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_LATIN,
-   "Latin - Lingua Latina"
+   "Lingua Latina (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_LATVIAN,
-   "Latvian - Latviešu Valoda"
+   "Latviešu Valoda (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_LITHUANIAN,
-   "Lithuanian - Lietuvių kalba"
+   "Lietuvių kalba (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_MACEDONIAN,
-   "Macedonian - македонски"
+   "македонски (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_MALAY,
-   "Malay - Bahasa Melayu"
+   "Bahasa Melayu (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_MALTESE,
-   "Maltese - Malti"
+   "Malti (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_NORWEGIAN,
-   "Norwegian - Norsk"
+   "Norsk (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_PERSIAN,
-   "Persian - فارسی (Restart Required)"
+   "Farsi (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_POLISH,
-   "Polish - Polski"
+   "Polski (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_PORTUGUESE_BRAZIL,
-   "Portuguese (Brazil) - Português (Brasil)"
+   "Português - Brasil (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_PORTUGUESE_PORTUGAL,
-   "Portuguese (Portugal) - Português (Portugal)"
+   "Português (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_ROMANIAN,
-   "Romanian - Limba Română"
+   "Limba Română (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_RUSSIAN,
-   "Russian - Русский язык"
+   "Русский язык (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_SERBIAN,
-   "Serbian - Cрпски / Srpski"
+   "Cрпски / Srpski (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_SLOVAK,
-   "Slovak - Slovenčina"
+   "Slovenčina (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_SLOVENIAN,
-   "Slovenian - Slovenščina"
+   "Slovenščina (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_SPANISH,
-   "Spanish - Español"
+   "Español"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_SWAHILI,
-   "Swahili - KiSwahili"
+   "KiSwahili (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_SWEDISH,
-   "Swedish - Svenska"
+   "Svenska (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_TAMIL,
-   "Tamil - தமிழ் (Restart Required)"
+   "தமிழ் (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_TELUGU,
-   "Telugu - తెలుగు (Restart Required)"
+   "తెలుగు (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_THAI,
-   "Thai - ภาษาไทย (Restart Required)"
+   "ภาษาไทย (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_TURKISH,
-   "Turkish - Türkçe"
+   "Türkçe (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_UKRAINIAN,
-   "Ukrainian - Українська мова"
+   "Українська мова (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_URDU,
-   "Urdu - اُردُو (Restart Required)"
+   "اُردُو (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_CATALAN_VALENCIA,
-   "Catalan (Valencian) - Català (Valencià)"
+   "Català Valencià (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_VIETNAMESE,
-   "Vietnamese - Tiếng Việt"
+   "Tieng Viet (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_WELSH,
-   "Welsh - Cymraeg"
+   "Cymraeg (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LANG_YIDDISH,
-   "Yiddish - ײִדיש"
+   "ײִדיש (not translated)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LNG_COMPLETION_95_PLUS,
@@ -9827,7 +9791,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_ENTRY_REMOVE_ENABLE_ALL,
-   "All Playlists"
+   "All Gamelists"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_ENTRY_REMOVE_ENABLE_NONE,
@@ -10287,11 +10251,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_USE_CONTENT_DIR,
-   "<Content Directory>"
+   "Select the appropriate Nintendo 64 database to create your Gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_USE_CUSTOM,
-   "<Custom>"
+   "(if no databases are displayed, they must be downloaded in the online updater.)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME_DETECT,
@@ -11445,15 +11409,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MATERIALUI_MENU_THUMBNAIL_VIEW_PORTRAIT,
-   "Specify playlist thumbnail view mode when using portrait display orientations."
+   "Specify gamelist thumbnail view mode when using portrait display orientations."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_MENU_THUMBNAIL_VIEW_LANDSCAPE,
-   "Landscape Thumbnail View"
+   "Thumbnail View"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MATERIALUI_MENU_THUMBNAIL_VIEW_LANDSCAPE,
-   "Specify playlist thumbnail view mode when using landscape display orientations."
+   "Specify gamelist thumbnail view mode."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_DUAL_THUMBNAIL_LIST_VIEW_ENABLE,
@@ -11461,7 +11425,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MATERIALUI_DUAL_THUMBNAIL_LIST_VIEW_ENABLE,
-   "Displays a secondary thumbnail when using 'List'-type playlist thumbnail view modes. This setting only applies when the screen has sufficient physical width to show two thumbnails."
+   "Displays a secondary thumbnail when using 'List'-type playlist thumbnail view modes."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_THUMBNAIL_BACKGROUND_ENABLE,
@@ -12290,7 +12254,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_PLAYLISTS,
-   "No playlists."
+   "No gamelists."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_BT_CONNECTED,
