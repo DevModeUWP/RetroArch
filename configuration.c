@@ -1799,7 +1799,7 @@ static struct config_bool_setting *populate_settings_bool(
    SETTING_BOOL("menu_pointer_enable",           &settings->bools.menu_pointer_enable, false, DEFAULT_POINTER_ENABLE, false);
    SETTING_BOOL("menu_timedate_enable",          &settings->bools.menu_timedate_enable, false, DEFAULT_MENU_TIMEDATE_ENABLE, false);
    SETTING_BOOL("menu_battery_level_enable",     &settings->bools.menu_battery_level_enable, false, false, false);
-   SETTING_BOOL("menu_core_enable",              &settings->bools.menu_core_enable, true, true, false);
+   SETTING_BOOL("menu_core_enable",              &settings->bools.menu_core_enable, false, false, false);
    SETTING_BOOL("menu_show_sublabels",           &settings->bools.menu_show_sublabels, false, DEFAULT_MENU_SHOW_SUBLABELS, false);
    SETTING_BOOL("menu_dynamic_wallpaper_enable", &settings->bools.menu_dynamic_wallpaper_enable, true, DEFAULT_MENU_DYNAMIC_WALLPAPER_ENABLE, false);
    SETTING_BOOL("menu_ticker_smooth",            &settings->bools.menu_ticker_smooth, true, DEFAULT_MENU_TICKER_SMOOTH, false);
@@ -1834,22 +1834,22 @@ static struct config_bool_setting *populate_settings_bool(
    SETTING_BOOL("quick_menu_show_resume_content",             &settings->bools.quick_menu_show_resume_content, true, DEFAULT_QUICK_MENU_SHOW_RESUME_CONTENT, false);
    SETTING_BOOL("quick_menu_show_restart_content",            &settings->bools.quick_menu_show_restart_content, true, DEFAULT_QUICK_MENU_SHOW_RESTART_CONTENT, false);
    SETTING_BOOL("quick_menu_show_close_content",              &settings->bools.quick_menu_show_close_content, false, DEFAULT_QUICK_MENU_SHOW_CLOSE_CONTENT, false);
-   SETTING_BOOL("quick_menu_show_savestate_submenu",          &settings->bools.quick_menu_show_savestate_submenu, true, DEFAULT_QUICK_MENU_SHOW_SAVESTATE_SUBMENU, false);
-   SETTING_BOOL("quick_menu_show_save_load_state",            &settings->bools.quick_menu_show_save_load_state, true, DEFAULT_QUICK_MENU_SHOW_SAVE_LOAD_STATE, false);
+   SETTING_BOOL("quick_menu_show_savestate_submenu",          &settings->bools.quick_menu_show_savestate_submenu, true, DEFAULT_QUICK_MENU_SHOW_SAVESTATE_SUBMENU, true);
+   SETTING_BOOL("quick_menu_show_save_load_state",            &settings->bools.quick_menu_show_save_load_state, true, DEFAULT_QUICK_MENU_SHOW_SAVE_LOAD_STATE, true);
    SETTING_BOOL("quick_menu_show_replay",            		  &settings->bools.quick_menu_show_replay, false, DEFAULT_QUICK_MENU_SHOW_REPLAY, false);
    SETTING_BOOL("quick_menu_show_take_screenshot",            &settings->bools.quick_menu_show_take_screenshot, false, DEFAULT_QUICK_MENU_SHOW_TAKE_SCREENSHOT, false);
-   SETTING_BOOL("quick_menu_show_undo_save_load_state",       &settings->bools.quick_menu_show_undo_save_load_state, true, DEFAULT_QUICK_MENU_SHOW_UNDO_SAVE_LOAD_STATE, false);
+   SETTING_BOOL("quick_menu_show_undo_save_load_state",       &settings->bools.quick_menu_show_undo_save_load_state, true, DEFAULT_QUICK_MENU_SHOW_UNDO_SAVE_LOAD_STATE, true);
    SETTING_BOOL("quick_menu_show_add_to_favorites",           &settings->bools.quick_menu_show_add_to_favorites, false, DEFAULT_QUICK_MENU_SHOW_ADD_TO_FAVORITES, false);
    SETTING_BOOL("quick_menu_show_start_recording",            &settings->bools.quick_menu_show_start_recording, false, DEFAULT_QUICK_MENU_SHOW_START_RECORDING, false);
    SETTING_BOOL("quick_menu_show_start_streaming",            &settings->bools.quick_menu_show_start_streaming, false, DEFAULT_QUICK_MENU_SHOW_START_STREAMING, false);
    SETTING_BOOL("quick_menu_show_set_core_association",       &settings->bools.quick_menu_show_set_core_association, false, DEFAULT_QUICK_MENU_SHOW_SET_CORE_ASSOCIATION, false);
    SETTING_BOOL("quick_menu_show_reset_core_association",     &settings->bools.quick_menu_show_reset_core_association, false, DEFAULT_QUICK_MENU_SHOW_RESET_CORE_ASSOCIATION, false);
    SETTING_BOOL("quick_menu_show_options",                    &settings->bools.quick_menu_show_options, true, DEFAULT_QUICK_MENU_SHOW_CORE_OPTIONS, false);
-   SETTING_BOOL("quick_menu_show_core_options_flush",         &settings->bools.quick_menu_show_core_options_flush, true, DEFAULT_QUICK_MENU_SHOW_CORE_OPTIONS_FLUSH, false);
+   SETTING_BOOL("quick_menu_show_core_options_flush",         &settings->bools.quick_menu_show_core_options_flush, true, DEFAULT_QUICK_MENU_SHOW_CORE_OPTIONS_FLUSH, true);
    SETTING_BOOL("quick_menu_show_controls",                   &settings->bools.quick_menu_show_controls, true, DEFAULT_QUICK_MENU_SHOW_CONTROLS, false);
    SETTING_BOOL("quick_menu_show_cheats",                     &settings->bools.quick_menu_show_cheats, true, DEFAULT_QUICK_MENU_SHOW_CHEATS, false);
    SETTING_BOOL("quick_menu_show_shaders",                    &settings->bools.quick_menu_show_shaders, false, DEFAULT_QUICK_MENU_SHOW_SHADERS, false);
-   SETTING_BOOL("quick_menu_show_save_core_overrides",        &settings->bools.quick_menu_show_save_core_overrides, false, DEFAULT_QUICK_MENU_SHOW_SAVE_CORE_OVERRIDES, false);
+   SETTING_BOOL("quick_menu_show_save_core_overrides",        &settings->bools.quick_menu_show_save_core_overrides, true, DEFAULT_QUICK_MENU_SHOW_SAVE_CORE_OVERRIDES, true);
    SETTING_BOOL("quick_menu_show_save_game_overrides",        &settings->bools.quick_menu_show_save_game_overrides, true, DEFAULT_QUICK_MENU_SHOW_SAVE_GAME_OVERRIDES, false);
    SETTING_BOOL("quick_menu_show_save_content_dir_overrides", &settings->bools.quick_menu_show_save_content_dir_overrides, false, DEFAULT_QUICK_MENU_SHOW_SAVE_CONTENT_DIR_OVERRIDES, false);
    SETTING_BOOL("quick_menu_show_information",                &settings->bools.quick_menu_show_information, true, DEFAULT_QUICK_MENU_SHOW_INFORMATION, false);
@@ -1898,7 +1898,7 @@ static struct config_bool_setting *populate_settings_bool(
    SETTING_BOOL("menu_show_restart_retroarch",   &settings->bools.menu_show_restart_retroarch, false, DEFAULT_MENU_SHOW_RESTART, false);
    SETTING_BOOL("menu_show_reboot",              &settings->bools.menu_show_reboot, false, DEFAULT_MENU_SHOW_REBOOT, false);
    SETTING_BOOL("menu_show_shutdown",            &settings->bools.menu_show_shutdown, false, DEFAULT_MENU_SHOW_SHUTDOWN, false);
-   SETTING_BOOL("menu_show_online_updater",      &settings->bools.menu_show_online_updater, true, DEFAULT_MENU_SHOW_ONLINE_UPDATER, false);
+   SETTING_BOOL("menu_show_online_updater",      &settings->bools.menu_show_online_updater, true, DEFAULT_MENU_SHOW_ONLINE_UPDATER, true);
    SETTING_BOOL("menu_show_core_updater",        &settings->bools.menu_show_core_updater, false, DEFAULT_MENU_SHOW_CORE_UPDATER, false);
    SETTING_BOOL("menu_show_legacy_thumbnail_updater", &settings->bools.menu_show_legacy_thumbnail_updater, true, DEFAULT_MENU_SHOW_LEGACY_THUMBNAIL_UPDATER, true);
 #ifdef HAVE_MIST
@@ -1942,12 +1942,12 @@ static struct config_bool_setting *populate_settings_bool(
 #ifdef HAVE_CHEEVOS
    SETTING_BOOL("cheevos_enable",               &settings->bools.cheevos_enable, true, DEFAULT_CHEEVOS_ENABLE, false);
    SETTING_BOOL("cheevos_test_unofficial",      &settings->bools.cheevos_test_unofficial, true, false, false);
-   SETTING_BOOL("cheevos_hardcore_mode_enable", &settings->bools.cheevos_hardcore_mode_enable, true, true, false);
+   SETTING_BOOL("cheevos_hardcore_mode_enable", &settings->bools.cheevos_hardcore_mode_enable, false, false, false);
    SETTING_BOOL("cheevos_challenge_indicators", &settings->bools.cheevos_challenge_indicators, true, true, false);
    SETTING_BOOL("cheevos_richpresence_enable",  &settings->bools.cheevos_richpresence_enable, true, true, false);
    SETTING_BOOL("cheevos_unlock_sound_enable",  &settings->bools.cheevos_unlock_sound_enable, true, false, false);
    SETTING_BOOL("cheevos_verbose_enable",       &settings->bools.cheevos_verbose_enable, true, true, false);
-   SETTING_BOOL("cheevos_auto_screenshot",      &settings->bools.cheevos_auto_screenshot, true, false, false);
+   SETTING_BOOL("cheevos_auto_screenshot",      &settings->bools.cheevos_auto_screenshot, false, false, false);
    SETTING_BOOL("cheevos_badges_enable",        &settings->bools.cheevos_badges_enable, true, false, false);
    SETTING_BOOL("cheevos_start_active",         &settings->bools.cheevos_start_active, true, false, false);
    SETTING_BOOL("cheevos_appearance_padding_auto", &settings->bools.cheevos_appearance_padding_auto, true, DEFAULT_CHEEVOS_APPEARANCE_PADDING_AUTO, false);

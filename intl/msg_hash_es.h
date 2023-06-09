@@ -41,11 +41,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_CONTENT_LIST,
-   "Importar contenido"
+   "Importar juegos"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ADD_CONTENT_LIST,
-   "Busca contenidos para crear y actualizar las listas de reproducción."
+   "Crear y actualizar listas de juegos."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ONLINE_UPDATER,
@@ -53,7 +53,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Descarga complementos, componentes y contenidos."
+   "Descargar los componentes necesarios y las imágenes de vista previa."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_QUIT_RETROARCH,
@@ -68,39 +68,39 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_THUMBNAILS_UPDATER_LIST,
-   "Actualizador de miniaturas"
+   "Descargar el paquete de miniaturas"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_THUMBNAILS_UPDATER_LIST,
-   "Descarga el paquete completo de miniaturas para el sistema seleccionado."
+   "Descarga un paquete de vista previa completo de todos los juegos de Nintendo 64."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PL_THUMBNAILS_UPDATER_LIST,
-   "Actualizar miniaturas de listas"
+   "Descargar miniaturas de la lista de juegos"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PL_THUMBNAILS_UPDATER_LIST,
-   "Descarga las miniaturas de los elementos de la lista de reproducción seleccionada."
+   "Descargar miniaturas de los juegos de la lista de juegos seleccionados."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_CORE_INFO_FILES,
-   "Actualizar archivos de información de núcleos"
+   "Descargar archivos léame del emulador (obligatorio)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_ASSETS,
-   "Actualizar recursos"
+   "Descargar archivos de menú adicionales (obligatorio)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_AUTOCONFIG_PROFILES,
-   "Actualizar perfiles de mandos"
+   "Descargar perfiles de controlador (obligatorio)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_CHEATS,
-   "Actualizar trucos"
+   "Descargar trucos (opcional)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
-   "Actualizar bases de datos"
+   "Descargar bases de datos de Nintendo 64 (requerido)"
    )
 
 /* Main Menu > Information > Database Manager */
@@ -3457,19 +3457,19 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_DEFAULT_CORE,
-   "Núcleo predeterminado"
+   "Asignación del emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_DEFAULT_CORE,
-   "Especifica el núcleo a utilizar cuando se inicie un contenido de una lista de reproducción que no tenga una asociación de núcleo ya existente."
+   "Seleccione el emulador que se utilizará al iniciar los juegos."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_RESET_CORES,
-   "Reiniciar asociaciones de núcleo"
+   "Restablecer la asignación del emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_MANAGER_RESET_CORES,
-   "Elimina las asociaciones de núcleo en todos los elementos de la lista de reproducción."
+   "Elimina la asignación de emulador existente."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_MANAGER_LABEL_DISPLAY_MODE,
@@ -4070,15 +4070,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_LIST,
-   "Crear lista de reproducción"
+   "Crear lista de reproducción para Nintendo 64 / Nintendo 64DD"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_LIST,
-   "Crea una lista de reproducción basada en el contenido de los juegos de las bases de datos de Nintendo 64."
+   "Se admiten los siguientes formatos:		.n64 .v64 .z64 (Nintendo 64)	y	.ndd (Nintendo 64DD)"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SCAN_ENTRY,
-   "Buscar"
+   "Cachear"
    )
 
 /* Import Content > Scan File */
@@ -4100,7 +4100,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_DIR,
-   "Selecciona un directorio donde buscar contenidos."
+   "Seleccione un directorio en el que buscar juegos. La lista de reproducción recibe el nombre del directorio."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
@@ -4108,7 +4108,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_SYSTEM_NAME,
-   "Especifique una base de datos a la que asociar los juegos encontrados. Se usa para nombrar el archivo de lista de reproducción generado e identificar las previsualizaciones de la lista de reproducción.."
+   "Especifique una base de datos para asignar un nombre a la lista de juegos generada y para poder asignar imágenes de vista previa."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_CUSTOM,
@@ -4120,11 +4120,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME,
-   "Núcleo predeterminado"
+   "Emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_CORE_NAME,
-   "Selecciona el núcleo asignado de forma predeterminada para iniciar los contenidos buscados."
+   "Seleccione un emulador para esta lista de reproducción."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_FILE_EXTS,
@@ -4168,27 +4168,27 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_OVERWRITE,
-   "Sobrescribir lista existente"
+   "Sobrescribir lista de reproducción existente"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_OVERWRITE,
-   "Si se activa esta opción, se eliminará cualquier lista de reproducción existente antes de buscar contenidos. Al desactivarla, se preservarán los elementos ya existentes en las listas de reproducción y solo se añadirán aquellos contenidos que no se encuentren."
+   "Si esta opción está activada, se sobrescribirá la lista de reproducción existente."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_VALIDATE_ENTRIES,
-   "Validar elementos ya existentes"
+   "Actualizar lista de reproducción existente"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_VALIDATE_ENTRIES,
-   "Al activar esta opción, se comprobarán los elementos de todas las listas de reproducción existentes antes de buscar contenidos nuevos. Todo elemento que apunte a un contenido desaparecido o a archivos con extensiones no válidas será eliminado."
+   "Si esta opción está activada, se revisará la lista de reproducción existente y se añadirá cualquier entrada de juego que falte o se haya modificado."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_START,
-   "Comenzar búsqueda"
+   "Crear lista de reproducción"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_MANUAL_CONTENT_SCAN_START,
-   "Busca el contenido seleccionado."
+   "Busca juegos de Nintendo 64 en el directorio proporcionado y crea una lista de reproducción."
    )
 
 /* Explore tab */
@@ -4381,11 +4381,11 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RUN,
-   "Iniciar"
+   "Iniciar juego"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RUN,
-   "Ejecuta el contenido."
+   "Inicia el juego de Nintendo 64 seleccionado."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RENAME_ENTRY,
@@ -4393,15 +4393,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RENAME_ENTRY,
-   "Cambia el título de este elemento."
+   "Renombrar el título de este juego."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DELETE_ENTRY,
-   "Eliminar"
+   "Eliminar de la lista de reproducción"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DELETE_ENTRY,
-   "Elimina esta entrada de la lista de reproducción."
+   "Elimina este juego de la lista de reproducción."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_TO_FAVORITES_PLAYLIST,
@@ -4413,19 +4413,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SET_CORE_ASSOCIATION,
-   "Asignar asociación de núcleo"
+   "Asignar emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SET_CORE_ASSOCIATION,
-   "Establece el núcleo asociado a este contenido."
+   "Especifica el emulador asociado a este juego."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RESET_CORE_ASSOCIATION,
-   "Restablecer asociación de núcleo"
+   "Restablecer la asignación del emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESET_CORE_ASSOCIATION,
-   "Reinicia el núcleo asociado a este contenido."
+   "Reinicia el emulador asociado a este juego."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INFORMATION,
@@ -4433,7 +4433,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INFORMATION,
-   "Muestra más información sobre el contenido."
+   "Visualizza informazioni su questo gioco."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DOWNLOAD_PL_ENTRY_THUMBNAILS,
@@ -4448,7 +4448,7 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DETECT_CORE_LIST_OK_CURRENT_CORE,
-   "Núcleo actual"
+   "Emulador actual"
    )
 
 /* Playlist Item > Information */
@@ -4490,7 +4490,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESUME_CONTENT,
-   "Reanuda el contenido ejecutado y abandona el menú rápido."
+   "Salir del menú contextual y continuar con el juego actual."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RESTART_CONTENT,
@@ -4498,7 +4498,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESTART_CONTENT,
-   "Reinicia el contenido desde el principio."
+   "Reinicia el juego desde el principio."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CLOSE_CONTENT,
@@ -4638,11 +4638,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_OPTIONS,
-   "Opciones del núcleo"
+   "Preferencias del emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CORE_OPTIONS,
-   "Cambia las opciones del contenido cargado."
+   "Cambiar la configuración del juego actual."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_INPUT_REMAPPING_OPTIONS,
@@ -4650,7 +4650,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CORE_INPUT_REMAPPING_OPTIONS,
-   "Cambia los controles del contenido cargado."
+   "Cambiar el control del juego actual."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_CHEAT_OPTIONS,
@@ -4693,22 +4693,22 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_OPTION_OVERRIDE_LIST,
-   "Administrar opciones del núcleo"
+   "Administrar opciones del emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CORE_OPTION_OVERRIDE_LIST,
-   "Guarda o elimina las personalizaciones de configuración para el contenido actual."
+   "Guarda o borra la configuración de sobrescritura del juego actual."
    )
 
 /* Quick Menu > Options > Manage Core Options */
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_GAME_SPECIFIC_CORE_OPTIONS_CREATE,
-   "Guardar opciones del juego"
+   "Guardar las preferencias del juego"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_GAME_SPECIFIC_CORE_OPTIONS_REMOVE,
-   "Eliminar opciones del juego"
+   "Borrar las preferencias del juego"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_FOLDER_SPECIFIC_CORE_OPTIONS_CREATE,
@@ -4732,7 +4732,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CORE_OPTIONS_RESET,
-   "Cambia todas las opciones del núcleo a su configuración predeterminada."
+   "Ripristina tutte le impostazioni dell' emulatore ai valori predefiniti."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_OPTIONS_FLUSH,
@@ -4761,7 +4761,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_REMAP_FILE_MANAGER_LIST,
-   "Carga, guarda o elimina los archivos de reasignaciones de entrada del contenido actual."
+   "Cargar, guardar o eliminar archivos de asignación de teclas para el juego actual."
    )
 
 /* Quick Menu > Controls > Manage Remap Files */
@@ -4780,11 +4780,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_REMAP_FILE_SAVE_CORE,
-   "Guardar reasignación para el núcleo"
+   "Guardar el archivo de asignación de teclas del emulador"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_REMAP_FILE_REMOVE_CORE,
-   "Eliminar reasignación del núcleo"
+   "Eliminar el archivo de asignación de teclas del emulador"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_REMAP_FILE_SAVE_CONTENT_DIR,
@@ -4796,11 +4796,11 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_REMAP_FILE_SAVE_GAME,
-   "Guardar reasignación del juego"
+   "Guardar archivo de asignación de teclas de juego"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_REMAP_FILE_REMOVE_GAME,
-   "Eliminar reasignación del juego"
+   "Borrar archivo de asignación de teclas de juego"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_REMAP_FILE_RESET,
@@ -5446,19 +5446,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SAVE_CURRENT_CONFIG_OVERRIDE_CORE,
-   "Guardar personalizaciones del núcleo"
+   "Guardar sobrescrituras del emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVE_CURRENT_CONFIG_OVERRIDE_CORE,
-   "Guarda un archivo de configuración personalizado que se aplicará a todos los contenidos cargados con este núcleo y que tendrá prioridad sobre la configuración principal."
+   "Guardar una configuración de sobrescritura que se aplica a cada juego cargado con este emulador. Tiene prioridad sobre la configuración principal."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_REMOVE_CURRENT_CONFIG_OVERRIDE_CORE,
-   "Eliminar personalizaciones del núcleo"
+   "Eliminar sobrescrituras del emulador"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_REMOVE_CURRENT_CONFIG_OVERRIDE_CORE,
-   "Elimina el archivo de configuraciones personalizadas que se aplicará a todos los contenidos que se carguen con este núcleo."
+   "Borrar el archivo de configuración de sobrescritura de todos los juegos cargados con este emulador."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SAVE_CURRENT_CONFIG_OVERRIDE_CONTENT_DIR,
@@ -5478,19 +5478,19 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SAVE_CURRENT_CONFIG_OVERRIDE_GAME,
-   "Guardar personalizaciones del juego"
+   "Guardar sobrescritos de juego"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVE_CURRENT_CONFIG_OVERRIDE_GAME,
-   "Guarda un archivo de configuración personalizada que se aplicará solo al contenido actual. Este archivo tendrá prioridad sobre la configuración principal."
+   "Guardar una configuración de sobreescritura que solo es válida para el juego actual. Tiene prioridad sobre la configuración principal."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_REMOVE_CURRENT_CONFIG_OVERRIDE_GAME,
-   "Eliminar personalizaciones de juegos"
+   "Eliminar sobrescritos de juego"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_REMOVE_CURRENT_CONFIG_OVERRIDE_GAME,
-   "Elimina el archivo de configuraciones personalizadas que se aplicará únicamente al contenido actual."
+   "Elimina el archivo de configuración de sobrescritura que solo es válido para el juego actual."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_OVERRIDE_UNLOAD,
@@ -5579,15 +5579,15 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_CORES_AVAILABLE,
-   "No hay núcleos disponibles"
+   "No hay emulador disponible."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_CORE_OPTIONS_AVAILABLE,
-   "No hay opciones del núcleo disponibles"
+   "No hay opciones de emulador disponibles"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_CORE_INFORMATION_AVAILABLE,
-   "No hay información del núcleo disponible"
+   "No hay información del emulador disponible"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_CORE_BACKUPS_AVAILABLE,
@@ -5619,7 +5619,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_PLAYLIST_ENTRIES_AVAILABLE,
-   "No hay elementos disponibles en la lista de reproducción"
+   "No hay entradas de lista de reproducción disponibles"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_SETTINGS_FOUND,
@@ -5635,7 +5635,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_CORE,
-   "Sin núcleo"
+   "Sin emulador"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SEARCH,
@@ -7311,7 +7311,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_THUMBNAIL_VIEW_LANDSCAPE_DESKTOP,
-   "Escritorio"
+   "Vista en dos partes"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MATERIALUI_LANDSCAPE_LAYOUT_OPTIMIZATION_DISABLED,
@@ -7997,7 +7997,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SUPPORTED_CORES,
-   "Núcleos sugeridos"
+   "Emuladores propuestos"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UNABLE_TO_READ_COMPRESSED_FILE,
@@ -8451,7 +8451,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_BASIC_MENU_ENUM_CONTROLS_QUIT,
-   "Cerrar RetroArch"
+   "Cerrar"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_BASIC_MENU_ENUM_CONTROLS_SCROLL_UP,
@@ -9734,7 +9734,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MSG_PRESS_AGAIN_TO_QUIT,
-   "Vuelve a pulsar la tecla para cerrar RetroArch..."
+   "Pulse de nuevo para salir..."
    )
 MSG_HASH(
    MSG_TO,
