@@ -346,12 +346,20 @@ MSG_HASH(
    "Cheats Downloader (optional)"
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
-   "Nintendo 64 Database Downloader (required)"
+   MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
+   "Configurations Downloader"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT,
+   "Download game configurations and input remaps for Nintendo 64 games."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS,
-   "Update Overlays"
+   "Configurations Downloader"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS,
+   "Download game configurations and input remaps for Nintendo 64 games."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_GLSL_SHADERS,
@@ -10259,7 +10267,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME_DETECT,
-   "<Unspecified>"
+   "<nothing selected>"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LEFT_ANALOG,

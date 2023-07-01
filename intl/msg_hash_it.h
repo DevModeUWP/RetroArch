@@ -338,14 +338,6 @@ MSG_HASH(
    "Descargar miniaturas de los juegos de la lista de juegos seleccionados."
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
-   "Scaricatore di contenuti"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT,
-   "Scarica contenuti gratuiti per il nucleo selezionato."
-   )
-MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_SYSTEM_FILES,
    "Download File Di Sistema del Core"
    )
@@ -370,12 +362,20 @@ MSG_HASH(
    "Scarica trucchi (opzionale)"
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
-   "Scarica i database Nintendo 64 (richiesto)"
+   MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
+   "Scarica le configurazioni"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT,
+   "Scarica le configurazioni di gioco e i file di mappatura dei pulsanti di input per i giochi Nintendo 64."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS,
-   "Aggiorna le coperture"
+   "Scarica le configurazioni"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS,
+   "Scarica le configurazioni di gioco e i file di mappatura dei pulsanti di input per i giochi Nintendo 64."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_GLSL_SHADERS,
@@ -9603,7 +9603,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME_DETECT,
-   "<Non specificato>"
+   "<niente selezionato>"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LEFT_ANALOG,

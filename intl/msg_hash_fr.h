@@ -342,14 +342,6 @@ MSG_HASH(
    "Télécharger les aperçus des jeux dans la liste de jeux sélectionnée."
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
-   "Téléchargement de contenu"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT,
-   "Télécharger du contenu gratuit pour le cœur sélectionné."
-   )
-MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_SYSTEM_FILES,
    "Téléchargement des fichiers système de cœurs"
    )
@@ -374,12 +366,20 @@ MSG_HASH(
    "Télécharger Cheats (facultatif)"
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
-   "Télécharger les bases de données système (requis)"
+   MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
+   "Télécharger les configurations"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT,
+   "Téléchargez les configurations de jeu et les fichiers de mappage des boutons de saisie pour les jeux Nintendo 64."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS,
-   "Mettre à jour les surimpressions"
+   "Télécharger les configurations"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS,
+   "Téléchargez les configurations de jeu et les fichiers de mappage des boutons de saisie pour les jeux Nintendo 64."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_GLSL_SHADERS,
@@ -9663,7 +9663,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME_DETECT,
-   "<Non spécifié>"
+   "<rien sélectionné>"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LEFT_ANALOG,

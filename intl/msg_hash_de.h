@@ -67,14 +67,6 @@ MSG_HASH(
 /* Main Menu > Online Updater */
 
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_THUMBNAILS_UPDATER_LIST,
-   "Vorschaubildpaket herunterladen"
-   )
-MSG_HASH(
-   MENU_ENUM_SUBLABEL_THUMBNAILS_UPDATER_LIST,
-   "Ein komplettes Vorschaubilderpaket aller Nintendo 64 Spiele herunterladen."
-   )
-MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PL_THUMBNAILS_UPDATER_LIST,
    "Vorschaubilder der Spieleliste herunterladen"
    )
@@ -83,24 +75,12 @@ MSG_HASH(
    "Vorschaubilder für Spiele in der ausgewählten Spieleliste herunterladen."
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_CORE_INFO_FILES,
-   "Emulator-Infodateien herunterladen (erforderlich)"
+   MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS,
+   "Konfigurationen herunterladen"
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_ASSETS,
-   "Zusätzliche Menü-Dateien herunterladen (erforderlich)"
-   )
-MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_AUTOCONFIG_PROFILES,
-   "Controller-Profile herunterladen (erforderlich)"
-   )
-MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_CHEATS,
-   "Cheats herunterladen (optional)"
-   )
-MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
-   "Datenbanken herunterladen (erforderlich)"
+   MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS,
+   "Spiele-Konfigurationen und Eingabe-Tastenzuordnungsdateien für Nintendo 64-Spiele herunterladen."
    )
 
 /* Settings */
@@ -1935,15 +1915,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_USE_CONTENT_DIR,
-   "Wähle die passende Nintendo 64-Datenbank aus um deine Spieleliste zu erstellen."
+   ""
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_SYSTEM_NAME_USE_CUSTOM,
-   "(wenn keine Datenbanken angezeigt werden müssen diese im Online Updater heruntergeladen werden.)"
+   ""
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME_DETECT,
-   "<Nicht spezifiziert>"
+   "<nichts ausgewählt>"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LEFT_ANALOG,

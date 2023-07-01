@@ -99,8 +99,20 @@ MSG_HASH(
    "Descargar trucos (opcional)"
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
-   "Descargar bases de datos de Nintendo 64 (requerido)"
+   MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE_CONTENT,
+   "Descargar configuraciones"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT,
+   "Descarga configuraciones de juegos y archivos de asignación de botones de entrada para juegos de Nintendo 64."
+   )
+MSG_HASH(
+   MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS,
+   "Descargar configuraciones"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS,
+   "Descarga configuraciones de juegos y archivos de asignación de botones de entrada para juegos de Nintendo 64."
    )
 
 /* Main Menu > Information > Database Manager */
@@ -6138,7 +6150,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_MANUAL_CONTENT_SCAN_CORE_NAME_DETECT,
-   "<Sin especificar>"
+   "<Nada seleccionado>"
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LEFT_ANALOG,
