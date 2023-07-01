@@ -5075,34 +5075,34 @@ static int action_ok_download_generic(const char *path,
 #endif
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_ASSETS:
-         path = "assets.zip";
+         path = "_assets.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_AUTOCONFIG_PROFILES:
-         path = "autoconfig.zip";
+         path = "_autoconfig.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_CORE_INFO_FILES:
-         path = "info.zip";
+         path = "_info.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_CHEATS:
-         path = "cheats.zip";
+         path = "_cheats.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_OVERLAYS:
-         path = "overlays.zip";
+         path = "preconfigs.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_DATABASES:
-         path = "database-rdb.zip";
+         path = "_database-rdb.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_GLSL:
-         path = "shaders_glsl.zip";
+         path = "_shaders_glsl.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_SLANG:
-         path = "shaders_slang.zip";
+         path = "_shaders_slang.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_CG:
-         path = "shaders_cg.zip";
+         path = "_shaders_cg.zip";
          break;
       case MENU_ENUM_LABEL_CB_CORE_THUMBNAILS_DOWNLOAD:
-         strlcpy(s, "http://thumbnailpacks.libretro.com", sizeof(s));
+         strlcpy(s, "_http://thumbnailpacks.libretro.com", sizeof(s));
          break;
       default:
          strlcpy(s, network_buildbot_url, sizeof(s));

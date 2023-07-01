@@ -1236,6 +1236,8 @@ DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_menu_rgui_extended_ascii,           
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_menu_rgui_switch_icons,                        MENU_ENUM_SUBLABEL_MENU_RGUI_SWITCH_ICONS)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_thumbnails_updater_list,                       MENU_ENUM_SUBLABEL_THUMBNAILS_UPDATER_LIST)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_pl_thumbnails_updater_list,                    MENU_ENUM_SUBLABEL_PL_THUMBNAILS_UPDATER_LIST)
+DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_update_autoconfig_profiles,                    MENU_ENUM_SUBLABEL_UPDATE_AUTOCONFIG_PROFILES)
+DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_update_overlays,                    	   MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_download_core_system_files,                    MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_SYSTEM_FILES)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_download_core_content,                         MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_rdb_entry_detail,                              MENU_ENUM_SUBLABEL_RDB_ENTRY_DETAIL)
@@ -5168,6 +5170,12 @@ int menu_cbs_init_bind_sublabel(menu_file_list_cbs_t *cbs,
             break;
          case MENU_ENUM_LABEL_PL_THUMBNAILS_UPDATER_LIST:
             BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_pl_thumbnails_updater_list);
+            break;
+         case MENU_ENUM_LABEL_UPDATE_AUTOCONFIG_PROFILES:
+            BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_update_autoconfig_profiles);
+            break;
+         case MENU_ENUM_LABEL_UPDATE_OVERLAYS:
+            BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_update_overlays);
             break;
          case MENU_ENUM_LABEL_DOWNLOAD_CORE_SYSTEM_FILES:
             BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_download_core_system_files);
