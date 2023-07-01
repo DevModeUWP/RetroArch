@@ -82,7 +82,7 @@ static scan_settings_t scan_settings = {
    "",                                          /* file_exts_custom */
    "",                                          /* dat_file_path */
    true,                                        /* search_recursively */
-   false,                                       /* search_archives */
+   true,                                        /* search_archives */
    false,                                       /* filter_dat_content */
    false,                                       /* overwrite_playlist */
    false                                        /* validate_entries */
