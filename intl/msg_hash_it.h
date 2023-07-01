@@ -147,7 +147,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_ONLINE_UPDATER,
-   "Scarica i componenti necessari e le anteprime."
+   "Scarica miniature e configurazioni."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_NETPLAY,
