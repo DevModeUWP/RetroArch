@@ -647,11 +647,11 @@ MSG_HASH(
 
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SYSTEM_DIRECTORY,
-   "Texturenpakete"
+   "Texturenpakete und Nintendo 64DD BIOS-Datei (data)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "Texturenpakete werden in diesem Verzeichnis gespeichert."
+   "Texturenpakete (.htc/.hts) werden im /Mupen64plus/cache/-Verzeichnis und das 64DD BIOS (64DD_IPL.bin) /-Verzeichnis gespeichert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASSETS_DIRECTORY,
@@ -663,7 +663,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_THUMBNAILS_DIRECTORY,
-   "Vorschaubilder"
+   "Vorschaubilder (thumbnails)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_THUMBNAILS_DIRECTORY,
@@ -703,7 +703,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INPUT_REMAPPING_DIRECTORY,
-   "Eingabe-Tastenzuordnungsdateien"
+   "Eingabe-Tastenzuordnungsdateien (remaps)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_REMAPPING_DIRECTORY,
@@ -711,7 +711,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
-   "Spielelisten"
+   "Spielelisten (gamelists)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_DIRECTORY,
@@ -719,7 +719,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SAVEFILE_DIRECTORY,
-   "Speicherdaten"
+   "Speicherdaten (saves)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVEFILE_DIRECTORY,
@@ -727,7 +727,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SAVESTATE_DIRECTORY,
-   "Schnellspeicherungen"
+   "Schnellspeicherungen (savestates)"
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_DIRECTORY,
