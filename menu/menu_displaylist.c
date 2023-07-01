@@ -9925,6 +9925,8 @@ unsigned menu_displaylist_build_list(
 
          {
             menu_displaylist_build_info_t build_list[] = {
+               {MENU_ENUM_LABEL_QUICK_MENU_SHOW_SET_CORE_ASSOCIATION,   PARSE_ONLY_BOOL},
+               {MENU_ENUM_LABEL_QUICK_MENU_SHOW_RESET_CORE_ASSOCIATION, PARSE_ONLY_BOOL},
 #ifdef HAVE_NETWORKING
                {MENU_ENUM_LABEL_QUICK_MENU_SHOW_DOWNLOAD_THUMBNAILS,    PARSE_ONLY_BOOL},
 #endif
@@ -9996,7 +9998,6 @@ unsigned menu_displaylist_build_list(
          {
             menu_displaylist_build_info_t build_list[] = {
                {MENU_ENUM_LABEL_SYSTEM_DIRECTORY,                PARSE_ONLY_DIR},
-               {MENU_ENUM_LABEL_ASSETS_DIRECTORY,                PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_THUMBNAILS_DIRECTORY,            PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_INPUT_REMAPPING_DIRECTORY,       PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_PLAYLIST_DIRECTORY,              PARSE_ONLY_DIR},
@@ -13214,46 +13215,6 @@ bool menu_displaylist_ctl(enum menu_displaylist_ctl_state type,
 #ifdef HAVE_UPDATE_CORE_INFO
 #endif
 
-
-#ifdef HAVE_UPDATE_ASSETS
-               if (menu_entries_append(info->list,
-                        msg_hash_to_str(MENU_ENUM_LABEL_VALUE_UPDATE_ASSETS),
-                        msg_hash_to_str(MENU_ENUM_LABEL_UPDATE_ASSETS),
-                        MENU_ENUM_LABEL_UPDATE_ASSETS,
-                        MENU_SETTING_ACTION, 0, 0, NULL))
-                  count++;
-#endif
-
-                  if (menu_entries_append(info->list,
-                           msg_hash_to_str(MENU_ENUM_LABEL_VALUE_UPDATE_CORE_INFO_FILES),
-                           msg_hash_to_str(MENU_ENUM_LABEL_UPDATE_CORE_INFO_FILES),
-                           MENU_ENUM_LABEL_UPDATE_CORE_INFO_FILES,
-                           MENU_SETTING_ACTION, 0, 0, NULL))
-                  count++;
-
-#ifdef HAVE_LIBRETRODB
-#if !defined(VITA)
-
-#endif
-
-#if !defined(_3DS)
-               if (menu_entries_append(info->list,
-                        msg_hash_to_str(MENU_ENUM_LABEL_VALUE_UPDATE_AUTOCONFIG_PROFILES),
-                        msg_hash_to_str(MENU_ENUM_LABEL_UPDATE_AUTOCONFIG_PROFILES),
-                        MENU_ENUM_LABEL_UPDATE_AUTOCONFIG_PROFILES,
-                        MENU_SETTING_ACTION, 0, 0, NULL))
-                  count++;
-
-               if (menu_entries_append(info->list,
-                        msg_hash_to_str(MENU_ENUM_LABEL_VALUE_UPDATE_CHEATS),
-                        msg_hash_to_str(MENU_ENUM_LABEL_UPDATE_CHEATS),
-                        MENU_ENUM_LABEL_UPDATE_CHEATS,
-                        MENU_SETTING_ACTION, 0, 0, NULL))
-                  count++;
-#endif
-
-
-
                if (menu_entries_append(info->list,
                         msg_hash_to_str(MENU_ENUM_LABEL_VALUE_PL_THUMBNAILS_UPDATER_LIST),
                         msg_hash_to_str(MENU_ENUM_LABEL_PL_THUMBNAILS_UPDATER_LIST),
@@ -13261,6 +13222,17 @@ bool menu_displaylist_ctl(enum menu_displaylist_ctl_state type,
                         MENU_SETTING_ACTION, 0, 0, NULL))
                   count++;
 
+               if (menu_entries_append(info->list,
+                        msg_hash_to_str(MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS),
+                        msg_hash_to_str(MENU_ENUM_LABEL_UPDATE_OVERLAYS),
+                        MENU_ENUM_LABEL_UPDATE_OVERLAYS,
+                        MENU_SETTING_ACTION, 0, 0, NULL))
+                  count++;
+
+#ifdef HAVE_LIBRETRODB
+#if !defined(VITA)
+
+#endif
 
 
 #if defined(HAVE_CG) || defined(HAVE_GLSL) || defined(HAVE_SLANG) || defined(HAVE_HLSL)
