@@ -84,8 +84,8 @@
 /* Certain platforms might have assets stored in the bundle that
  * we need to extract to a user-writable directory on first boot.
  *
- * Examples include: Android, iOS/OSX) */
-#if defined(ANDROID) || defined(__APPLE__)
+ * Examples include: Android, iOS/OSX), XBOX */
+#if defined(ANDROID) || defined(__APPLE__) || defined(_XBOX)
 #define DEFAULT_BUNDLE_ASSETS_EXTRACT_ENABLE true
 #else
 #define DEFAULT_BUNDLE_ASSETS_EXTRACT_ENABLE true
@@ -636,7 +636,7 @@
 #define DEFAULT_QUICK_MENU_SHOW_ADD_TO_FAVORITES false
 #define DEFAULT_QUICK_MENU_SHOW_START_RECORDING false
 #define DEFAULT_QUICK_MENU_SHOW_START_STREAMING false
-#define DEFAULT_QUICK_MENU_SHOW_SET_CORE_ASSOCIATION false
+#define DEFAULT_QUICK_MENU_SHOW_SET_CORE_ASSOCIATION true
 #define DEFAULT_QUICK_MENU_SHOW_RESET_CORE_ASSOCIATION false
 #define DEFAULT_QUICK_MENU_SHOW_CORE_OPTIONS true
 #define DEFAULT_QUICK_MENU_SHOW_CORE_OPTIONS_FLUSH true
@@ -1610,93 +1610,93 @@
 #endif
 
 #if defined(HAKCHI)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(ANDROID)
 #if defined(ANDROID_ARM_V7)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(ANDROID_ARM)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(ANDROID_AARCH64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(ANDROID_X86)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(ANDROID_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #else
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #endif
 #elif defined(__QNX__)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL http://buildbot.bplaced.net/nintendo64""
 #elif defined(IOS)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(OSX)
 #if defined(__x86_64__)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__aarch64__)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #else
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #endif
 #elif defined(_WIN32) && !defined(_XBOX)
 #if _MSC_VER >= 1910
 #ifndef __WINRT__
 #if defined(__x86_64__) || defined(_M_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(_M_IX86) || defined(_M_IA64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__arm__) || defined(_M_ARM)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__aarch64__) || defined(_M_ARM64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #endif
 #else
 #if defined(__x86_64__) || defined(_M_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(_M_IX86) || defined(_M_IA64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__arm__) || defined(_M_ARM)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__aarch64__) || defined(_M_ARM64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #endif
 #endif
 #elif _MSC_VER == 1600
 #if defined(__x86_64__) || defined(_M_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(_M_IX86) || defined(_M_IA64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #endif
 #elif _MSC_VER == 1400
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif _MSC_VER == 1310
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #else
 #if defined(__x86_64__) || defined(_M_X64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__) || defined(_M_IX86) || defined(_M_IA64)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #endif
 #endif
 #elif defined(__linux__)
 #if defined(__x86_64__)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__i386__) || defined(__i486__) || defined(__i686__)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(__arm__) && __ARM_ARCH == 7 && defined(__ARM_PCS_VFP)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #else
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #endif
 #elif defined(WIIU)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(HAVE_LIBNX)
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #elif defined(_3DS)
 #define DEFAULT_BUILDBOT_SERVER_URL envIsHomebrew() ? "" : ""
 #else
-#define DEFAULT_BUILDBOT_SERVER_URL ""
+#define DEFAULT_BUILDBOT_SERVER_URL "http://buildbot.bplaced.net/nintendo64"
 #endif
 
 #define DEFAULT_BUILDBOT_ASSETS_SERVER_URL "http://buildbot.bplaced.net/nintendo64/assets/"
@@ -1713,7 +1713,7 @@
 
 #define DEFAULT_AI_SERVICE_MODE 1
 
-#define DEFAULT_AI_SERVICE_URL "http://localhost:4404/"
+#define DEFAULT_AI_SERVICE_URL "http://buildbot.bplaced.net/nintendo64"
 
 #if defined(HAVE_FFMPEG) || defined(HAVE_MPV)
 #define DEFAULT_BUILTIN_MEDIAPLAYER_ENABLE false
