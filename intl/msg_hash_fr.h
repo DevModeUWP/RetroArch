@@ -379,7 +379,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS,
-   "Téléchargez les configurations de jeu et les fichiers de mappage des boutons de saisie pour les jeux Nintendo 64."
+   "Téléchargez les configurations de jeu pour les jeux Nintendo 64."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_GLSL_SHADERS,
@@ -390,8 +390,12 @@ MSG_HASH(
    "Mettre à jour les shaders CG"
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_SLANG_SHADERS,
-   "Mettre à jour les shaders Slang"
+   MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
+   "Télécharger les fichiers de mappage des clés"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_UPDATE_DATABASES,
+   "Téléchargez les fichiers de mappage des boutons de saisie pour les jeux Nintendo 64."
    )
 
 /* Main Menu > Information */

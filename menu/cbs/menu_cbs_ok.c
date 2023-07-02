@@ -4907,13 +4907,13 @@ void cb_generic_download(retro_task_t *task,
             switch (transf->enum_idx)
             {
                case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_CG:
-                  dirname                                   = "shaders_cg";
+                  dirname                                   = "";
                   break;
                case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_GLSL:
-                  dirname                                   = "shaders_glsl";
+                  dirname                                   = "";
                   break;
                case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_SLANG:
-                  dirname                                   = "shaders_slang";
+                  dirname                                   = "";
                   break;
                default:
                   break;
@@ -5090,13 +5090,13 @@ static int action_ok_download_generic(const char *path,
          path = "preconfigs.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_DATABASES:
-         path = "_database-rdb.zip";
+         path = "preremaps.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_GLSL:
          path = "_shaders_glsl.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_SLANG:
-         path = "_shaders_slang.zip";
+         path = "_preconfigs.zip";
          break;
       case MENU_ENUM_LABEL_CB_UPDATE_SHADERS_CG:
          path = "_shaders_cg.zip";

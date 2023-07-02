@@ -359,7 +359,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS,
-   "Download game configurations and input remaps for Nintendo 64 games."
+   "Download game configurations for Nintendo 64 games."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_GLSL_SHADERS,
@@ -370,8 +370,12 @@ MSG_HASH(
    "Update Cg Shaders"
    )
 MSG_HASH(
-   MENU_ENUM_LABEL_VALUE_UPDATE_SLANG_SHADERS,
-   "Update Slang Shaders"
+   MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
+   "Input Remaps Downloader"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_UPDATE_DATABASES,
+   "Download input remaps for Nintendo 64 games."
    )
 
 /* Main Menu > Information */

@@ -80,7 +80,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS,
-   "Spiele-Konfigurationen und Eingabe-Tastenzuordnungsdateien für Nintendo 64-Spiele herunterladen."
+   "Spiele-Konfigurationen für Nintendo 64-Spiele herunterladen."
+   )
+MSG_HASH(
+   MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES,
+   "Tastenzuordnungsdateien herunterladen"
+   )
+MSG_HASH(
+   MENU_ENUM_SUBLABEL_UPDATE_DATABASES,
+   "Eingabe-Tastenzuordnungsdateien für Nintendo 64-Spiele herunterladen."
    )
 
 /* Settings */

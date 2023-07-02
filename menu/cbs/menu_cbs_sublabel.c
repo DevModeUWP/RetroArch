@@ -1238,6 +1238,8 @@ DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_thumbnails_updater_list,            
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_pl_thumbnails_updater_list,                    MENU_ENUM_SUBLABEL_PL_THUMBNAILS_UPDATER_LIST)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_update_autoconfig_profiles,                    MENU_ENUM_SUBLABEL_UPDATE_AUTOCONFIG_PROFILES)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_update_overlays,                    	   MENU_ENUM_SUBLABEL_UPDATE_OVERLAYS)
+DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_update_databases,                    	   MENU_ENUM_SUBLABEL_UPDATE_DATABASES)
+DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_update_slang_shaders,                    	   MENU_ENUM_SUBLABEL_UPDATE_SLANG_SHADERS)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_download_core_system_files,                    MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_SYSTEM_FILES)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_download_core_content,                         MENU_ENUM_SUBLABEL_DOWNLOAD_CORE_CONTENT)
 DEFAULT_SUBLABEL_MACRO(action_bind_sublabel_rdb_entry_detail,                              MENU_ENUM_SUBLABEL_RDB_ENTRY_DETAIL)
@@ -5176,6 +5178,12 @@ int menu_cbs_init_bind_sublabel(menu_file_list_cbs_t *cbs,
             break;
          case MENU_ENUM_LABEL_UPDATE_OVERLAYS:
             BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_update_overlays);
+            break;
+         case MENU_ENUM_LABEL_UPDATE_DATABASES:
+            BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_update_databases);
+            break;
+         case MENU_ENUM_LABEL_UPDATE_SLANG_SHADERS:
+            BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_update_slang_shaders);
             break;
          case MENU_ENUM_LABEL_DOWNLOAD_CORE_SYSTEM_FILES:
             BIND_ACTION_SUBLABEL(cbs, action_bind_sublabel_download_core_system_files);

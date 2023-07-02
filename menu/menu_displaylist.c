@@ -9997,12 +9997,13 @@ unsigned menu_displaylist_build_list(
       case DISPLAYLIST_DIRECTORY_SETTINGS_LIST:
          {
             menu_displaylist_build_info_t build_list[] = {
+               {MENU_ENUM_LABEL_RGUI_CONFIG_DIRECTORY,           PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_SYSTEM_DIRECTORY,                PARSE_ONLY_DIR},
-               {MENU_ENUM_LABEL_THUMBNAILS_DIRECTORY,            PARSE_ONLY_DIR},
-               {MENU_ENUM_LABEL_INPUT_REMAPPING_DIRECTORY,       PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_PLAYLIST_DIRECTORY,              PARSE_ONLY_DIR},
+               {MENU_ENUM_LABEL_INPUT_REMAPPING_DIRECTORY,       PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_SAVEFILE_DIRECTORY,              PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_SAVESTATE_DIRECTORY,             PARSE_ONLY_DIR},
+               {MENU_ENUM_LABEL_THUMBNAILS_DIRECTORY,            PARSE_ONLY_DIR},
             };
 
             for (i = 0; i < ARRAY_SIZE(build_list); i++)
@@ -13226,6 +13227,13 @@ bool menu_displaylist_ctl(enum menu_displaylist_ctl_state type,
                         msg_hash_to_str(MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS),
                         msg_hash_to_str(MENU_ENUM_LABEL_UPDATE_OVERLAYS),
                         MENU_ENUM_LABEL_UPDATE_OVERLAYS,
+                        MENU_SETTING_ACTION, 0, 0, NULL))
+                  count++;
+
+               if (menu_entries_append(info->list,
+                        msg_hash_to_str(MENU_ENUM_LABEL_VALUE_UPDATE_DATABASES),
+                        msg_hash_to_str(MENU_ENUM_LABEL_UPDATE_DATABASES),
+                        MENU_ENUM_LABEL_UPDATE_DATABASES,
                         MENU_SETTING_ACTION, 0, 0, NULL))
                   count++;
 

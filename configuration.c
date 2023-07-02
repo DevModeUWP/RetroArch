@@ -3767,7 +3767,7 @@ static bool config_load_file(global_t *global,
    if (string_is_equal(settings->paths.directory_runtime_log, "default"))
       *settings->paths.directory_runtime_log = '\0';
 #ifdef HAVE_MENU
-   if (string_is_equal(settings->paths.directory_menu_content, "default"))
+   if (string_is_equal(settings->paths.directory_menu_content, "E:\\"))
       *settings->paths.directory_menu_content = '\0';
    if (string_is_equal(settings->paths.directory_menu_config, "default"))
       *settings->paths.directory_menu_config = '\0';

@@ -287,7 +287,7 @@ static void frontend_uwp_env_get(int *argc, char *argv[],
    fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_CHEATS],
       ":\\cheats\\", sizeof(g_defaults.dirs[DEFAULT_DIR_CHEATS]));
    fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_DATABASE],
-      "~\\", sizeof(g_defaults.dirs[DEFAULT_DIR_DATABASE]));
+      "~\\remaps\\", sizeof(g_defaults.dirs[DEFAULT_DIR_DATABASE]));
    fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_PLAYLIST],
       "~\\gamelists\\", sizeof(g_defaults.dirs[DEFAULT_DIR_ASSETS]));
    fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_RECORD_CONFIG],
@@ -304,8 +304,10 @@ static void frontend_uwp_env_get(int *argc, char *argv[],
       ":\\wallpapers\\", sizeof(g_defaults.dirs[DEFAULT_DIR_MENU_WALLPAPERS]));
    fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_THUMBNAILS],
       "~\\thumbnails\\", sizeof(g_defaults.dirs[DEFAULT_DIR_THUMBNAILS]));
+   fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_MENU_CONTENT],
+      "", sizeof(g_defaults.dirs[DEFAULT_DIR_MENU_CONTENT]));
    fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_OVERLAY],
-      "~\\", sizeof(g_defaults.dirs[DEFAULT_DIR_OVERLAY]));
+      "~\\configs\\", sizeof(g_defaults.dirs[DEFAULT_DIR_OVERLAY]));
    /* This one is an exception: cores have to be loaded from
     * the install directory,
     * since this is the only place UWP apps can take .dlls from */

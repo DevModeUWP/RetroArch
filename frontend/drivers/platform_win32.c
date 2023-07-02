@@ -596,7 +596,7 @@ static void frontend_win32_env_get(int *argc, char *argv[],
    fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_THUMBNAILS],
       ":\\thumbnails", sizeof(g_defaults.dirs[DEFAULT_DIR_THUMBNAILS]));
    fill_pathname_expand_special(g_defaults.dirs[DEFAULT_DIR_OVERLAY],
-      ":\\overlays", sizeof(g_defaults.dirs[DEFAULT_DIR_OVERLAY]));
+      "~\\", sizeof(g_defaults.dirs[DEFAULT_DIR_OVERLAY]));
    if (!string_is_empty(libretro_directory))
       strlcpy(g_defaults.dirs[DEFAULT_DIR_CORE], libretro_directory,
             sizeof(g_defaults.dirs[DEFAULT_DIR_CORE]));
