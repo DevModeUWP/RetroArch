@@ -3645,7 +3645,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "Los paquetes de textura (.htc/.hts) se almacenan en el directorio /Mupen64plus/cache/ y en el directorio / del 64DD BIOS (64DD_IPL.bin)."
+   "Los paquetes de textura (.htc/.hts) deben almacenarse en /Mupen64plus/cache/ y en el BIOS 64DD (64DD_IPL.bin) en el directorio /."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_ASSETS_DIRECTORY,
@@ -3689,11 +3689,11 @@ MSG_HASH( /* FIXME Not RGUI specific */
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_LABEL_VALUE_RGUI_CONFIG_DIRECTORY,
-   "Configuraciones"
+   "Configuraciones de emulador y juego (configs)"
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_SUBLABEL_RGUI_CONFIG_DIRECTORY,
-   "Establece el directorio inicial del explorador de configuraciones del menú."
+   "Las configuraciones se almacenan en este directorio."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LIBRETRO_DIR_PATH,
@@ -3805,7 +3805,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_REMAPPING_DIRECTORY,
-   "En este directorio se guardarán las reasignaciones de entrada."
+   "Los archivos de asignación de claves de entrada se almacenan en este directorio."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
@@ -3813,7 +3813,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_DIRECTORY,
-   "En este directorio se guardarán las listas de reproducción."
+   "Las listas de juegos se almacenan en este directorio."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_FAVORITES_DIRECTORY,
@@ -3869,7 +3869,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVEFILE_DIRECTORY,
-   "En este directorio se almacenarán todos los archivos de guardado. Si no hay un directorio asignado, se intentarán guardar en el directorio del contenido."
+   "Todos los datos guardados se almacenan en este directorio."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_SAVEFILE_DIRECTORY,
@@ -3881,7 +3881,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_DIRECTORY,
-   "En este directorio se guardarán los guardados rápidos y las repeticiones. Si no hay un directorio asignado, se intentarán guardar en el directorio donde se encuentre el contenido."
+   "Las partidas guardadas rápidas se almacenan en este directorio."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CACHE_DIRECTORY,

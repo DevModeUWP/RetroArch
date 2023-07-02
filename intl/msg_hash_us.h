@@ -7306,7 +7306,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "Texture packs (.htc/.hts) are stored in the /Mupen64plus/cache/ directory and the 64DD BIOS (64DD_IPL.bin) in the / directory."
+   "Texture packs (.htc/.hts) must be stored in the /Mupen64plus/cache/ and the 64DD BIOS (64DD_IPL.bin) in the / directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_ASSETS_DIRECTORY,
@@ -7350,11 +7350,11 @@ MSG_HASH( /* FIXME Not RGUI specific */
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_LABEL_VALUE_RGUI_CONFIG_DIRECTORY,
-   "Configs"
+   "Emulator and Game Configurations (configs)"
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_SUBLABEL_RGUI_CONFIG_DIRECTORY,
-   "Set start directory for menu configuration browser."
+   "Configurations are stored in this directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LIBRETRO_DIR_PATH,

@@ -651,7 +651,15 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "Texturenpakete (.htc/.hts) werden im /Mupen64plus/cache/-Verzeichnis und das 64DD BIOS (64DD_IPL.bin) /-Verzeichnis gespeichert."
+   "Texturenpakete (.htc/.hts) müssen im /Mupen64plus/cache/ und das 64DD BIOS (64DD_IPL.bin) im / Verzeichnis gespeichert werden."
+   )
+MSG_HASH( /* FIXME Not RGUI specific */
+   MENU_ENUM_LABEL_VALUE_RGUI_CONFIG_DIRECTORY,
+   "Emulatoren- und Spielkonfigurationen (configs)"
+   )
+MSG_HASH( /* FIXME Not RGUI specific */
+   MENU_ENUM_SUBLABEL_RGUI_CONFIG_DIRECTORY,
+   "Konfigurationen werden in diesem Verzeichnis gespeichert."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASSETS_DIRECTORY,

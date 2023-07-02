@@ -7138,7 +7138,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "I pacchetti di texture (.htc/.hts) sono memorizzati nella directory /Mupen64plus/cache/ e nella directory 64DD BIOS (64DD_IPL.bin) /."
+   "I pacchetti texture (.htc/.hts) devono essere memorizzati in /Mupen64plus/cache/ e il BIOS 64DD (64DD_IPL.bin) nella directory /."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_ASSETS_DIRECTORY,
@@ -7182,11 +7182,11 @@ MSG_HASH( /* FIXME Not RGUI specific */
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_LABEL_VALUE_RGUI_CONFIG_DIRECTORY,
-   "Configurazioni"
+   "Emulatore e configurazioni di gioco (configs)"
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_SUBLABEL_RGUI_CONFIG_DIRECTORY,
-   "Imposta la directory iniziale per il browser di configurazione dei menù."
+   "Le configurazioni sono memorizzate in questa directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LIBRETRO_DIR_PATH,
@@ -7298,7 +7298,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_REMAPPING_DIRECTORY,
-   "I remapppamenti dei comandi sono memorizzati in questa cartella."
+   "I file di mappatura delle chiavi di input vengono archiviati in questa directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
@@ -7306,7 +7306,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_DIRECTORY,
-   "Le scalette sono memorizzate in questa directory."
+   "Gli elenchi di giochi sono memorizzati in questa directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_FAVORITES_DIRECTORY,
@@ -7362,7 +7362,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVEFILE_DIRECTORY,
-   "Salva tutti i file di salvataggio in questa directory. Se non è impostato, cercherà di salvare nella directory di lavoro del file di contenuto."
+   "Tutti i dati di salvataggio sono memorizzati in questa directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_SAVEFILE_DIRECTORY,
@@ -7374,7 +7374,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_DIRECTORY,
-   "Gli stati di salvataggio e i replay sono memorizzati in questa directory. Se non impostata, tenteranno di salvarli nella directory in cui si trova il contenuto."
+   "I salvataggi rapidi sono memorizzati in questa directory."
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_CACHE_DIRECTORY,

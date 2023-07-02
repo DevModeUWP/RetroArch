@@ -7178,7 +7178,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "Les paquets de texture (.htc/.hts) sont stockés dans le répertoire /Mupen64plus/cache/ et le répertoire / du BIOS 64DD (64DD_IPL.bin)."
+   "Les paquets de texture (.htc/.hts) doivent être stockés dans /Mupen64plus/cache/ et le BIOS 64DD (64DD_IPL.bin) dans le répertoire /."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_ASSETS_DIRECTORY,
@@ -7222,11 +7222,11 @@ MSG_HASH( /* FIXME Not RGUI specific */
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_LABEL_VALUE_RGUI_CONFIG_DIRECTORY,
-   "Fichiers de configuration "
+   "Configurations d'émulateur et de jeu (configs)"
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_SUBLABEL_RGUI_CONFIG_DIRECTORY,
-   "Définir le dossier de départ du navigateur de configurations du menu."
+   "Les configurations sont stockées dans ce répertoire."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LIBRETRO_DIR_PATH,
@@ -7338,7 +7338,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_REMAPPING_DIRECTORY,
-   "Les fichiers de remappage des touches sont conservés dans ce dossier."
+   "Les fichiers de mappage de clés d'entrée sont stockés dans ce répertoire."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
@@ -7346,7 +7346,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PLAYLIST_DIRECTORY,
-   "Les listes de lecture sont conservées dans ce dossier."
+   "Les listes de jeux sont stockées dans ce répertoire."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CONTENT_FAVORITES_DIRECTORY,
@@ -7402,7 +7402,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVEFILE_DIRECTORY,
-   "Les fichiers de sauvegarde seront conservés dans ce dossier. Si aucun dossier n'est défini, ils seront sauvegardés dans le même dossier que le contenu."
+   "Toutes les données sauvegardées sont stockées dans ce répertoire."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_HELP_SAVEFILE_DIRECTORY,
@@ -7414,7 +7414,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SAVESTATE_DIRECTORY,
-   "Les sauvegardes instantanées et replays sont conservés dans ce dossier. Si non défini, essayera de les enregistrer dans le dossier où se trouve le contenu."
+   "Les sauvegardes rapides sont stockées dans ce répertoire."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CACHE_DIRECTORY,
