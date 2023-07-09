@@ -327,7 +327,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PL_THUMBNAILS_UPDATER_LIST,
-   "Download thumbnails for games in the selected gamelist."
+   "Download thumbnails for Nintendo 64 games in the selected gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_CORE_INFO_FILES,
@@ -7310,7 +7310,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "Texture packs (.htc/.hts) must be stored in the /Mupen64plus/cache/ and the 64DD BIOS (64DD_IPL.bin) in the / directory."
+   "Texture packs (.htc/.hts) must be stored in the /data/Mupen64plus/cache/ and the 64DD BIOS (64DD_IPL.bin) in the /data/ directory."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_CORE_ASSETS_DIRECTORY,
@@ -7358,7 +7358,7 @@ MSG_HASH( /* FIXME Not RGUI specific */
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_SUBLABEL_RGUI_CONFIG_DIRECTORY,
-   "Configurations are stored in this directory."
+   "The Online Updater only supports storage in the internal standard LocalState folder. If this setting is changed, the optional download must be added manually. See the link on the Github page."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_LIBRETRO_DIR_PATH,
@@ -7470,7 +7470,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_REMAPPING_DIRECTORY,
-   "Input remaps are stored in this directory."
+   "The Online Updater only supports storage in the internal standard LocalState folder. If this setting is changed, the optional download must be added manually. See the link on the Github page."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
@@ -8070,7 +8070,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RENAME_ENTRY,
-   "Rename the title of this game."
+   "Rename the title of this Nintendo 64 game."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DELETE_ENTRY,
@@ -8078,7 +8078,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DELETE_ENTRY,
-   "Remove this game from the gamelist."
+   "Remove this Nintendo 64 game from the gamelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ADD_TO_FAVORITES_PLAYLIST,
@@ -8094,7 +8094,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SET_CORE_ASSOCIATION,
-   "Set the emulator associated with this game."
+   "Set the emulator associated with this Nintendo 64 game."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RESET_CORE_ASSOCIATION,
@@ -8102,7 +8102,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESET_CORE_ASSOCIATION,
-   "Reset the emulator associated with this game."
+   "Reset the emulator associated with this Nintendo 64 game."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INFORMATION,
@@ -9376,7 +9376,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_CORE,
-   "No Core"
+   ""
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SEARCH,

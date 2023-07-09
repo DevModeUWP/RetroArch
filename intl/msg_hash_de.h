@@ -72,7 +72,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_PL_THUMBNAILS_UPDATER_LIST,
-   "Vorschaubilder für Spiele in der ausgewählten Spieleliste herunterladen."
+   "Vorschaubilder für Nintendo 64-Spiele in der ausgewählten Spieleliste herunterladen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_UPDATE_OVERLAYS,
@@ -659,7 +659,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SYSTEM_DIRECTORY,
-   "Texturenpakete (.htc/.hts) müssen im /Mupen64plus/cache/ und das 64DD BIOS (64DD_IPL.bin) im / Verzeichnis gespeichert werden."
+   "Texturenpakete (.htc/.hts) müssen im /data/Mupen64plus/cache/ und das 64DD BIOS (64DD_IPL.bin) im /data/ Verzeichnis gespeichert werden."
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_LABEL_VALUE_RGUI_CONFIG_DIRECTORY,
@@ -667,7 +667,7 @@ MSG_HASH( /* FIXME Not RGUI specific */
    )
 MSG_HASH( /* FIXME Not RGUI specific */
    MENU_ENUM_SUBLABEL_RGUI_CONFIG_DIRECTORY,
-   "Konfigurationen werden in diesem Verzeichnis gespeichert."
+   "Der Online Updater unterstützt nur Speicherungen im internen standard LocalState Ordner. Wird diese Einstellung geändert muss der optionale Download manuell hinzugefügt werden. Siehe dazu den Link auf der Github-Seite."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_ASSETS_DIRECTORY,
@@ -723,7 +723,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_INPUT_REMAPPING_DIRECTORY,
-   "Eingabe-Tastenzuordnungsdateien werden in diesem Verzeichnis gespeichert."
+   "Der Online Updater unterstützt nur Speicherungen im internen standard LocalState Ordner. Wird diese Einstellung geändert muss der optionale Download manuell hinzugefügt werden. Siehe dazu den Link auf der Github-Seite."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_PLAYLIST_DIRECTORY,
@@ -829,7 +829,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RUN,
-   "Starte das ausgewählte Nintendo 64 Spiel."
+   "Starte das ausgewählte Nintendo 64-Spiel."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RENAME_ENTRY,
@@ -837,7 +837,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RENAME_ENTRY,
-   "Titel dieses Spiels umbenennen."
+   "Titel dieses Nintendo 64-Spiels umbenennen."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_DELETE_ENTRY,
@@ -845,7 +845,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_DELETE_ENTRY,
-   "Entferne diesen Spiel aus der Spielelist."
+   "Entferne dieses Nintendo 64-Spiel aus der Spielelist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SET_CORE_ASSOCIATION,
@@ -853,7 +853,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_SET_CORE_ASSOCIATION,
-   "Legt den Emulator fest, der diesem Spiel zugeordnet ist."
+   "Legt den Emulator fest, der diesem Nintendo 64-Spiel zugeordnet ist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_RESET_CORE_ASSOCIATION,
@@ -861,7 +861,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_SUBLABEL_RESET_CORE_ASSOCIATION,
-   "Emulator zurücksetzen, der diesem Spiel zugeordnet ist."
+   "Emulator zurücksetzen, der diesem Nintendo 64-Spiel zugeordnet ist."
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_INFORMATION,
@@ -1588,7 +1588,7 @@ MSG_HASH(
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_NO_CORE,
-   "Kein Emulator"
+   ""
    )
 MSG_HASH(
    MENU_ENUM_LABEL_VALUE_SEARCH,
