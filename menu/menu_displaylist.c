@@ -9997,10 +9997,8 @@ unsigned menu_displaylist_build_list(
       case DISPLAYLIST_DIRECTORY_SETTINGS_LIST:
          {
             menu_displaylist_build_info_t build_list[] = {
-               {MENU_ENUM_LABEL_RGUI_CONFIG_DIRECTORY,           PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_SYSTEM_DIRECTORY,                PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_PLAYLIST_DIRECTORY,              PARSE_ONLY_DIR},
-               {MENU_ENUM_LABEL_INPUT_REMAPPING_DIRECTORY,       PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_SAVEFILE_DIRECTORY,              PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_SAVESTATE_DIRECTORY,             PARSE_ONLY_DIR},
                {MENU_ENUM_LABEL_THUMBNAILS_DIRECTORY,            PARSE_ONLY_DIR},
