@@ -6,8 +6,8 @@
 # /* - pkg/snap/snapcraft.yaml (including the github url) */
 
 #if 0
-RARCH_VERSION="1.15.0"
+RARCH_VERSION="Nintendo 64 (powered by libretro) v1.15.0.6"
 #endif
 #ifndef PACKAGE_VERSION
-#define PACKAGE_VERSION "1.15.0"
+#define PACKAGE_VERSION "Nintendo 64 (powered by libretro) v1.15.0.6"
 #endif

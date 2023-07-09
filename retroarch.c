@@ -2,7 +2,7 @@
  *  Copyright (C) 2010-2014 - Hans-Kristian Arntzen
  *  Copyright (C) 2011-2021 - Daniel De Matteis
  *  Copyright (C) 2012-2015 - Michael Lelli
- *  Copyright (C) 2014-2017 - Jean-Andr� Santoni
+ *  Copyright (C) 2014-2017 - Jean-Andr  Santoni
  *  Copyright (C) 2016-2019 - Brad Parker
  *
  *  RetroArch is free software: you can redistribute it and/or modify it under the terms
@@ -6949,7 +6949,7 @@ int retroarch_get_capabilities(enum rarch_capabilities type,
          break;
       case RARCH_CAPABILITIES_COMPILER:
 #if defined(_MSC_VER)
-         snprintf(s, len, "%s: MSVC (%d) %u-bit",
+         snprintf(s, len, "%s: (%d) %u-bit",
                msg_hash_to_str(MSG_COMPILER),
                _MSC_VER, (unsigned)
                (CHAR_BIT * sizeof(size_t)));
